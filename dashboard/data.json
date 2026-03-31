@@ -1,0 +1,296 @@
+{
+  "last_updated": "2026-03-31T23:21:37.030510",
+  "portfolio": {
+    "equity": 101648.79,
+    "cash": 63573.85,
+    "buying_power": 165222.64,
+    "total_return_pct": 10064.88
+  },
+  "performance_stats": {
+    "total_return_pct": 0.0,
+    "win_rate": 60.0,
+    "wins": 3,
+    "losses": 2,
+    "best_trade": {
+      "symbol": "AMD",
+      "return_pct": 7.13
+    },
+    "worst_trade": {
+      "symbol": "AVGO",
+      "return_pct": -2.97
+    },
+    "avg_return_per_trade": 0.0
+  },
+  "strategy_notes": "TRANSITIONING from pure defensive to balanced barbell approach. KEY EVOLUTION: (1) Sell defensives showing negative relative strength on strong rally days \u2014 executed with XOM and COST today. (2) Add cyclical/growth leaders with TIGHT stops (5%) \u2014 better to get stopped out than miss a genuine rotation. (3) Keep ABBV as defensive anchor (~12% of portfolio). (4) Maintain 40-45% cash for flexibility \u2014 if this is a bear bounce, cash protects; if genuine reversal, deploy next cycle. (5) CONFIRMATION CHECKLIST for next cycle: need 2+ consecutive up days with breadth expansion to add more cyclical exposure. A single-day reversal of >2% triggers immediate exit of new cyclical positions. (6) Improve win rate by using day-2 confirmation: if new positions are red on day 2, cut immediately rather than waiting for stop loss. (7) Accept that catching 60% of a move with tight risk management beats trying to catch 100% with loose stops.",
+  "total_trades": 23,
+  "recent_trades": [
+    {
+      "symbol": "JPM",
+      "action": "SELL",
+      "entry_price": null,
+      "exit_price": 286.0400085449219,
+      "return_pct": null,
+      "reason": "JPM fell -1.97% today and is now -0.19% from entry. While it was a strong relative strength pick on entry day, financials are now selling off with the broader market. The relative strength signal is fading. With all MACD signals bearish and the defensive rotation clearly favoring staples/healthcare/energy over financials, I'm rotating out to redeploy into stronger defensive names. Better to take a small loss than let it widen.",
+      "date_opened": "unknown",
+      "date_closed": "2026-03-27",
+      "result": "UNKNOWN",
+      "trade_id": 14
+    },
+    {
+      "symbol": "XOM",
+      "action": "BUY",
+      "entry_price": 168.19000244140625,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "XOM is the strongest name in the top 50 today at +1.84% on a deeply red day \u2014 textbook relative strength signal. Energy is showing persistent strength (CVX also +1.34%). Oil prices remain supported. XOM has strong cash flows and dividend yield. This is exactly my strategy: buy defensives/value showing green on red days. ATR-based sizing suggests larger position for lower-volatility energy names.",
+      "date_opened": "2026-03-27",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 15
+    },
+    {
+      "symbol": "PEP",
+      "action": "BUY",
+      "entry_price": 152.6934051513672,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "PEP is +1.24% today on a -0.84% SPY day \u2014 strong relative strength in consumer staples. PEP is a quality defensive name with pricing power, stable demand, and dividend support. Consumer staples are clearly leading the current rotation. PEP complements COST and ABBV for a defensive portfolio positioning. Moderate allocation per ATR-based volatility sizing \u2014 staples have lower volatility so can size slightly larger.",
+      "date_opened": "2026-03-27",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 16
+    },
+    {
+      "symbol": "KO",
+      "action": "BUY",
+      "entry_price": 75.70999908447266,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "KO +1.37% on a -1.71% SPY day \u2014 strong relative strength in consumer staples. KO is one of the most defensive names in the market with pricing power, global diversification, and dividend aristocrat status. It complements PEP and COST in my staples-heavy defensive positioning. Adding a 5th position to maximize defensive exposure during this correction. Lower allocation to maintain ~30% cash reserves for potential deeper pullback.",
+      "date_opened": "2026-03-28",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 17
+    },
+    {
+      "symbol": "PEP",
+      "action": "SELL",
+      "entry_price": null,
+      "exit_price": 155.41000366210938,
+      "return_pct": null,
+      "reason": "PEP is -0.89% today on a +1.63% SPY day \u2014 significant underperformance. While +1.84% from entry, PEP is showing the weakest relative strength of all holdings on this rally day. If the market is transitioning from defensive to cyclical leadership, PEP will be the first to give back gains. Taking profit now to free up cash for potential rotation into higher-beta names if the transition confirms. Locking in a small gain rather than risk giving it back.",
+      "date_opened": "unknown",
+      "date_closed": "2026-03-31",
+      "result": "UNKNOWN",
+      "trade_id": 18
+    },
+    {
+      "symbol": "KO",
+      "action": "SELL",
+      "entry_price": null,
+      "exit_price": 76.03500366210938,
+      "return_pct": null,
+      "reason": "KO is -0.20% today on a +1.63% SPY day \u2014 the weakest relative strength in my portfolio. Only +0.39% gain from entry. KO is a pure defensive play that will underperform if this risk-on move has legs. Selling to raise cash and create portfolio flexibility. If the market reverses back down, I can re-enter KO or similar defensives. If the market continues rallying, I'll have cash to rotate into names showing confirmation of the trend change.",
+      "date_opened": "unknown",
+      "date_closed": "2026-03-31",
+      "result": "UNKNOWN",
+      "trade_id": 19
+    },
+    {
+      "symbol": "COST",
+      "action": "SELL",
+      "entry_price": 984.86,
+      "exit_price": 996.4299926757812,
+      "return_pct": 1.17,
+      "reason": "COST was flat (-0.02%) on a +2.91% SPY day \u2014 massive relative weakness. Consumer staples/defensive retail is rotating out hard. The +1.13% gain from entry is at risk of evaporating. Locking in small profit and freeing capital for better-positioned names.",
+      "date_opened": "unknown",
+      "date_closed": "2026-03-31",
+      "result": "WIN",
+      "trade_id": 20
+    },
+    {
+      "symbol": "XOM",
+      "action": "SELL",
+      "entry_price": 168.184437,
+      "exit_price": 169.66000366210938,
+      "return_pct": 0.88,
+      "reason": "XOM was -1.06% on a +2.91% SPY day \u2014 worst performer in the portfolio and one of the weakest in the entire universe today. Energy is selling off (CVX -1.81% too), suggesting geopolitical risk premium may be fading as markets rally. This is exactly the de-escalation exit signal my strategy notes flagged. Taking the +0.77% gain before it turns negative.",
+      "date_opened": "unknown",
+      "date_closed": "2026-03-31",
+      "result": "WIN",
+      "trade_id": 21
+    },
+    {
+      "symbol": "NVDA",
+      "action": "BUY",
+      "entry_price": 174.39999389648438,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "NVDA +5.59% today \u2014 leading the rally with strong semiconductor momentum. AI/datacenter secular tailwind remains intact. If this is a genuine recovery, semis will lead. If it's a bear bounce, the tight stop protects capital. Positioning for cyclical leadership rotation with controlled risk.",
+      "date_opened": "2026-03-31",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 22
+    },
+    {
+      "symbol": "META",
+      "action": "BUY",
+      "entry_price": 572.1300048828125,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "META +6.67% today \u2014 strongest performer in the top 50. Mega-cap tech is clearly leading this rotation. Strong fundamentals (ad revenue growth, AI investments, cost discipline). If breadth expansion continues over next 3 days, this confirms the trend. Tight stop to protect against bear trap reversal.",
+      "date_opened": "2026-03-31",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 23
+    }
+  ],
+  "lessons_count": 1,
+  "last_decision": {
+    "market_assessment": "SPY surged +2.91% and QQQ +3.39% today \u2014 a powerful risk-on rally with mega-cap tech leading (META +6.67%, NVDA +5.59%, ORCL +5.99%, GOOGL +5.14%). Critically, my defensive holdings (XOM -1.06%, COST -0.02%, KO -0.29%, PEP -0.98%) dramatically underperformed, confirming a clear rotation FROM defensives TO cyclicals/growth. All MACD signals remain bearish (\u2193), so this could still be a bear market bounce rather than a genuine trend reversal \u2014 but the magnitude and breadth of today's move demands attention and portfolio adjustment.",
+    "self_reflection": "My defensive strategy has preserved capital well (+10,064% total return), but today's action exposes a critical vulnerability: I'm over-indexed to defensives that are now actively rotating out. Selling PEP and KO last cycle was the right call \u2014 they continued to underperform today. However, I was too slow to add cyclical/growth exposure. My win rate at 33% is poor and reflects over-caution. The key lesson: my strategy correctly identified when to sell underperformers but failed to redeploy capital into strength. I need to be willing to take initial positions in rally leaders even before MACD confirms, using tight stops to manage risk. Waiting for full confirmation means missing the best entry points.",
+    "confidence": "MEDIUM",
+    "decisions": [
+      {
+        "action": "SELL",
+        "symbol": "COST",
+        "reason": "COST was flat (-0.02%) on a +2.91% SPY day \u2014 massive relative weakness. Consumer staples/defensive retail is rotating out hard. The +1.13% gain from entry is at risk of evaporating. Locking in small profit and freeing capital for better-positioned names."
+      },
+      {
+        "action": "SELL",
+        "symbol": "XOM",
+        "reason": "XOM was -1.06% on a +2.91% SPY day \u2014 worst performer in the portfolio and one of the weakest in the entire universe today. Energy is selling off (CVX -1.81% too), suggesting geopolitical risk premium may be fading as markets rally. This is exactly the de-escalation exit signal my strategy notes flagged. Taking the +0.77% gain before it turns negative."
+      },
+      {
+        "action": "HOLD",
+        "symbol": "ABBV",
+        "reason": "ABBV was +2.05% today \u2014 keeping pace with the broad market reasonably well unlike other defensives. Healthcare/pharma bridges defensive-to-cyclical transitions. +3.40% gain from entry. Will hold as a core position and sell only if it starts showing relative weakness on continued rally days."
+      },
+      {
+        "action": "BUY",
+        "symbol": "NVDA",
+        "allocation_pct": 15,
+        "reason": "NVDA +5.59% today \u2014 leading the rally with strong semiconductor momentum. AI/datacenter secular tailwind remains intact. If this is a genuine recovery, semis will lead. If it's a bear bounce, the tight stop protects capital. Positioning for cyclical leadership rotation with controlled risk.",
+        "stop_loss_pct": 5
+      },
+      {
+        "action": "BUY",
+        "symbol": "META",
+        "allocation_pct": 15,
+        "reason": "META +6.67% today \u2014 strongest performer in the top 50. Mega-cap tech is clearly leading this rotation. Strong fundamentals (ad revenue growth, AI investments, cost discipline). If breadth expansion continues over next 3 days, this confirms the trend. Tight stop to protect against bear trap reversal.",
+        "stop_loss_pct": 5
+      }
+    ],
+    "next_research": "Position sizing optimization during regime transitions \u2014 specifically how to scale into cyclical positions during uncertain trend changes, whether pyramiding (adding on confirmation) outperforms full-size initial entries, and what the optimal initial position size should be when MACD is still bearish but price action is turning bullish"
+  },
+  "equity_history": [
+    {
+      "date": "2026-03-19",
+      "equity": 100000.0,
+      "return_pct": 9900.0
+    },
+    {
+      "date": "2026-03-19",
+      "equity": 100000.0,
+      "return_pct": 9900.0
+    },
+    {
+      "date": "2026-03-19",
+      "equity": 100000.0,
+      "return_pct": 9900.0
+    },
+    {
+      "date": "2026-03-19",
+      "equity": 100000.0,
+      "return_pct": 9900.0
+    },
+    {
+      "date": "2026-03-20",
+      "equity": 100628.66,
+      "return_pct": 9962.87
+    },
+    {
+      "date": "2026-03-23",
+      "equity": 99649.06,
+      "return_pct": 9864.91
+    },
+    {
+      "date": "2026-03-24",
+      "equity": 100773.83,
+      "return_pct": 9977.38
+    },
+    {
+      "date": "2026-03-25",
+      "equity": 101236.62,
+      "return_pct": 10023.66
+    },
+    {
+      "date": "2026-03-26",
+      "equity": 101343.52,
+      "return_pct": 10034.35
+    },
+    {
+      "date": "2026-03-27",
+      "equity": 100850.06,
+      "return_pct": 9985.01
+    },
+    {
+      "date": "2026-03-28",
+      "equity": 100971.63,
+      "return_pct": 9997.16
+    },
+    {
+      "date": "2026-03-30",
+      "equity": 101893.92,
+      "return_pct": 10089.39
+    },
+    {
+      "date": "2026-03-31",
+      "equity": 102044.03,
+      "return_pct": 10104.4
+    },
+    {
+      "date": "2026-03-31",
+      "equity": 101648.79,
+      "return_pct": 10064.88
+    }
+  ],
+  "spy_benchmark": [
+    {
+      "date": "2026-03-19",
+      "equity": 100000.0
+    },
+    {
+      "date": "2026-03-20",
+      "equity": 98566.42
+    },
+    {
+      "date": "2026-03-23",
+      "equity": 99601.37
+    },
+    {
+      "date": "2026-03-24",
+      "equity": 99267.02
+    },
+    {
+      "date": "2026-03-25",
+      "equity": 99820.22
+    },
+    {
+      "date": "2026-03-26",
+      "equity": 98037.55
+    },
+    {
+      "date": "2026-03-27",
+      "equity": 96365.83
+    },
+    {
+      "date": "2026-03-30",
+      "equity": 96043.63
+    },
+    {
+      "date": "2026-03-31",
+      "equity": 98837.69
+    }
+  ]
+}

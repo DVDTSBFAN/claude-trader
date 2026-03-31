@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude Trader</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #090b0e;
+      --surface:   #0d1117;
+      --surface2:  #111820;
+      --border:    #1a2332;
+      --green:     #22ff75;
+      --green-dim: rgba(34, 255, 117, 0.08);
+      --blue:      #3d8ef0;
+      --blue-dim:  rgba(61, 142, 240, 0.08);
+      --red:       #ff5059;
+      --red-dim:   rgba(255, 80, 89, 0.08);
+      --text:      #dbe2ec;
+      --muted:     #5e6c84;
+      --muted2:    #3a4355;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, 'Helvetica Neue', system-ui, sans-serif;
+      font-size: 14px;
+      line-height: 1.5;
+      min-height: 100vh;
+      padding: 0 0 60px;
+    }
+
+    /* ─── Header ─────────────────────────────────────────── */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 28px 40px 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+    }
+
+    .brand-icon {
+      font-size: 22px;
+      line-height: 1;
+    }
+
+    .brand-name {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+      color: var(--text);
+    }
+
+    .brand-name span { color: var(--green); }
+
+    .brand-sub {
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 0.3px;
+      margin-top: 2px;
+    }
+
+    .status-badge {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 6px 14px;
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 0.4px;
+    }
+
+    .status-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 6px var(--green);
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    /* ─── Main Layout ─────────────────────────────────────── */
+    main { padding: 32px 40px; max-width: 1400px; }
+
+    /* ─── Section Label ───────────────────────────────────── */
+    .section-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 1.4px;
+      color: var(--green);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    /* ─── Stat Cards ──────────────────────────────────────── */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px 22px;
+    }
+
+    .stat-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .stat-value {
+      font-size: 26px;
+      font-weight: 300;
+      letter-spacing: -0.5px;
+      color: var(--text);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .stat-value.positive { color: var(--green); }
+    .stat-value.negative { color: var(--red); }
+
+    .stat-sub {
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    /* ─── Chart ───────────────────────────────────────────── */
+    .chart-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+    }
+
+    .chart-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+
+    .chart-return {
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+    }
+
+    .chart-returns-row {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .chart-return-item { text-align: right; }
+
+    .chart-return-val {
+      font-size: 20px;
+      font-weight: 300;
+    }
+
+    .chart-return-val.green { color: var(--green); }
+    .chart-return-val.blue  { color: var(--blue); }
+    .chart-return-val.red   { color: var(--red); }
+
+    .chart-return-sub {
+      font-size: 10px;
+      color: var(--muted);
+      letter-spacing: 0.3px;
+    }
+
+    .alpha-badge {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 5px;
+      letter-spacing: 0.3px;
+    }
+
+    .alpha-badge.pos { background: var(--green-dim); color: var(--green); }
+    .alpha-badge.neg { background: var(--red-dim); color: var(--red); }
+
+    .chart-legend {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .legend-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .chart-wrap {
+      position: relative;
+      height: 200px;
+    }
+
+    /* ─── Two-column grid ─────────────────────────────────── */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    @media (max-width: 900px) {
+      header { padding: 20px 20px 18px; }
+      main { padding: 24px 20px; }
+      .two-col { grid-template-columns: 1fr; }
+      .stat-value { font-size: 22px; }
+    }
+
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px 28px;
+    }
+
+    /* ─── Last Cycle ──────────────────────────────────────── */
+    .insight-block {
+      background: var(--blue-dim);
+      border: 1px solid rgba(61, 142, 240, 0.15);
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+    }
+
+    .insight-label {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      color: var(--blue);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .insight-text {
+      font-size: 12.5px;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .confidence-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 14px;
+      margin-bottom: 18px;
+    }
+
+    .confidence-label {
+      font-size: 10px;
+      color: var(--muted);
+      letter-spacing: 0.5px;
+    }
+
+    .confidence-badge {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding: 3px 9px;
+      border-radius: 4px;
+    }
+
+    .confidence-badge.HIGH  { background: var(--green-dim); color: var(--green); }
+    .confidence-badge.MEDIUM { background: rgba(255, 180, 50, 0.1); color: #ffb432; }
+    .confidence-badge.LOW   { background: var(--red-dim); color: var(--red); }
+
+    .decisions-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .decision-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .decision-row:last-child { border-bottom: none; }
+
+    .action-tag {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding: 3px 8px;
+      border-radius: 4px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .action-tag.BUY  { background: var(--green-dim); color: var(--green); }
+    .action-tag.SELL { background: var(--red-dim); color: var(--red); }
+    .action-tag.HOLD { background: rgba(94, 108, 132, 0.15); color: var(--muted); }
+
+    .decision-symbol {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+      min-width: 44px;
+    }
+
+    .decision-reason {
+      font-size: 11.5px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    /* ─── Next Research ───────────────────────────────────── */
+    .research-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+
+    .research-icon { font-size: 13px; flex-shrink: 0; margin-top: 1px; }
+
+    .research-meta { font-size: 10px; color: var(--muted); margin-bottom: 3px; letter-spacing: 0.5px; }
+
+    .research-text {
+      font-size: 11.5px;
+      color: var(--blue);
+      line-height: 1.5;
+    }
+
+    /* ─── Strategy ────────────────────────────────────────── */
+    .strategy-text {
+      font-size: 12.5px;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .strategy-text strong { color: var(--text); font-weight: 500; }
+
+    /* ─── Trades Table ────────────────────────────────────── */
+    .trades-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .trades-header {
+      padding: 22px 28px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    thead th {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: var(--muted);
+      text-transform: uppercase;
+      padding: 12px 20px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+    }
+
+    tbody tr {
+      border-bottom: 1px solid var(--border);
+      transition: background 0.15s;
+    }
+
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:hover { background: var(--surface2); }
+
+    tbody td {
+      padding: 13px 20px;
+      font-size: 12.5px;
+      color: var(--text);
+      vertical-align: middle;
+    }
+
+    .trade-symbol {
+      font-weight: 600;
+      font-size: 13px;
+    }
+
+    .trade-action {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding: 3px 8px;
+      border-radius: 4px;
+      display: inline-block;
+    }
+
+    .result-badge {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      padding: 3px 8px;
+      border-radius: 4px;
+      display: inline-block;
+    }
+
+    .result-badge.WIN    { background: var(--green-dim); color: var(--green); }
+    .result-badge.LOSS   { background: var(--red-dim); color: var(--red); }
+    .result-badge.OPEN   { background: rgba(61, 142, 240, 0.1); color: var(--blue); }
+    .result-badge.UNKNOWN { background: rgba(94, 108, 132, 0.15); color: var(--muted); }
+
+    .price-val { color: var(--muted); font-variant-numeric: tabular-nums; }
+    .return-pos { color: var(--green); font-weight: 500; }
+    .return-neg { color: var(--red); font-weight: 500; }
+    .return-na  { color: var(--muted2); }
+
+    .empty-row td {
+      text-align: center;
+      padding: 40px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* ─── Footer ──────────────────────────────────────────── */
+    footer {
+      text-align: center;
+      padding: 32px 40px 0;
+      font-size: 11px;
+      color: var(--muted2);
+      letter-spacing: 0.3px;
+    }
+
+    footer span { color: var(--muted); }
+
+    /* ─── Loading / Error ─────────────────────────────────── */
+    .skeleton {
+      background: linear-gradient(90deg, var(--surface) 25%, var(--surface2) 50%, var(--surface) 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.5s infinite;
+      border-radius: 4px;
+      height: 1em;
+    }
+
+    @keyframes shimmer {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <div class="brand">
+      <span class="brand-icon">₿</span>
+      <span class="brand-name">Claude <span>Trader</span></span>
+    </div>
+    <div class="brand-sub">autonomous AI portfolio experiment &nbsp;·&nbsp; paper trading</div>
+  </div>
+  <div class="status-badge">
+    <div class="status-dot"></div>
+    <span id="last-updated">—</span>
+  </div>
+</header>
+
+<main>
+
+  <!-- ── Stats ───────────────────────────────────────────── -->
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-label">Portfolio Value</div>
+      <div class="stat-value" id="stat-equity">—</div>
+      <div class="stat-sub">Started at $100,000</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Total Return</div>
+      <div class="stat-value" id="stat-return">—</div>
+      <div class="stat-sub">since inception</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Win Rate</div>
+      <div class="stat-value" id="stat-winrate">—</div>
+      <div class="stat-sub" id="stat-winrate-sub">closed trades</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Total Trades</div>
+      <div class="stat-value" id="stat-trades">—</div>
+      <div class="stat-sub" id="stat-lessons-sub">—</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Cash Available</div>
+      <div class="stat-value" id="stat-cash">—</div>
+      <div class="stat-sub" id="stat-bp-sub">buying power</div>
+    </div>
+  </div>
+
+  <!-- ── Equity Chart ────────────────────────────────────── -->
+  <div class="chart-card">
+    <div class="chart-header">
+      <div>
+        <div class="section-label">Equity Growth vs S&P 500</div>
+        <div style="font-size:12px; color:var(--muted);" id="chart-range">Since 2026-03-19 · $100,000 starting capital</div>
+      </div>
+      <div class="chart-return">
+        <div class="chart-returns-row">
+          <div class="chart-return-item">
+            <div class="chart-return-val green" id="chart-return-val">—</div>
+            <div class="chart-return-sub">Claude Trader</div>
+          </div>
+          <div class="chart-return-item">
+            <div class="chart-return-val blue" id="spy-return-val">—</div>
+            <div class="chart-return-sub">S&P 500</div>
+          </div>
+        </div>
+        <div class="alpha-badge" id="alpha-badge">Alpha: —</div>
+      </div>
+    </div>
+    <div class="chart-legend">
+      <div class="legend-item"><div class="legend-dot" style="background:var(--green)"></div> Claude Trader</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--blue)"></div> S&P 500 Benchmark</div>
+    </div>
+    <div class="chart-wrap">
+      <canvas id="equity-chart"></canvas>
+    </div>
+  </div>
+
+  <!-- ── Last Cycle + Strategy ───────────────────────────── -->
+  <div class="two-col">
+
+    <div class="panel">
+      <div class="section-label">Last Trading Cycle</div>
+
+      <div class="insight-block">
+        <div class="insight-label">Market Assessment</div>
+        <div class="insight-text" id="market-assessment">Loading…</div>
+      </div>
+
+      <div class="insight-block">
+        <div class="insight-label">Self-Reflection</div>
+        <div class="insight-text" id="self-reflection">Loading…</div>
+      </div>
+
+      <div class="confidence-row">
+        <span class="confidence-label">Confidence</span>
+        <span class="confidence-badge" id="confidence-badge">—</span>
+      </div>
+
+      <div class="decisions-label">Decisions</div>
+      <div id="decisions-list"></div>
+
+      <div class="research-row">
+        <span class="research-icon">🔬</span>
+        <div>
+          <div class="research-meta">NEXT RESEARCH TOPIC</div>
+          <div class="research-text" id="next-research">—</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="section-label">Claude's Current Strategy</div>
+      <div class="strategy-text" id="strategy-text">Loading strategy notes…</div>
+    </div>
+
+  </div>
+
+  <!-- ── Recent Trades ───────────────────────────────────── -->
+  <div class="trades-card">
+    <div class="trades-header">
+      <div class="section-label" style="margin:0">Recent Trades</div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Symbol</th>
+          <th>Action</th>
+          <th>Entry</th>
+          <th>Exit</th>
+          <th>Return</th>
+          <th>Result</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody id="trades-body">
+        <tr class="empty-row"><td colspan="8">Loading trades…</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</main>
+
+<footer>
+  Claude Trader &nbsp;·&nbsp; <span>Paper Trading Experiment</span> &nbsp;·&nbsp; Not Financial Advice &nbsp;·&nbsp; Built for Research
+</footer>
+
+<script>
+  const STARTING_CAPITAL = 100000;
+  const BENCHMARK_START  = '2026-03-19';
+
+  const fmt = {
+    currency: v => v == null ? '—' : '$' + Number(v).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2}),
+    pct: v => v == null ? '—' : (v >= 0 ? '+' : '') + Number(v).toFixed(2) + '%',
+    price: v => v == null ? '—' : '$' + Number(v).toFixed(2),
+    date: s => s ? s.slice(0, 10) : '—',
+  };
+
+  function el(id) { return document.getElementById(id); }
+
+  /* ── SPY live fetch ──────────────────────────────────────── */
+  async function fetchSPYBenchmark() {
+    try {
+      const startTs = Math.floor(new Date(BENCHMARK_START + 'T13:30:00Z').getTime() / 1000);
+      const endTs   = Math.floor(Date.now() / 1000) + 86400;
+      const url = `https://query1.finance.yahoo.com/v8/finance/chart/SPY?interval=1d&period1=${startTs}&period2=${endTs}&includePrePost=false`;
+      const res = await fetch(url);
+      if (!res.ok) return null;
+      const json = await res.json();
+      const result = json.chart?.result?.[0];
+      if (!result) return null;
+      const timestamps = result.timestamp;
+      const closes     = result.indicators.quote[0].close;
+      const startPrice = closes.find(c => c != null);
+      if (!startPrice) return null;
+      return timestamps.map((ts, i) => ({
+        date:   new Date(ts * 1000).toISOString().slice(0, 10),
+        equity: closes[i] != null ? Math.round(STARTING_CAPITAL * closes[i] / startPrice * 100) / 100 : null,
+      })).filter(e => e.equity != null);
+    } catch (e) {
+      console.warn('SPY fetch failed:', e);
+      return null;
+    }
+  }
+
+  /* ── Chart ───────────────────────────────────────────────── */
+  function renderChart(equityHistory, spyData) {
+    // Deduplicate portfolio history (keep last per date)
+    const portMap = new Map();
+    equityHistory.forEach(e => portMap.set(e.date, e.equity));
+
+    const spyMap = new Map();
+    (spyData || []).forEach(e => spyMap.set(e.date, e.equity));
+
+    // Union of all dates, sorted
+    const allDates = [...new Set([...portMap.keys(), ...spyMap.keys()])].sort();
+
+    const portValues = allDates.map(d => portMap.get(d) ?? null);
+    const spyValues  = allDates.map(d => spyMap.get(d) ?? null);
+
+    // Return calculations
+    const portEnd = [...portMap.values()].at(-1) ?? STARTING_CAPITAL;
+    const spyEnd  = [...spyMap.values()].at(-1);
+    const portReturn = (portEnd - STARTING_CAPITAL) / STARTING_CAPITAL * 100;
+    const spyReturn  = spyEnd != null ? (spyEnd - STARTING_CAPITAL) / STARTING_CAPITAL * 100 : null;
+    const alpha      = spyReturn != null ? portReturn - spyReturn : null;
+
+    // Update header figures
+    el('chart-return-val').textContent = fmt.pct(portReturn);
+    if (spyReturn != null) {
+      el('spy-return-val').textContent = fmt.pct(spyReturn);
+      const ab = el('alpha-badge');
+      ab.textContent = 'Alpha ' + (alpha >= 0 ? '+' : '') + alpha.toFixed(2) + 'pp';
+      ab.className = 'alpha-badge ' + (alpha >= 0 ? 'pos' : 'neg');
+    }
+
+    const ctx = document.getElementById('equity-chart').getContext('2d');
+
+    const makeGradient = (color, alpha0, alpha1) => (ctxObj) => {
+      const g = ctxObj.chart.ctx.createLinearGradient(0, 0, 0, 220);
+      g.addColorStop(0, color.replace(')', `, ${alpha0})`).replace('rgb', 'rgba'));
+      g.addColorStop(1, color.replace(')', `, ${alpha1})`).replace('rgb', 'rgba'));
+      return g;
+    };
+
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: allDates,
+        datasets: [
+          {
+            label: 'Claude Trader',
+            data: portValues,
+            borderColor: '#22ff75',
+            borderWidth: 2.5,
+            pointRadius: allDates.map((_, i) => portValues[i] != null ? 3 : 0),
+            pointBackgroundColor: '#22ff75',
+            pointBorderColor: '#090b0e',
+            pointBorderWidth: 2,
+            fill: true,
+            backgroundColor: ctx => {
+              const g = ctx.chart.ctx.createLinearGradient(0, 0, 0, 220);
+              g.addColorStop(0, 'rgba(34,255,117,0.15)');
+              g.addColorStop(1, 'rgba(34,255,117,0)');
+              return g;
+            },
+            tension: 0.35,
+            spanGaps: true,
+          },
+          {
+            label: 'S&P 500',
+            data: spyValues,
+            borderColor: '#3d8ef0',
+            borderWidth: 1.8,
+            borderDash: [5, 4],
+            pointRadius: 0,
+            fill: false,
+            tension: 0.35,
+            spanGaps: true,
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: { mode: 'index', intersect: false },
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            backgroundColor: '#111820',
+            borderColor: '#1a2332',
+            borderWidth: 1,
+            titleColor: '#5e6c84',
+            bodyColor: '#dbe2ec',
+            padding: 12,
+            callbacks: {
+              label: ctx => {
+                const val = ctx.parsed.y;
+                if (val == null) return null;
+                const ret = ((val - STARTING_CAPITAL) / STARTING_CAPITAL * 100);
+                return ` ${ctx.dataset.label}: ${fmt.currency(val)} (${fmt.pct(ret)})`;
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            grid: { color: '#1a2332', drawBorder: false },
+            ticks: { color: '#5e6c84', font: { size: 10 }, maxRotation: 0, maxTicksLimit: 10 },
+            border: { display: false },
+          },
+          y: {
+            grid: { color: '#1a2332', drawBorder: false },
+            ticks: {
+              color: '#5e6c84',
+              font: { size: 10 },
+              callback: v => '$' + (v / 1000).toFixed(1) + 'k',
+            },
+            border: { display: false },
+          }
+        }
+      }
+    });
+  }
+
+  /* ── Decisions ───────────────────────────────────────────── */
+  function renderDecisions(decisions) {
+    if (!decisions || !decisions.length) {
+      el('decisions-list').innerHTML = '<div style="color:var(--muted);font-size:12px;">No decisions recorded.</div>';
+      return;
+    }
+    el('decisions-list').innerHTML = decisions.map(d => `
+      <div class="decision-row">
+        <span class="action-tag ${d.action}">${d.action}</span>
+        <span class="decision-symbol">${d.symbol || ''}</span>
+        <span class="decision-reason">${d.reason || ''}</span>
+      </div>
+    `).join('');
+  }
+
+  /* ── Trades ──────────────────────────────────────────────── */
+  function renderTrades(trades) {
+    if (!trades || !trades.length) {
+      el('trades-body').innerHTML = '<tr class="empty-row"><td colspan="8">No trades yet.</td></tr>';
+      return;
+    }
+    el('trades-body').innerHTML = [...trades].reverse().map((t, i) => {
+      const retClass    = t.return_pct == null ? 'return-na' : (t.return_pct >= 0 ? 'return-pos' : 'return-neg');
+      const resultClass = (t.result || 'UNKNOWN').toUpperCase();
+      const actionClass = (t.action || '').toUpperCase();
+      return `
+        <tr>
+          <td style="color:var(--muted2)">${trades.length - i}</td>
+          <td><span class="trade-symbol">${t.symbol}</span></td>
+          <td><span class="trade-action action-tag ${actionClass}">${t.action}</span></td>
+          <td class="price-val">${fmt.price(t.entry_price)}</td>
+          <td class="price-val">${fmt.price(t.exit_price)}</td>
+          <td class="${retClass}">${fmt.pct(t.return_pct)}</td>
+          <td><span class="result-badge ${resultClass}">${t.result || 'UNKNOWN'}</span></td>
+          <td style="color:var(--muted)">${fmt.date(t.date_opened || t.date_closed)}</td>
+        </tr>
+      `;
+    }).join('');
+  }
+
+  /* ── Strategy notes formatting ───────────────────────────── */
+  function formatStrategyNotes(notes) {
+    return notes
+      .replace(/\((\d+)\)/g, '<strong>($1)</strong>')
+      .replace(/(CURRENT PRINCIPLES:|Strategy [^—]+—)/g, '<strong>$1</strong>');
+  }
+
+  /* ── Main ────────────────────────────────────────────────── */
+  async function loadDashboard() {
+    let data;
+    try {
+      const res = await fetch('dashboard/data.json');
+      if (!res.ok) throw new Error('fetch failed');
+      data = await res.json();
+    } catch (e) {
+      console.error('Could not load dashboard/data.json:', e);
+      el('market-assessment').textContent = 'Could not load data. Serve with: python -m http.server';
+      return;
+    }
+
+    // Timestamp
+    el('last-updated').textContent = 'Updated ' + (data.last_updated?.slice(0, 16).replace('T', ' ') || '—');
+
+    // Stats
+    const p = data.portfolio || {};
+    const s = data.performance_stats || {};
+    const equity = p.equity;
+    const actualReturn = equity != null ? ((equity - STARTING_CAPITAL) / STARTING_CAPITAL * 100) : null;
+
+    el('stat-equity').textContent = fmt.currency(equity);
+    if (actualReturn != null) {
+      el('stat-return').textContent = fmt.pct(actualReturn);
+      el('stat-return').className = 'stat-value ' + (actualReturn >= 0 ? 'positive' : 'negative');
+    }
+    if (s.win_rate != null) {
+      el('stat-winrate').textContent = s.win_rate.toFixed(1) + '%';
+      el('stat-winrate-sub').textContent = `${s.wins || 0}W / ${s.losses || 0}L`;
+    }
+    el('stat-trades').textContent = data.total_trades ?? '—';
+    el('stat-lessons-sub').textContent = (data.lessons_count ?? 0) + ' lesson batch' + (data.lessons_count === 1 ? '' : 'es');
+    el('stat-cash').textContent = fmt.currency(p.cash);
+    if (p.buying_power != null) {
+      el('stat-bp-sub').textContent = fmt.currency(p.buying_power) + ' buying power';
+    }
+
+    // Last decision
+    const d = data.last_decision || {};
+    el('market-assessment').textContent = d.market_assessment || '—';
+    el('self-reflection').textContent   = d.self_reflection   || '—';
+    el('next-research').textContent     = d.next_research      || '—';
+    const conf = (d.confidence || '').toUpperCase();
+    const cb   = el('confidence-badge');
+    cb.textContent = conf || '—';
+    cb.className   = 'confidence-badge ' + conf;
+    renderDecisions(d.decisions);
+
+    // Strategy
+    el('strategy-text').innerHTML = data.strategy_notes
+      ? formatStrategyNotes(data.strategy_notes)
+      : 'No strategy notes yet.';
+
+    // Trades
+    renderTrades(data.recent_trades);
+
+    // Chart — fetch SPY in parallel with data load, fallback to stored benchmark
+    if (data.equity_history?.length > 0) {
+      const spyStored = data.spy_benchmark?.length > 0 ? data.spy_benchmark : null;
+      // Try live fetch; fall back to stored
+      const spyLive = await fetchSPYBenchmark();
+      renderChart(data.equity_history, spyLive || spyStored);
+    }
+  }
+
+  loadDashboard();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+{
+  "created_at": "2026-03-19T13:20:27.781294",
+  "total_trades": 23,
+  "strategy_notes": "TRANSITIONING from pure defensive to balanced barbell approach. KEY EVOLUTION: (1) Sell defensives showing negative relative strength on strong rally days \u2014 executed with XOM and COST today. (2) Add cyclical/growth leaders with TIGHT stops (5%) \u2014 better to get stopped out than miss a genuine rotation. (3) Keep ABBV as defensive anchor (~12% of portfolio). (4) Maintain 40-45% cash for flexibility \u2014 if this is a bear bounce, cash protects; if genuine reversal, deploy next cycle. (5) CONFIRMATION CHECKLIST for next cycle: need 2+ consecutive up days with breadth expansion to add more cyclical exposure. A single-day reversal of >2% triggers immediate exit of new cyclical positions. (6) Improve win rate by using day-2 confirmation: if new positions are red on day 2, cut immediately rather than waiting for stop loss. (7) Accept that catching 60% of a move with tight risk management beats trying to catch 100% with loose stops.",
+  "lessons_learned": [
+    {
+      "date": "2026-03-27T16:16:05.629423",
+      "trades_covered": 10,
+      "lesson": "Relative strength signals on red market days proved reliable for entries, with AMD (+7.13%) and CVX (~+4.65%) delivering solid wins by buying names holding up during broad selloffs. However, the strategy showed a critical vulnerability: initial relative strength sometimes reversed immediately, as seen with RTX (-0.74%) and AVGO (-2.97%), both of which failed to confirm within days of entry. The key differentiator between wins and losses appears to be sector momentum durability \u2014 energy and tech (AMD) had genuine tailwinds, while defense and semiconductors faced swift sector-wide reversals. Disciplined profit-taking at the +5\u20137% threshold and early cutting of non-confirmers limited damage effectively. Going forward, prioritize confirming that the broader sector supports the trade, not just the individual name, and treat immediate post-entry reversal as an early exit signal rather than a reason to hold."
+    }
+  ],
+  "recent_trades_full": [
+    {
+      "symbol": "ABBV",
+      "action": "BUY",
+      "entry_price": 210.27499389648438,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "ABBV +1.38% on a -1.18% SPY day \u2014 strong relative strength signal. Healthcare/pharma is a classic defensive sector that leads in the current phase of sector rotation (defensive-to-cyclical). ABBV has steady cash flows, strong pipeline, and dividend support. This is exactly the type of name my strategy calls for: quality defensive showing green on a red day. Moderate position size given still-bearish MACD environment.",
+      "date_opened": "2026-03-26",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 11
+    },
+    {
+      "symbol": "COST",
+      "action": "BUY",
+      "entry_price": 984.8300170898438,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "COST +0.93% today on a red market day \u2014 relative strength in consumer staples/defensive retail. Costco is a high-quality defensive name that benefits from both consumer resilience and inflation hedging (membership model). Aligns with sector rotation research: defensives lead in correction environments. Smaller allocation to maintain cash reserves for potential deeper pullbacks.",
+      "date_opened": "2026-03-26",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 12
+    },
+    {
+      "symbol": "MA",
+      "action": "SELL",
+      "entry_price": null,
+      "exit_price": 488.375,
+      "return_pct": null,
+      "reason": "MA is down -3.11% from entry and fell -2.71% today \u2014 the worst performer in the portfolio. The relative strength signal from entry has completely failed to confirm. V is also down -3.03% today, suggesting payment processors are rotating out with growth, not acting as defensives. This mirrors the RTX and AVGO pattern: initial relative strength that reverses immediately. Cutting before the -3% stop loss rule is breached. Following the evolved principle: cut non-confirmers by day 4.",
+      "date_opened": "unknown",
+      "date_closed": "2026-03-27",
+      "result": "UNKNOWN",
+      "trade_id": 13
+    },
+    {
+      "symbol": "JPM",
+      "action": "SELL",
+      "entry_price": null,
+      "exit_price": 286.0400085449219,
+      "return_pct": null,
+      "reason": "JPM fell -1.97% today and is now -0.19% from entry. While it was a strong relative strength pick on entry day, financials are now selling off with the broader market. The relative strength signal is fading. With all MACD signals bearish and the defensive rotation clearly favoring staples/healthcare/energy over financials, I'm rotating out to redeploy into stronger defensive names. Better to take a small loss than let it widen.",
+      "date_opened": "unknown",
+      "date_closed": "2026-03-27",
+      "result": "UNKNOWN",
+      "trade_id": 14
+    },
+    {
+      "symbol": "XOM",
+      "action": "BUY",
+      "entry_price": 168.19000244140625,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "XOM is the strongest name in the top 50 today at +1.84% on a deeply red day \u2014 textbook relative strength signal. Energy is showing persistent strength (CVX also +1.34%). Oil prices remain supported. XOM has strong cash flows and dividend yield. This is exactly my strategy: buy defensives/value showing green on red days. ATR-based sizing suggests larger position for lower-volatility energy names.",
+      "date_opened": "2026-03-27",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 15
+    },
+    {
+      "symbol": "PEP",
+      "action": "BUY",
+      "entry_price": 152.6934051513672,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "PEP is +1.24% today on a -0.84% SPY day \u2014 strong relative strength in consumer staples. PEP is a quality defensive name with pricing power, stable demand, and dividend support. Consumer staples are clearly leading the current rotation. PEP complements COST and ABBV for a defensive portfolio positioning. Moderate allocation per ATR-based volatility sizing \u2014 staples have lower volatility so can size slightly larger.",
+      "date_opened": "2026-03-27",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 16
+    },
+    {
+      "symbol": "KO",
+      "action": "BUY",
+      "entry_price": 75.70999908447266,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "KO +1.37% on a -1.71% SPY day \u2014 strong relative strength in consumer staples. KO is one of the most defensive names in the market with pricing power, global diversification, and dividend aristocrat status. It complements PEP and COST in my staples-heavy defensive positioning. Adding a 5th position to maximize defensive exposure during this correction. Lower allocation to maintain ~30% cash reserves for potential deeper pullback.",
+      "date_opened": "2026-03-28",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 17
+    },
+    {
+      "symbol": "PEP",
+      "action": "SELL",
+      "entry_price": null,
+      "exit_price": 155.41000366210938,
+      "return_pct": null,
+      "reason": "PEP is -0.89% today on a +1.63% SPY day \u2014 significant underperformance. While +1.84% from entry, PEP is showing the weakest relative strength of all holdings on this rally day. If the market is transitioning from defensive to cyclical leadership, PEP will be the first to give back gains. Taking profit now to free up cash for potential rotation into higher-beta names if the transition confirms. Locking in a small gain rather than risk giving it back.",
+      "date_opened": "unknown",
+      "date_closed": "2026-03-31",
+      "result": "UNKNOWN",
+      "trade_id": 18
+    },
+    {
+      "symbol": "KO",
+      "action": "SELL",
+      "entry_price": null,
+      "exit_price": 76.03500366210938,
+      "return_pct": null,
+      "reason": "KO is -0.20% today on a +1.63% SPY day \u2014 the weakest relative strength in my portfolio. Only +0.39% gain from entry. KO is a pure defensive play that will underperform if this risk-on move has legs. Selling to raise cash and create portfolio flexibility. If the market reverses back down, I can re-enter KO or similar defensives. If the market continues rallying, I'll have cash to rotate into names showing confirmation of the trend change.",
+      "date_opened": "unknown",
+      "date_closed": "2026-03-31",
+      "result": "UNKNOWN",
+      "trade_id": 19
+    },
+    {
+      "symbol": "COST",
+      "action": "SELL",
+      "entry_price": 984.86,
+      "exit_price": 996.4299926757812,
+      "return_pct": 1.17,
+      "reason": "COST was flat (-0.02%) on a +2.91% SPY day \u2014 massive relative weakness. Consumer staples/defensive retail is rotating out hard. The +1.13% gain from entry is at risk of evaporating. Locking in small profit and freeing capital for better-positioned names.",
+      "date_opened": "unknown",
+      "date_closed": "2026-03-31",
+      "result": "WIN",
+      "trade_id": 20
+    },
+    {
+      "symbol": "XOM",
+      "action": "SELL",
+      "entry_price": 168.184437,
+      "exit_price": 169.66000366210938,
+      "return_pct": 0.88,
+      "reason": "XOM was -1.06% on a +2.91% SPY day \u2014 worst performer in the portfolio and one of the weakest in the entire universe today. Energy is selling off (CVX -1.81% too), suggesting geopolitical risk premium may be fading as markets rally. This is exactly the de-escalation exit signal my strategy notes flagged. Taking the +0.77% gain before it turns negative.",
+      "date_opened": "unknown",
+      "date_closed": "2026-03-31",
+      "result": "WIN",
+      "trade_id": 21
+    },
+    {
+      "symbol": "NVDA",
+      "action": "BUY",
+      "entry_price": 174.39999389648438,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "NVDA +5.59% today \u2014 leading the rally with strong semiconductor momentum. AI/datacenter secular tailwind remains intact. If this is a genuine recovery, semis will lead. If it's a bear bounce, the tight stop protects capital. Positioning for cyclical leadership rotation with controlled risk.",
+      "date_opened": "2026-03-31",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 22
+    },
+    {
+      "symbol": "META",
+      "action": "BUY",
+      "entry_price": 572.1300048828125,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "META +6.67% today \u2014 strongest performer in the top 50. Mega-cap tech is clearly leading this rotation. Strong fundamentals (ad revenue growth, AI investments, cost discipline). If breadth expansion continues over next 3 days, this confirms the trend. Tight stop to protect against bear trap reversal.",
+      "date_opened": "2026-03-31",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 23
+    }
+  ],
+  "performance_stats": {
+    "total_return_pct": 0.0,
+    "win_rate": 60.0,
+    "wins": 3,
+    "losses": 2,
+    "best_trade": {
+      "symbol": "AMD",
+      "return_pct": 7.13
+    },
+    "worst_trade": {
+      "symbol": "AVGO",
+      "return_pct": -2.97
+    },
+    "avg_return_per_trade": 0.0
+  },
+  "research_notes": [
+    {
+      "date": "2026-03-23T12:45:42.027550",
+      "topic": "Relative strength momentum continuation patterns \u2014 specifically how to identify whether a stock showing initial relative strength on a down market day will continue outperforming over the next 5-10 trading sessions, including optimal holding periods and profit-taking rules",
+      "summary": "=== STRATEGY RESEARCH: RELATIVE STRENGTH MOMENTUM CONTINUATION PATTERNS \u2014 SPECIFICALLY HOW TO IDENTIFY WHETHER A STOCK SHOWING INITIAL RELATIVE STRENGTH ON A DOWN MARKET DAY WILL CONTINUE OUTPERFORMING OVER THE NEXT 5-10 TRADING SESSIONS, INCLUDING OPTIMAL HOLDING PERIODS AND PROFIT-TAKING RULES ==="
+    },
+    {
+      "date": "2026-03-23T16:23:26.826203",
+      "topic": "Mean reversion vs momentum continuation in extended market corrections \u2014 specifically when does relative strength buying stop working and mean reversion selling into strength becomes the better strategy, and what signals mark the transition between regimes",
+      "summary": "=== STRATEGY RESEARCH: MEAN REVERSION VS MOMENTUM CONTINUATION IN EXTENDED MARKET CORRECTIONS \u2014 SPECIFICALLY WHEN DOES RELATIVE STRENGTH BUYING STOP WORKING AND MEAN REVERSION SELLING INTO STRENGTH BECOMES THE BETTER STRATEGY, AND WHAT SIGNALS MARK THE TRANSITION BETWEEN REGIMES ===\n\u2022 Mean reversion"
+    },
+    {
+      "date": "2026-03-24T15:29:39.588168",
+      "topic": "Volume profile analysis during relief rallies \u2014 specifically how to use volume confirmation to distinguish between genuine trend reversals and bear market rallies, including what volume patterns predict sustainable vs. fading rallies in the S&P 500",
+      "summary": "=== STRATEGY RESEARCH: VOLUME PROFILE ANALYSIS DURING RELIEF RALLIES \u2014 SPECIFICALLY HOW TO USE VOLUME CONFIRMATION TO DISTINGUISH BETWEEN GENUINE TREND REVERSALS AND BEAR MARKET RALLIES, INCLUDING WHAT VOLUME PATTERNS PREDICT SUSTAINABLE VS. FADING RALLIES IN THE S&P 500 ===\n\u2022 Hussman Funds: Trading"
+    },
+    {
+      "date": "2026-03-25T15:04:11.573156",
+      "topic": "Sector rotation patterns during market corrections and recoveries \u2014 specifically which sectors lead coming out of corrections (defensive-to-cyclical rotation timing), and how to identify the rotation sequence to position ahead of the move",
+      "summary": "=== STRATEGY RESEARCH: SECTOR ROTATION PATTERNS DURING MARKET CORRECTIONS AND RECOVERIES \u2014 SPECIFICALLY WHICH SECTORS LEAD COMING OUT OF CORRECTIONS (DEFENSIVE-TO-CYCLICAL ROTATION TIMING), AND HOW TO IDENTIFY THE ROTATION SEQUENCE TO POSITION AHEAD OF THE MOVE ===\n\u2022 Market Correction 2026: Best Sec"
+    },
+    {
+      "date": "2026-03-26T18:51:22.140729",
+      "topic": "Optimal profit-taking strategies for short-term swing trades \u2014 specifically comparing trailing stops vs fixed targets vs time-based exits, and which approach maximizes expectancy when win rate is approximately 50% and average holding period is 3-7 days",
+      "summary": "=== STRATEGY RESEARCH: OPTIMAL PROFIT-TAKING STRATEGIES FOR SHORT-TERM SWING TRADES \u2014 SPECIFICALLY COMPARING TRAILING STOPS VS FIXED TARGETS VS TIME-BASED EXITS, AND WHICH APPROACH MAXIMIZES EXPECTANCY WHEN WIN RATE IS APPROXIMATELY 50% AND AVERAGE HOLDING PERIOD IS 3-7 DAYS ===\n\u2022 Trail Stop vs. Fix"
+    },
+    {
+      "date": "2026-03-27T16:15:51.834117",
+      "topic": "Position sizing optimization using ATR (Average True Range) \u2014 specifically how to calculate optimal position sizes based on stock volatility to normalize risk across different holdings, and whether volatility-adjusted sizing improves risk-adjusted returns for 3-7 day swing trades",
+      "summary": "=== STRATEGY RESEARCH: POSITION SIZING OPTIMIZATION USING ATR (AVERAGE TRUE RANGE) \u2014 SPECIFICALLY HOW TO CALCULATE OPTIMAL POSITION SIZES BASED ON STOCK VOLATILITY TO NORMALIZE RISK ACROSS DIFFERENT HOLDINGS, AND WHETHER VOLATILITY-ADJUSTED SIZING IMPROVES RISK-ADJUSTED RETURNS FOR 3-7 DAY SWING TRA"
+    },
+    {
+      "date": "2026-03-28T14:15:51.498386",
+      "topic": "Mean reversion vs momentum strategies in bear market rallies \u2014 specifically when defensive relative strength signals outperform momentum signals, and how to identify the transition point where momentum starts working again as markets shift from correction to recovery",
+      "summary": "=== STRATEGY RESEARCH: MEAN REVERSION VS MOMENTUM STRATEGIES IN BEAR MARKET RALLIES \u2014 SPECIFICALLY WHEN DEFENSIVE RELATIVE STRENGTH SIGNALS OUTPERFORM MOMENTUM SIGNALS, AND HOW TO IDENTIFY THE TRANSITION POINT WHERE MOMENTUM STARTS WORKING AGAIN AS MARKETS SHIFT FROM CORRECTION TO RECOVERY ===\n\u2022 Mea"
+    },
+    {
+      "date": "2026-03-30T16:58:32.086033",
+      "topic": "Geopolitical risk premium pricing in energy stocks \u2014 specifically how long energy outperformance persists during geopolitical crises (Iran-type scenarios), what signals indicate the premium is fading, and optimal exit timing for energy positions when tensions de-escalate",
+      "summary": "=== STRATEGY RESEARCH: GEOPOLITICAL RISK PREMIUM PRICING IN ENERGY STOCKS \u2014 SPECIFICALLY HOW LONG ENERGY OUTPERFORMANCE PERSISTS DURING GEOPOLITICAL CRISES (IRAN-TYPE SCENARIOS), WHAT SIGNALS INDICATE THE PREMIUM IS FADING, AND OPTIMAL EXIT TIMING FOR ENERGY POSITIONS WHEN TENSIONS DE-ESCALATE ===\n\u2022"
+    },
+    {
+      "date": "2026-03-31T17:04:08.877165",
+      "topic": "Sector rotation timing signals \u2014 specifically how to identify when MACD bearish signals are about to turn bullish across major indices, and what leading indicators (breadth, volume, credit spreads) historically signal the transition from defensive to cyclical leadership, to prepare for eventual portfolio rotation",
+      "summary": "=== STRATEGY RESEARCH: SECTOR ROTATION TIMING SIGNALS \u2014 SPECIFICALLY HOW TO IDENTIFY WHEN MACD BEARISH SIGNALS ARE ABOUT TO TURN BULLISH ACROSS MAJOR INDICES, AND WHAT LEADING INDICATORS (BREADTH, VOLUME, CREDIT SPREADS) HISTORICALLY SIGNAL THE TRANSITION FROM DEFENSIVE TO CYCLICAL LEADERSHIP, TO PR"
+    },
+    {
+      "date": "2026-03-31T23:21:31.808612",
+      "topic": "Bear market rally identification \u2014 specifically how to distinguish a genuine trend reversal from a bear market bounce using volume patterns, advance-decline breadth, new highs vs new lows, and whether the current rally has characteristics of sustainable recovery or a dead cat bounce given ongoing geopolitical conflict",
+      "summary": "=== STRATEGY RESEARCH: BEAR MARKET RALLY IDENTIFICATION \u2014 SPECIFICALLY HOW TO DISTINGUISH A GENUINE TREND REVERSAL FROM A BEAR MARKET BOUNCE USING VOLUME PATTERNS, ADVANCE-DECLINE BREADTH, NEW HIGHS VS NEW LOWS, AND WHETHER THE CURRENT RALLY HAS CHARACTERISTICS OF SUSTAINABLE RECOVERY OR A DEAD CAT "
+    }
+  ],
+  "_next_research_topic": "Position sizing optimization during regime transitions \u2014 specifically how to scale into cyclical positions during uncertain trend changes, whether pyramiding (adding on confirmation) outperforms full-size initial entries, and what the optimal initial position size should be when MACD is still bearish but price action is turning bullish"
+}
