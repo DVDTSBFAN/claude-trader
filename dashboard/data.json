@@ -1,15 +1,15 @@
 {
-  "last_updated": "2026-04-01T16:06:38.382628",
+  "last_updated": "2026-04-01T18:51:24.436621",
   "portfolio": {
-    "equity": 101277.18,
-    "cash": 63573.81,
-    "buying_power": 134137.02,
-    "total_return_pct": 10027.72
+    "equity": 102095.27,
+    "cash": 29556.75,
+    "buying_power": 131652.02,
+    "total_return_pct": 10109.53
   },
   "performance_stats": {
     "total_return_pct": 0.0,
-    "win_rate": 71.4,
-    "wins": 5,
+    "win_rate": 75.0,
+    "wins": 6,
     "losses": 2,
     "best_trade": {
       "symbol": "AMD",
@@ -21,93 +21,9 @@
     },
     "avg_return_per_trade": 0.0
   },
-  "strategy_notes": "FULLY COMMITTED to cyclical rotation. Key principles: (1) Pyramiding approach: enter at 15-20% allocation, add 5-10% on confirmation (green day 2-3). Never go full size on initial entry during regime transitions. (2) Keep ONE defensive anchor (ABBV) at ~12% for portfolio stability. (3) Tight stops at 6% on all cyclical positions \u2014 if the bear rally thesis fails, exit quickly. (4) Monitor for REVERSAL signals: if SPY drops >2% on any single day with breadth contraction, immediately trim cyclicals back to 50% of position. (5) Sell defensives showing negative relative strength on rally days \u2014 confirmed XOM/COST pattern. (6) Geopolitical catalyst: Iran war resolution expectations are driving this rally. If negotiations stall or hostilities escalate, the rally unwinds fast \u2014 have exit plan ready. (7) Target 60-70% invested, 30-40% cash as hedge against bear trap.",
-  "total_trades": 28,
+  "strategy_notes": "CYCLICAL TECH ROTATION ACTIVE. Key principles: (1) Pyramiding confirmed as effective \u2014 build positions in 2-3 stages, starting at 15-20%. (2) Speed of rotation execution is critical \u2014 when regime shifts, defensives can lose 2-5% in 2 sessions. Sell defensives showing negative relative strength on rally days IMMEDIATELY. (3) Maintain portfolio concentration in 4-5 mega-cap tech names during cyclical leadership phases (NVDA, META, GOOGL, AMZN). (4) ALL MACD signals still bearish \u2014 this is still unconfirmed by technicals. Keep 6% stop losses TIGHT on all positions. If SPY drops >2% on any day, trim ALL cyclicals by 50%. (5) Iran de-escalation narrative is the primary catalyst \u2014 any escalation reversal means immediate exit. (6) Target 75-80% invested in tech cyclicals, 20-25% cash as hedge. (7) Research shows first-week rally leaders can continue but profit-taking at +7-10% is prudent in unconfirmed rallies.",
+  "total_trades": 30,
   "recent_trades": [
-    {
-      "symbol": "KO",
-      "action": "SELL",
-      "entry_price": null,
-      "exit_price": 76.03500366210938,
-      "return_pct": null,
-      "reason": "KO is -0.20% today on a +1.63% SPY day \u2014 the weakest relative strength in my portfolio. Only +0.39% gain from entry. KO is a pure defensive play that will underperform if this risk-on move has legs. Selling to raise cash and create portfolio flexibility. If the market reverses back down, I can re-enter KO or similar defensives. If the market continues rallying, I'll have cash to rotate into names showing confirmation of the trend change.",
-      "date_opened": "unknown",
-      "date_closed": "2026-03-31",
-      "result": "UNKNOWN",
-      "trade_id": 19
-    },
-    {
-      "symbol": "COST",
-      "action": "SELL",
-      "entry_price": 984.86,
-      "exit_price": 996.4299926757812,
-      "return_pct": 1.17,
-      "reason": "COST was flat (-0.02%) on a +2.91% SPY day \u2014 massive relative weakness. Consumer staples/defensive retail is rotating out hard. The +1.13% gain from entry is at risk of evaporating. Locking in small profit and freeing capital for better-positioned names.",
-      "date_opened": "unknown",
-      "date_closed": "2026-03-31",
-      "result": "WIN",
-      "trade_id": 20
-    },
-    {
-      "symbol": "XOM",
-      "action": "SELL",
-      "entry_price": 168.184437,
-      "exit_price": 169.66000366210938,
-      "return_pct": 0.88,
-      "reason": "XOM was -1.06% on a +2.91% SPY day \u2014 worst performer in the portfolio and one of the weakest in the entire universe today. Energy is selling off (CVX -1.81% too), suggesting geopolitical risk premium may be fading as markets rally. This is exactly the de-escalation exit signal my strategy notes flagged. Taking the +0.77% gain before it turns negative.",
-      "date_opened": "unknown",
-      "date_closed": "2026-03-31",
-      "result": "WIN",
-      "trade_id": 21
-    },
-    {
-      "symbol": "NVDA",
-      "action": "BUY",
-      "entry_price": 174.39999389648438,
-      "exit_price": null,
-      "return_pct": null,
-      "reason": "NVDA +5.59% today \u2014 leading the rally with strong semiconductor momentum. AI/datacenter secular tailwind remains intact. If this is a genuine recovery, semis will lead. If it's a bear bounce, the tight stop protects capital. Positioning for cyclical leadership rotation with controlled risk.",
-      "date_opened": "2026-03-31",
-      "date_closed": null,
-      "result": "OPEN",
-      "trade_id": 22
-    },
-    {
-      "symbol": "META",
-      "action": "BUY",
-      "entry_price": 572.1300048828125,
-      "exit_price": null,
-      "return_pct": null,
-      "reason": "META +6.67% today \u2014 strongest performer in the top 50. Mega-cap tech is clearly leading this rotation. Strong fundamentals (ad revenue growth, AI investments, cost discipline). If breadth expansion continues over next 3 days, this confirms the trend. Tight stop to protect against bear trap reversal.",
-      "date_opened": "2026-03-31",
-      "date_closed": null,
-      "result": "OPEN",
-      "trade_id": 23
-    },
-    {
-      "symbol": "XOM",
-      "action": "SELL",
-      "entry_price": 168.184437,
-      "exit_price": 169.66000366210938,
-      "return_pct": 0.88,
-      "reason": "XOM is -1.06% on a +2.91% SPY day \u2014 the weakest name in the universe. Energy is clearly rotating out as geopolitical risk premium fades (CVX -1.81% too). Already -1.72% from entry. This is exactly the defensive-to-cyclical rotation exit signal. No reason to hold a name showing persistent relative weakness on strong rally days. Free up ~$14.8K for better-positioned names.",
-      "date_opened": "unknown",
-      "date_closed": "2026-04-01",
-      "result": "WIN",
-      "trade_id": 24
-    },
-    {
-      "symbol": "COST",
-      "action": "SELL",
-      "entry_price": 984.86,
-      "exit_price": 996.4299926757812,
-      "return_pct": 1.17,
-      "reason": "COST is flat (-0.02%) on a +2.91% SPY day \u2014 massive relative underperformance. Consumer staples are clearly lagging in this risk-on environment. Only +0.97% from entry. Taking the small gain and redeploying into names with stronger momentum. Defensive retail will continue to lag if this rally persists.",
-      "date_opened": "unknown",
-      "date_closed": "2026-04-01",
-      "result": "WIN",
-      "trade_id": 25
-    },
     {
       "symbol": "NVDA",
       "action": "BUY",
@@ -143,52 +59,68 @@
       "date_closed": null,
       "result": "OPEN",
       "trade_id": 28
+    },
+    {
+      "symbol": "ABBV",
+      "action": "SELL",
+      "entry_price": 210.33,
+      "exit_price": 215.28500366210938,
+      "return_pct": 2.36,
+      "reason": "ABBV -0.94% today on a +1.06% SPY day \u2014 significant relative weakness. Defensive healthcare is clearly rotating out as the market shifts to cyclical/growth leadership. Still +2.41% from entry, so locking in a small win. This frees ~$12.5K for better-positioned names. Following the proven pattern: sell defensives showing negative relative strength on rally days (same signal that correctly flagged COST and XOM exits).",
+      "date_opened": "unknown",
+      "date_closed": "2026-04-01",
+      "result": "WIN",
+      "trade_id": 29
+    },
+    {
+      "symbol": "AMZN",
+      "action": "BUY",
+      "entry_price": 212.6739044189453,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "AMZN +2.11% today \u2014 participating strongly in the cyclical rally. Diversifies tech exposure beyond pure advertising (META/GOOGL) into e-commerce/cloud (AWS). AMZN benefits from consumer spending recovery if geopolitical resolution boosts confidence. Starting at 18% per pyramiding approach \u2014 moderate initial size, will add on confirmation next cycle. This fills the 5th position slot freed by ABBV sale.",
+      "date_opened": "2026-04-01",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 30
     }
   ],
-  "lessons_count": 1,
+  "lessons_count": 2,
   "last_decision": {
-    "market_assessment": "Strong risk-on rally driven by expectations of Iran war resolution. SPY +2.91%, QQQ +3.39% with mega-cap tech and cyclicals leading (META +6.67%, INTC +7.14%, CAT +6.15%, NVDA +5.59%). Defensives (XOM -1.06%, PEP -0.98%, KO -0.29%, PG -0.19%) are sharply underperforming, confirming a clear rotation from defensive to cyclical leadership. All MACD signals still bearish, which means this could still be a bear market rally, but the breadth and magnitude suggest it has legs \u2014 the S&P is down 7% for the quarter and sentiment is shifting on geopolitical de-escalation hopes.",
-    "self_reflection": "My last cycle correctly identified the rotation signal: I sold PEP, KO, COST, and XOM on their relative weakness during the rally day, and bought NVDA and META as cyclical leaders. That was good execution on the barbell transition. However, I notice I re-bought COST and still hold XOM despite having sold them \u2014 this appears to be a data inconsistency but I need to act on current positions. XOM is now -1.72% from re-entry and underperforming badly on rally days. The key lesson: when I identify a regime change, I need to commit fully rather than half-measure. My win rate is 60% which is decent, but I need to cut losers faster and let winners run. The pyramiding research confirms I should scale into positions rather than go full-size immediately during uncertain transitions.",
+    "market_assessment": "The S&P 500 rally continues (+1.06% today, +2.91% yesterday) driven by Iran war de-escalation expectations. Tech/cyclicals are clearly leading: GOOGL +3.56%, AMZN +2.11%, META +2.02%, NVDA +1.39%. Notably, energy is crashing (XOM -4.85%, CVX -4.44%, PM -5.92%) confirming geopolitical risk premium is unwinding rapidly. All MACD signals remain bearish (\u2193) across every name, suggesting this rally hasn't yet technically confirmed \u2014 we could still be in a powerful bear bounce. The divergence between price action (strong rally) and MACD (all bearish) creates uncertainty.",
+    "self_reflection": "My rotation from defensives (COST, XOM, PEP, KO) into cyclical tech (NVDA, META, GOOGL) was well-timed \u2014 those defensive names are now flat or down while my tech positions are up 1-3.5% in a single day. The pyramiding approach worked well: I built into NVDA and META in stages. ABBV is the weakest link \u2014 down 0.94% today while tech rallies, showing classic defensive-to-cyclical rotation weakness. The 71.4% win rate validates the relative strength entry approach, but I need to be more disciplined about exits on names that stop confirming. Key lesson: when the regime shifts, it shifts FAST \u2014 XOM went from portfolio leader to -4.85% in two sessions. Speed of rotation execution matters enormously.",
     "confidence": "MEDIUM",
     "decisions": [
       {
         "action": "SELL",
-        "symbol": "XOM",
-        "reason": "XOM is -1.06% on a +2.91% SPY day \u2014 the weakest name in the universe. Energy is clearly rotating out as geopolitical risk premium fades (CVX -1.81% too). Already -1.72% from entry. This is exactly the defensive-to-cyclical rotation exit signal. No reason to hold a name showing persistent relative weakness on strong rally days. Free up ~$14.8K for better-positioned names."
-      },
-      {
-        "action": "SELL",
-        "symbol": "COST",
-        "reason": "COST is flat (-0.02%) on a +2.91% SPY day \u2014 massive relative underperformance. Consumer staples are clearly lagging in this risk-on environment. Only +0.97% from entry. Taking the small gain and redeploying into names with stronger momentum. Defensive retail will continue to lag if this rally persists."
+        "symbol": "ABBV",
+        "reason": "ABBV -0.94% today on a +1.06% SPY day \u2014 significant relative weakness. Defensive healthcare is clearly rotating out as the market shifts to cyclical/growth leadership. Still +2.41% from entry, so locking in a small win. This frees ~$12.5K for better-positioned names. Following the proven pattern: sell defensives showing negative relative strength on rally days (same signal that correctly flagged COST and XOM exits)."
       },
       {
         "action": "HOLD",
-        "symbol": "ABBV",
-        "reason": "ABBV +2.05% today \u2014 keeping pace with the market reasonably well unlike other defensives. +3.62% from entry. Healthcare/pharma has dual characteristics: defensive enough to hold up in pullbacks but with enough growth (22.78% earnings growth forecast, trading 41.7% below fair value) to participate in rallies. Keep as portfolio anchor at ~12% allocation."
-      },
-      {
-        "action": "BUY",
-        "symbol": "NVDA",
-        "allocation_pct": 20,
-        "reason": "Adding to NVDA position using pyramiding approach. NVDA +5.59% today, leading the semiconductor rally. AI/datacenter secular tailwind is intact. If the Iran de-escalation narrative holds, growth/cyclical tech will continue leading. This is a confirmation add \u2014 the initial entry was yesterday and it's already confirming with strong momentum. Scaling up per pyramiding research: add to winners showing confirmation.",
-        "stop_loss_pct": 6
-      },
-      {
-        "action": "BUY",
-        "symbol": "META",
-        "allocation_pct": 20,
-        "reason": "Adding to META position. +6.67% today \u2014 strongest performer in the top 50. Mega-cap tech is leading this rotation with strong ad revenue fundamentals and AI investments. Pyramiding into a winner that's confirming. If this rally has legs, META will be among the biggest beneficiaries of a sentiment shift.",
-        "stop_loss_pct": 6
-      },
-      {
-        "action": "BUY",
         "symbol": "GOOGL",
+        "allocation_pct": null,
+        "reason": "GOOGL +3.56% today \u2014 second strongest mega-cap tech name. Already +1.98% from entry. AI/search/cloud tailwinds intact. If the rally continues, GOOGL has room to run. Holding and monitoring for continued relative strength confirmation."
+      },
+      {
+        "action": "HOLD",
+        "symbol": "META",
+        "reason": "META +2.02% today, +0.94% from entry with strong momentum. Analyst consensus is 'Strong Buy' with $838 target \u2014 significant upside. Ad revenue growth and AI investments provide fundamental support. Holding full position."
+      },
+      {
+        "action": "HOLD",
+        "symbol": "NVDA",
+        "reason": "NVDA +1.39% today, +0.97% from entry. Semiconductor/AI leadership is intact with INTC +9.53% and AMD +4.37% showing broad sector strength. Holding full position with 6% stop loss."
+      },
+      {
+        "action": "BUY",
+        "symbol": "AMZN",
         "allocation_pct": 18,
-        "reason": "GOOGL +5.14% today \u2014 strong participation in the tech rally. Diversifying cyclical exposure across mega-cap tech rather than concentrating in just two names. GOOGL benefits from same AI/advertising tailwinds as META but adds search/cloud diversification. Initial position size per pyramiding strategy \u2014 start moderate, add on confirmation next cycle.",
+        "reason": "AMZN +2.11% today \u2014 participating strongly in the cyclical rally. Diversifies tech exposure beyond pure advertising (META/GOOGL) into e-commerce/cloud (AWS). AMZN benefits from consumer spending recovery if geopolitical resolution boosts confidence. Starting at 18% per pyramiding approach \u2014 moderate initial size, will add on confirmation next cycle. This fills the 5th position slot freed by ABBV sale.",
         "stop_loss_pct": 6
       }
     ],
-    "next_research": "Mean reversion vs momentum continuation in post-correction rallies \u2014 specifically after 7%+ quarterly drawdowns in the S&P 500, how often do the first-week leaders (mega-cap tech) continue leading in weeks 2-4 versus reverting, and whether profit-taking timing matters more than position selection"
+    "next_research": "Optimal profit-taking strategies during MACD-unconfirmed rallies \u2014 specifically when price is rising but MACD remains bearish, what are the historical outcomes for holding through the MACD crossover versus taking profits at fixed percentage thresholds (5%, 7%, 10%), and how trailing stops compare to fixed targets in this specific technical setup"
   },
   "equity_history": [
     {
@@ -265,6 +197,11 @@
       "date": "2026-04-01",
       "equity": 101277.18,
       "return_pct": 10027.72
+    },
+    {
+      "date": "2026-04-01",
+      "equity": 102095.27,
+      "return_pct": 10109.53
     }
   ],
   "spy_benchmark": [
@@ -303,6 +240,10 @@
     {
       "date": "2026-03-31",
       "equity": 98835.42
+    },
+    {
+      "date": "2026-04-01",
+      "equity": 99894.68
     }
   ]
 }
