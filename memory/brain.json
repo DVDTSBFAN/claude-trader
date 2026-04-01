@@ -1,7 +1,7 @@
 {
   "created_at": "2026-03-19T13:20:27.781294",
-  "total_trades": 23,
-  "strategy_notes": "TRANSITIONING from pure defensive to balanced barbell approach. KEY EVOLUTION: (1) Sell defensives showing negative relative strength on strong rally days \u2014 executed with XOM and COST today. (2) Add cyclical/growth leaders with TIGHT stops (5%) \u2014 better to get stopped out than miss a genuine rotation. (3) Keep ABBV as defensive anchor (~12% of portfolio). (4) Maintain 40-45% cash for flexibility \u2014 if this is a bear bounce, cash protects; if genuine reversal, deploy next cycle. (5) CONFIRMATION CHECKLIST for next cycle: need 2+ consecutive up days with breadth expansion to add more cyclical exposure. A single-day reversal of >2% triggers immediate exit of new cyclical positions. (6) Improve win rate by using day-2 confirmation: if new positions are red on day 2, cut immediately rather than waiting for stop loss. (7) Accept that catching 60% of a move with tight risk management beats trying to catch 100% with loose stops.",
+  "total_trades": 28,
+  "strategy_notes": "FULLY COMMITTED to cyclical rotation. Key principles: (1) Pyramiding approach: enter at 15-20% allocation, add 5-10% on confirmation (green day 2-3). Never go full size on initial entry during regime transitions. (2) Keep ONE defensive anchor (ABBV) at ~12% for portfolio stability. (3) Tight stops at 6% on all cyclical positions \u2014 if the bear rally thesis fails, exit quickly. (4) Monitor for REVERSAL signals: if SPY drops >2% on any single day with breadth contraction, immediately trim cyclicals back to 50% of position. (5) Sell defensives showing negative relative strength on rally days \u2014 confirmed XOM/COST pattern. (6) Geopolitical catalyst: Iran war resolution expectations are driving this rally. If negotiations stall or hostilities escalate, the rally unwinds fast \u2014 have exit plan ready. (7) Target 60-70% invested, 30-40% cash as hedge against bear trap.",
   "lessons_learned": [
     {
       "date": "2026-03-27T16:16:05.629423",
@@ -165,12 +165,72 @@
       "date_closed": null,
       "result": "OPEN",
       "trade_id": 23
+    },
+    {
+      "symbol": "XOM",
+      "action": "SELL",
+      "entry_price": 168.184437,
+      "exit_price": 169.66000366210938,
+      "return_pct": 0.88,
+      "reason": "XOM is -1.06% on a +2.91% SPY day \u2014 the weakest name in the universe. Energy is clearly rotating out as geopolitical risk premium fades (CVX -1.81% too). Already -1.72% from entry. This is exactly the defensive-to-cyclical rotation exit signal. No reason to hold a name showing persistent relative weakness on strong rally days. Free up ~$14.8K for better-positioned names.",
+      "date_opened": "unknown",
+      "date_closed": "2026-04-01",
+      "result": "WIN",
+      "trade_id": 24
+    },
+    {
+      "symbol": "COST",
+      "action": "SELL",
+      "entry_price": 984.86,
+      "exit_price": 996.4299926757812,
+      "return_pct": 1.17,
+      "reason": "COST is flat (-0.02%) on a +2.91% SPY day \u2014 massive relative underperformance. Consumer staples are clearly lagging in this risk-on environment. Only +0.97% from entry. Taking the small gain and redeploying into names with stronger momentum. Defensive retail will continue to lag if this rally persists.",
+      "date_opened": "unknown",
+      "date_closed": "2026-04-01",
+      "result": "WIN",
+      "trade_id": 25
+    },
+    {
+      "symbol": "NVDA",
+      "action": "BUY",
+      "entry_price": 174.39999389648438,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "Adding to NVDA position using pyramiding approach. NVDA +5.59% today, leading the semiconductor rally. AI/datacenter secular tailwind is intact. If the Iran de-escalation narrative holds, growth/cyclical tech will continue leading. This is a confirmation add \u2014 the initial entry was yesterday and it's already confirming with strong momentum. Scaling up per pyramiding research: add to winners showing confirmation.",
+      "date_opened": "2026-04-01",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 26
+    },
+    {
+      "symbol": "META",
+      "action": "BUY",
+      "entry_price": 572.1300048828125,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "Adding to META position. +6.67% today \u2014 strongest performer in the top 50. Mega-cap tech is leading this rotation with strong ad revenue fundamentals and AI investments. Pyramiding into a winner that's confirming. If this rally has legs, META will be among the biggest beneficiaries of a sentiment shift.",
+      "date_opened": "2026-04-01",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 27
+    },
+    {
+      "symbol": "GOOGL",
+      "action": "BUY",
+      "entry_price": 287.55999755859375,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "GOOGL +5.14% today \u2014 strong participation in the tech rally. Diversifying cyclical exposure across mega-cap tech rather than concentrating in just two names. GOOGL benefits from same AI/advertising tailwinds as META but adds search/cloud diversification. Initial position size per pyramiding strategy \u2014 start moderate, add on confirmation next cycle.",
+      "date_opened": "2026-04-01",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 28
     }
   ],
   "performance_stats": {
     "total_return_pct": 0.0,
-    "win_rate": 60.0,
-    "wins": 3,
+    "win_rate": 71.4,
+    "wins": 5,
     "losses": 2,
     "best_trade": {
       "symbol": "AMD",
@@ -183,11 +243,6 @@
     "avg_return_per_trade": 0.0
   },
   "research_notes": [
-    {
-      "date": "2026-03-23T12:45:42.027550",
-      "topic": "Relative strength momentum continuation patterns \u2014 specifically how to identify whether a stock showing initial relative strength on a down market day will continue outperforming over the next 5-10 trading sessions, including optimal holding periods and profit-taking rules",
-      "summary": "=== STRATEGY RESEARCH: RELATIVE STRENGTH MOMENTUM CONTINUATION PATTERNS \u2014 SPECIFICALLY HOW TO IDENTIFY WHETHER A STOCK SHOWING INITIAL RELATIVE STRENGTH ON A DOWN MARKET DAY WILL CONTINUE OUTPERFORMING OVER THE NEXT 5-10 TRADING SESSIONS, INCLUDING OPTIMAL HOLDING PERIODS AND PROFIT-TAKING RULES ==="
-    },
     {
       "date": "2026-03-23T16:23:26.826203",
       "topic": "Mean reversion vs momentum continuation in extended market corrections \u2014 specifically when does relative strength buying stop working and mean reversion selling into strength becomes the better strategy, and what signals mark the transition between regimes",
@@ -232,7 +287,12 @@
       "date": "2026-03-31T23:21:31.808612",
       "topic": "Bear market rally identification \u2014 specifically how to distinguish a genuine trend reversal from a bear market bounce using volume patterns, advance-decline breadth, new highs vs new lows, and whether the current rally has characteristics of sustainable recovery or a dead cat bounce given ongoing geopolitical conflict",
       "summary": "=== STRATEGY RESEARCH: BEAR MARKET RALLY IDENTIFICATION \u2014 SPECIFICALLY HOW TO DISTINGUISH A GENUINE TREND REVERSAL FROM A BEAR MARKET BOUNCE USING VOLUME PATTERNS, ADVANCE-DECLINE BREADTH, NEW HIGHS VS NEW LOWS, AND WHETHER THE CURRENT RALLY HAS CHARACTERISTICS OF SUSTAINABLE RECOVERY OR A DEAD CAT "
+    },
+    {
+      "date": "2026-04-01T16:06:31.439252",
+      "topic": "Position sizing optimization during regime transitions \u2014 specifically how to scale into cyclical positions during uncertain trend changes, whether pyramiding (adding on confirmation) outperforms full-size initial entries, and what the optimal initial position size should be when MACD is still bearish but price action is turning bullish",
+      "summary": "=== STRATEGY RESEARCH: POSITION SIZING OPTIMIZATION DURING REGIME TRANSITIONS \u2014 SPECIFICALLY HOW TO SCALE INTO CYCLICAL POSITIONS DURING UNCERTAIN TREND CHANGES, WHETHER PYRAMIDING (ADDING ON CONFIRMATION) OUTPERFORMS FULL-SIZE INITIAL ENTRIES, AND WHAT THE OPTIMAL INITIAL POSITION SIZE SHOULD BE WH"
     }
   ],
-  "_next_research_topic": "Position sizing optimization during regime transitions \u2014 specifically how to scale into cyclical positions during uncertain trend changes, whether pyramiding (adding on confirmation) outperforms full-size initial entries, and what the optimal initial position size should be when MACD is still bearish but price action is turning bullish"
+  "_next_research_topic": "Mean reversion vs momentum continuation in post-correction rallies \u2014 specifically after 7%+ quarterly drawdowns in the S&P 500, how often do the first-week leaders (mega-cap tech) continue leading in weeks 2-4 versus reverting, and whether profit-taking timing matters more than position selection"
 }
