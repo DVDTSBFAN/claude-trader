@@ -1,7 +1,7 @@
 {
   "created_at": "2026-03-19T13:20:27.781294",
   "total_trades": 30,
-  "strategy_notes": "CYCLICAL TECH ROTATION ACTIVE. Key principles: (1) Pyramiding confirmed as effective \u2014 build positions in 2-3 stages, starting at 15-20%. (2) Speed of rotation execution is critical \u2014 when regime shifts, defensives can lose 2-5% in 2 sessions. Sell defensives showing negative relative strength on rally days IMMEDIATELY. (3) Maintain portfolio concentration in 4-5 mega-cap tech names during cyclical leadership phases (NVDA, META, GOOGL, AMZN). (4) ALL MACD signals still bearish \u2014 this is still unconfirmed by technicals. Keep 6% stop losses TIGHT on all positions. If SPY drops >2% on any day, trim ALL cyclicals by 50%. (5) Iran de-escalation narrative is the primary catalyst \u2014 any escalation reversal means immediate exit. (6) Target 75-80% invested in tech cyclicals, 20-25% cash as hedge. (7) Research shows first-week rally leaders can continue but profit-taking at +7-10% is prudent in unconfirmed rallies.",
+  "strategy_notes": "CONSOLIDATION PHASE \u2014 NO NEW ADDS. Key principles: (1) All MACD signals remain bearish across entire universe \u2014 rally is technically unconfirmed. Do NOT add new positions or pyramid further until at least 2-3 names show MACD bullish crossovers. (2) Current allocation ~77% invested, 23% cash \u2014 this is at the upper limit for an unconfirmed rally. (3) Trump address tonight = event risk \u2014 no action before clarity. (4) Maintain 6% hard stops on all positions. If SPY drops >2% on any day, trim ALL positions by 50% immediately. (5) AMZN is the weakest position \u2014 first trim candidate if portfolio needs derisking. (6) Profit-taking rule: take 50% off any position reaching +7% from entry. (7) The Day 2 pause is normal after sharp rallies, but Day 3-4 must show follow-through or this is a dead cat bounce. (8) Research showed fixed percentage targets (5-7%) outperform trailing stops in MACD-unconfirmed rallies \u2014 implement this.",
   "lessons_learned": [
     {
       "date": "2026-03-27T16:16:05.629423",
@@ -93,11 +93,6 @@
   },
   "research_notes": [
     {
-      "date": "2026-03-24T15:29:39.588168",
-      "topic": "Volume profile analysis during relief rallies \u2014 specifically how to use volume confirmation to distinguish between genuine trend reversals and bear market rallies, including what volume patterns predict sustainable vs. fading rallies in the S&P 500",
-      "summary": "=== STRATEGY RESEARCH: VOLUME PROFILE ANALYSIS DURING RELIEF RALLIES \u2014 SPECIFICALLY HOW TO USE VOLUME CONFIRMATION TO DISTINGUISH BETWEEN GENUINE TREND REVERSALS AND BEAR MARKET RALLIES, INCLUDING WHAT VOLUME PATTERNS PREDICT SUSTAINABLE VS. FADING RALLIES IN THE S&P 500 ===\n\u2022 Hussman Funds: Trading"
-    },
-    {
       "date": "2026-03-25T15:04:11.573156",
       "topic": "Sector rotation patterns during market corrections and recoveries \u2014 specifically which sectors lead coming out of corrections (defensive-to-cyclical rotation timing), and how to identify the rotation sequence to position ahead of the move",
       "summary": "=== STRATEGY RESEARCH: SECTOR ROTATION PATTERNS DURING MARKET CORRECTIONS AND RECOVERIES \u2014 SPECIFICALLY WHICH SECTORS LEAD COMING OUT OF CORRECTIONS (DEFENSIVE-TO-CYCLICAL ROTATION TIMING), AND HOW TO IDENTIFY THE ROTATION SEQUENCE TO POSITION AHEAD OF THE MOVE ===\n\u2022 Market Correction 2026: Best Sec"
@@ -141,7 +136,12 @@
       "date": "2026-04-01T18:51:12.369586",
       "topic": "Mean reversion vs momentum continuation in post-correction rallies \u2014 specifically after 7%+ quarterly drawdowns in the S&P 500, how often do the first-week leaders (mega-cap tech) continue leading in weeks 2-4 versus reverting, and whether profit-taking timing matters more than position selection",
       "summary": "=== STRATEGY RESEARCH: MEAN REVERSION VS MOMENTUM CONTINUATION IN POST-CORRECTION RALLIES \u2014 SPECIFICALLY AFTER 7%+ QUARTERLY DRAWDOWNS IN THE S&P 500, HOW OFTEN DO THE FIRST-WEEK LEADERS (MEGA-CAP TECH) CONTINUE LEADING IN WEEKS 2-4 VERSUS REVERTING, AND WHETHER PROFIT-TAKING TIMING MATTERS MORE THA"
+    },
+    {
+      "date": "2026-04-02T17:47:48.531772",
+      "topic": "Optimal profit-taking strategies during MACD-unconfirmed rallies \u2014 specifically when price is rising but MACD remains bearish, what are the historical outcomes for holding through the MACD crossover versus taking profits at fixed percentage thresholds (5%, 7%, 10%), and how trailing stops compare to fixed targets in this specific technical setup",
+      "summary": "=== STRATEGY RESEARCH: OPTIMAL PROFIT-TAKING STRATEGIES DURING MACD-UNCONFIRMED RALLIES \u2014 SPECIFICALLY WHEN PRICE IS RISING BUT MACD REMAINS BEARISH, WHAT ARE THE HISTORICAL OUTCOMES FOR HOLDING THROUGH THE MACD CROSSOVER VERSUS TAKING PROFITS AT FIXED PERCENTAGE THRESHOLDS (5%, 7%, 10%), AND HOW TR"
     }
   ],
-  "_next_research_topic": "Optimal profit-taking strategies during MACD-unconfirmed rallies \u2014 specifically when price is rising but MACD remains bearish, what are the historical outcomes for holding through the MACD crossover versus taking profits at fixed percentage thresholds (5%, 7%, 10%), and how trailing stops compare to fixed targets in this specific technical setup"
+  "_next_research_topic": "Event-driven trading around presidential addresses and major policy announcements \u2014 specifically how markets react in the 24-48 hours after presidential primetime addresses, whether pre-event positioning or post-event reaction trading is more profitable, and how to manage overnight gap risk in concentrated tech portfolios"
 }
