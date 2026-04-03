@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-04-02T17:47:49.569235",
+  "last_updated": "2026-04-03T20:31:30.626050",
   "portfolio": {
-    "equity": 101614.56,
+    "equity": 101438.88,
     "cash": 23623.63,
-    "buying_power": 125238.19,
-    "total_return_pct": 10061.46
+    "buying_power": 125062.51,
+    "total_return_pct": 10043.89
   },
   "performance_stats": {
     "total_return_pct": 0.0,
-    "win_rate": 75.0,
+    "win_rate": 66.7,
     "wins": 6,
-    "losses": 2,
+    "losses": 3,
     "best_trade": {
       "symbol": "AMD",
       "return_pct": 7.13
@@ -21,8 +21,8 @@
     },
     "avg_return_per_trade": 0.0
   },
-  "strategy_notes": "CONSOLIDATION PHASE \u2014 NO NEW ADDS. Key principles: (1) All MACD signals remain bearish across entire universe \u2014 rally is technically unconfirmed. Do NOT add new positions or pyramid further until at least 2-3 names show MACD bullish crossovers. (2) Current allocation ~77% invested, 23% cash \u2014 this is at the upper limit for an unconfirmed rally. (3) Trump address tonight = event risk \u2014 no action before clarity. (4) Maintain 6% hard stops on all positions. If SPY drops >2% on any day, trim ALL positions by 50% immediately. (5) AMZN is the weakest position \u2014 first trim candidate if portfolio needs derisking. (6) Profit-taking rule: take 50% off any position reaching +7% from entry. (7) The Day 2 pause is normal after sharp rallies, but Day 3-4 must show follow-through or this is a dead cat bounce. (8) Research showed fixed percentage targets (5-7%) outperform trailing stops in MACD-unconfirmed rallies \u2014 implement this.",
-  "total_trades": 30,
+  "strategy_notes": "DERISKING PHASE \u2014 Rally failed Day 3 follow-through test. Key principles: (1) ALL MACD signals remain bearish \u2014 this is the strongest signal in the current setup. No new buys until at least 2-3 names show MACD bullish crossovers. (2) Sold AMZN to raise cash to ~41% \u2014 appropriate for an unconfirmed, fading rally. (3) Remaining 3 positions (NVDA, GOOGL, META) are the highest-conviction mega-cap tech names. (4) Profit-taking rule: take 50% off any position at +5% from entry. (5) Hard stops: 6% from entry on all positions. (6) Next add criteria: only buy if (a) MACD crosses bullish on target name AND (b) SPY shows 2+ consecutive up days with volume. (7) If SPY closes below $640 (roughly -2.4% from here), trim all positions by 50%. (8) NVDA is the strongest \u2014 last to trim. META is next trim candidate if weakness continues. (9) Cash is a position \u2014 don't feel pressure to be fully invested in unconfirmed rallies.",
+  "total_trades": 31,
   "recent_trades": [
     {
       "symbol": "NVDA",
@@ -83,36 +83,48 @@
       "date_closed": null,
       "result": "OPEN",
       "trade_id": 30
+    },
+    {
+      "symbol": "AMZN",
+      "action": "SELL",
+      "entry_price": 212.695371,
+      "exit_price": 209.77000427246094,
+      "return_pct": -1.38,
+      "reason": "AMZN is the weakest position at -1.38% P&L, down -0.38% today on a flat market day. Strategy notes explicitly flagged AMZN as 'first trim candidate if portfolio needs derisking.' Day 3 of the rally is showing no follow-through, and AMZN is underperforming all other holdings. Cutting the weakest name frees ~$18K to cash, reducing portfolio exposure from ~77% to ~59%. In MACD-unconfirmed environments, protecting capital is priority #1. Taking a small loss (-1.38%) is better than waiting for the -6% stop.",
+      "date_opened": "unknown",
+      "date_closed": "2026-04-03",
+      "result": "LOSS",
+      "trade_id": 31
     }
   ],
   "lessons_count": 2,
   "last_decision": {
-    "market_assessment": "Market is flat/consolidating after the strong April 1st rally. SPY unchanged, QQQ slightly negative. ALL MACD signals remain bearish across every stock in the universe \u2014 this is a critical warning that the rally is unconfirmed technically. Trump's televised address tonight creates significant event risk. The initial bounce from the geopolitical de-escalation may be stalling, and headlines about inflation/rate worries suggest the macro backdrop remains uncertain. This is a classic Day 2 pause after a sharp relief rally \u2014 the next 1-2 sessions will determine if this becomes a trend reversal or a dead cat bounce.",
-    "self_reflection": "My cyclical tech rotation on April 1st was well-timed \u2014 I caught the big rally day and sold ABBV at the right moment (+2.36%). However, I'm now sitting with 4 concentrated mega-cap tech positions that are ALL showing slight losses or barely positive P&L since entry, and EVERY single MACD signal is bearish. My research on bear market rally identification warned that volume confirmation and breadth expansion are needed \u2014 I haven't seen that yet. The pyramiding approach added to NVDA and META at higher levels, which increases risk if this is just a bounce. My 75% invested / 25% cash split is at the upper end of my comfort zone given the unconfirmed technical setup. Key lesson: the initial rally was strong enough to justify entry, but Day 2 consolidation with universally bearish MACD means I should NOT add more here \u2014 I should set clear exit triggers and be prepared to trim if momentum fades.",
+    "market_assessment": "SPY and QQQ are essentially flat (+0.09% and +0.11%), suggesting the post-correction rally is losing momentum on Day 3. Every single stock in the universe shows MACD bearish signals (\u2193), confirming the rally remains technically unconfirmed. This is the critical Day 3-4 follow-through window I identified last cycle \u2014 and the market is NOT following through with conviction. The divergence between leaders (INTC +4.89%, AMD +3.47%, NFLX +3.25%) and laggards (TSLA -5.42%, GE -3.94%, ABBV -2.86%) suggests rotation and indecision rather than broad-based buying.",
+    "self_reflection": "My current positions are mixed: NVDA +1.29% and GOOGL +1.29% are modestly green, while AMZN -1.38% and META -0.65% are pulling back. The strategy notes from last cycle explicitly said 'Day 3-4 must show follow-through or this is a dead cat bounce' \u2014 and we're seeing flat/mixed action, not follow-through. AMZN was flagged as the weakest position and it's confirming that with -0.38% today while SPY was flat. I was right to be cautious about the MACD-unconfirmed rally, and my research showed fixed percentage targets (5-7%) outperform trailing stops in this setup. None of my positions have hit those targets yet, so the question is whether to hold for potential confirmation or start trimming the weakest names. My 75% win rate is strong but built on disciplined exits \u2014 I should honor that discipline now.",
     "confidence": "MEDIUM",
     "decisions": [
       {
-        "action": "HOLD",
-        "symbol": "NVDA",
-        "reason": "NVDA +0.37% today, holding gains from rally day. Still below entry on the latest add ($175.13 avg), but showing slight positive momentum. MACD bearish is a concern but AI/datacenter secular thesis intact. Holding with tight 6% stop from current price ($165.80). Will reassess next cycle \u2014 need to see MACD start converging or continued price strength."
+        "action": "SELL",
+        "symbol": "AMZN",
+        "reason": "AMZN is the weakest position at -1.38% P&L, down -0.38% today on a flat market day. Strategy notes explicitly flagged AMZN as 'first trim candidate if portfolio needs derisking.' Day 3 of the rally is showing no follow-through, and AMZN is underperforming all other holdings. Cutting the weakest name frees ~$18K to cash, reducing portfolio exposure from ~77% to ~59%. In MACD-unconfirmed environments, protecting capital is priority #1. Taking a small loss (-1.38%) is better than waiting for the -6% stop."
       },
       {
         "action": "HOLD",
-        "symbol": "META",
-        "reason": "META -0.57% today, slight giveback after the massive +6.67% rally day. Still near entry ($578.23 avg vs $575.80 current = -0.42%). Analyst consensus target of $837 suggests significant upside if market stabilizes. Holding but this is the first position I'd trim if broad market weakens \u2014 it's the largest position at ~$20.4K. 6% stop at ~$542."
+        "symbol": "NVDA",
+        "reason": "NVDA is the strongest position at +1.29% with solid +0.93% today. Semiconductor sector showing strength (AMD +3.47%, INTC +4.89%). AI/datacenter thesis intact. Will hold with 6% hard stop from entry (~$164.62). If NVDA breaks above $180, that would be a strong confirmation signal."
       },
       {
         "action": "HOLD",
         "symbol": "GOOGL",
-        "reason": "GOOGL is actually the best performer among my positions at +1.92% from entry, showing relative strength. Analyst target $351 is ~18% upside. Holding as the strongest position. 6% stop at ~$280."
+        "reason": "GOOGL +1.29% from entry but -0.54% today \u2014 mild weakness. Analyst consensus is Strong Buy with $351 target (18.8% upside). Holding for now but watching closely. If GOOGL drops below $285 (roughly -2.4% from entry), will exit. The -0.54% today on a flat market is concerning but not yet actionable."
       },
       {
         "action": "HOLD",
-        "symbol": "AMZN",
-        "reason": "AMZN -0.74% from entry, the weakest of my 4 positions. However, it's only Day 2 and the drawdown is minimal. AWS cloud growth and e-commerce provide diversification within tech. If AMZN doesn't recover to breakeven within 2 more sessions, it becomes the first trim candidate. 6% stop at ~$199."
+        "symbol": "META",
+        "reason": "META -0.65% from entry, down -0.82% today. Strong Q4 earnings (revenue +23.8% YoY) support fundamentals. However, it's the second weakest position after AMZN. Holding with tight 5% stop from entry ($549.32). If Day 4-5 doesn't show bounce, META becomes next trim candidate. Research showed first-week leaders don't always sustain \u2014 monitoring closely."
       }
     ],
-    "next_research": "Event-driven trading around presidential addresses and major policy announcements \u2014 specifically how markets react in the 24-48 hours after presidential primetime addresses, whether pre-event positioning or post-event reaction trading is more profitable, and how to manage overnight gap risk in concentrated tech portfolios"
+    "next_research": "Sector rotation timing signals \u2014 specifically how to identify when mega-cap tech leadership is exhausting and when to rotate into value/cyclical names, using breadth indicators, relative strength divergences, and volume analysis during the transition from rally to consolidation phases"
   },
   "equity_history": [
     {
@@ -199,6 +211,11 @@
       "date": "2026-04-02",
       "equity": 101614.56,
       "return_pct": 10061.46
+    },
+    {
+      "date": "2026-04-03",
+      "equity": 101438.88,
+      "return_pct": 10043.89
     }
   ],
   "spy_benchmark": [
@@ -244,7 +261,7 @@
     },
     {
       "date": "2026-04-02",
-      "equity": 99528.43
+      "equity": 99669.76
     }
   ]
 }
