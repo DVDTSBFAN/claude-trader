@@ -1,7 +1,7 @@
 {
   "created_at": "2026-03-19T13:20:27.781294",
-  "total_trades": 31,
-  "strategy_notes": "DERISKING PHASE \u2014 Rally failed Day 3 follow-through test. Key principles: (1) ALL MACD signals remain bearish \u2014 this is the strongest signal in the current setup. No new buys until at least 2-3 names show MACD bullish crossovers. (2) Sold AMZN to raise cash to ~41% \u2014 appropriate for an unconfirmed, fading rally. (3) Remaining 3 positions (NVDA, GOOGL, META) are the highest-conviction mega-cap tech names. (4) Profit-taking rule: take 50% off any position at +5% from entry. (5) Hard stops: 6% from entry on all positions. (6) Next add criteria: only buy if (a) MACD crosses bullish on target name AND (b) SPY shows 2+ consecutive up days with volume. (7) If SPY closes below $640 (roughly -2.4% from here), trim all positions by 50%. (8) NVDA is the strongest \u2014 last to trim. META is next trim candidate if weakness continues. (9) Cash is a position \u2014 don't feel pressure to be fully invested in unconfirmed rallies.",
+  "total_trades": 32,
+  "strategy_notes": "DEFENSIVE CASH-RAISE PHASE \u2014 ALL 50 names show MACD bearish. This is the strongest 'stay cautious' signal possible. Key principles: (1) Selling META raises cash to ~43%, appropriate for universal bearish MACD. (2) Target portfolio: 2-3 positions max (NVDA, GOOGL, possibly AMZN if still held) at ~55-60% invested. (3) Hard stops: 6% from entry on all positions \u2014 no exceptions. (4) Profit-taking: take 50% off at +5% from entry. (5) NO new buys until at least 3 names show MACD bullish crossovers AND SPY shows 2+ consecutive up days with expanding volume. (6) Research flagged mega-cap tech rotation risk \u2014 be ready to shift into value/cyclical (V, MA, COST) when tech MACD weakens further. (7) NVDA last to trim, AMZN/GOOGL next trim candidates. (8) Cash is king in universal MACD-bearish environments. (9) Monitor breadth: if SPY drops below $645, trim all positions by 50%.",
   "lessons_learned": [
     {
       "date": "2026-03-27T16:16:05.629423",
@@ -86,13 +86,25 @@
       "date_closed": "2026-04-03",
       "result": "LOSS",
       "trade_id": 31
+    },
+    {
+      "symbol": "META",
+      "action": "SELL",
+      "entry_price": 578.229744,
+      "exit_price": 574.4600219726562,
+      "return_pct": -0.65,
+      "reason": "META is -0.82% today, the worst performer among my holdings. Down -0.65% from entry with MACD bearish. Research on sector rotation timing warns that mega-cap tech leadership is exhausting. META was flagged as 'next trim candidate if weakness continues' in my strategy notes. Taking a small loss (-0.65%) to raise cash to ~43%. Following the proven pattern: cut underperformers in MACD-bearish environments.",
+      "date_opened": "unknown",
+      "date_closed": "2026-04-04",
+      "result": "LOSS",
+      "trade_id": 32
     }
   ],
   "performance_stats": {
     "total_return_pct": 0.0,
-    "win_rate": 66.7,
+    "win_rate": 60.0,
     "wins": 6,
-    "losses": 3,
+    "losses": 4,
     "best_trade": {
       "symbol": "AMD",
       "return_pct": 7.13
@@ -104,11 +116,6 @@
     "avg_return_per_trade": 0.0
   },
   "research_notes": [
-    {
-      "date": "2026-03-26T18:51:22.140729",
-      "topic": "Optimal profit-taking strategies for short-term swing trades \u2014 specifically comparing trailing stops vs fixed targets vs time-based exits, and which approach maximizes expectancy when win rate is approximately 50% and average holding period is 3-7 days",
-      "summary": "=== STRATEGY RESEARCH: OPTIMAL PROFIT-TAKING STRATEGIES FOR SHORT-TERM SWING TRADES \u2014 SPECIFICALLY COMPARING TRAILING STOPS VS FIXED TARGETS VS TIME-BASED EXITS, AND WHICH APPROACH MAXIMIZES EXPECTANCY WHEN WIN RATE IS APPROXIMATELY 50% AND AVERAGE HOLDING PERIOD IS 3-7 DAYS ===\n\u2022 Trail Stop vs. Fix"
-    },
     {
       "date": "2026-03-27T16:15:51.834117",
       "topic": "Position sizing optimization using ATR (Average True Range) \u2014 specifically how to calculate optimal position sizes based on stock volatility to normalize risk across different holdings, and whether volatility-adjusted sizing improves risk-adjusted returns for 3-7 day swing trades",
@@ -153,7 +160,12 @@
       "date": "2026-04-03T20:31:28.286930",
       "topic": "Event-driven trading around presidential addresses and major policy announcements \u2014 specifically how markets react in the 24-48 hours after presidential primetime addresses, whether pre-event positioning or post-event reaction trading is more profitable, and how to manage overnight gap risk in concentrated tech portfolios",
       "summary": "=== STRATEGY RESEARCH: EVENT-DRIVEN TRADING AROUND PRESIDENTIAL ADDRESSES AND MAJOR POLICY ANNOUNCEMENTS \u2014 SPECIFICALLY HOW MARKETS REACT IN THE 24-48 HOURS AFTER PRESIDENTIAL PRIMETIME ADDRESSES, WHETHER PRE-EVENT POSITIONING OR POST-EVENT REACTION TRADING IS MORE PROFITABLE, AND HOW TO MANAGE OVER"
+    },
+    {
+      "date": "2026-04-04T22:12:55.536492",
+      "topic": "Sector rotation timing signals \u2014 specifically how to identify when mega-cap tech leadership is exhausting and when to rotate into value/cyclical names, using breadth indicators, relative strength divergences, and volume analysis during the transition from rally to consolidation phases",
+      "summary": "=== STRATEGY RESEARCH: SECTOR ROTATION TIMING SIGNALS \u2014 SPECIFICALLY HOW TO IDENTIFY WHEN MEGA-CAP TECH LEADERSHIP IS EXHAUSTING AND WHEN TO ROTATE INTO VALUE/CYCLICAL NAMES, USING BREADTH INDICATORS, RELATIVE STRENGTH DIVERGENCES, AND VOLUME ANALYSIS DURING THE TRANSITION FROM RALLY TO CONSOLIDATIO"
     }
   ],
-  "_next_research_topic": "Sector rotation timing signals \u2014 specifically how to identify when mega-cap tech leadership is exhausting and when to rotate into value/cyclical names, using breadth indicators, relative strength divergences, and volume analysis during the transition from rally to consolidation phases"
+  "_next_research_topic": "Volume-price divergence analysis \u2014 specifically how to use declining volume on up days and increasing volume on down days as a leading indicator of trend exhaustion in mega-cap tech, and whether volume confirmation should be required before holding through consolidation phases versus taking profits"
 }
