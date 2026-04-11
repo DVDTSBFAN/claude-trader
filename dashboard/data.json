@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-04-04T22:12:57.879732",
+  "last_updated": "2026-04-11T16:30:22.454427",
   "portfolio": {
-    "equity": 101438.88,
-    "cash": 23623.63,
-    "buying_power": 125062.51,
-    "total_return_pct": 10043.89
+    "equity": 106768.11,
+    "cash": 44151.63,
+    "buying_power": 150919.74,
+    "total_return_pct": 10576.81
   },
   "performance_stats": {
     "total_return_pct": 0.0,
-    "win_rate": 60.0,
-    "wins": 6,
+    "win_rate": 66.7,
+    "wins": 8,
     "losses": 4,
     "best_trade": {
-      "symbol": "AMD",
-      "return_pct": 7.13
+      "symbol": "AMZN",
+      "return_pct": 12.08
     },
     "worst_trade": {
       "symbol": "AVGO",
@@ -21,8 +21,8 @@
     },
     "avg_return_per_trade": 0.0
   },
-  "strategy_notes": "DEFENSIVE CASH-RAISE PHASE \u2014 ALL 50 names show MACD bearish. This is the strongest 'stay cautious' signal possible. Key principles: (1) Selling META raises cash to ~43%, appropriate for universal bearish MACD. (2) Target portfolio: 2-3 positions max (NVDA, GOOGL, possibly AMZN if still held) at ~55-60% invested. (3) Hard stops: 6% from entry on all positions \u2014 no exceptions. (4) Profit-taking: take 50% off at +5% from entry. (5) NO new buys until at least 3 names show MACD bullish crossovers AND SPY shows 2+ consecutive up days with expanding volume. (6) Research flagged mega-cap tech rotation risk \u2014 be ready to shift into value/cyclical (V, MA, COST) when tech MACD weakens further. (7) NVDA last to trim, AMZN/GOOGL next trim candidates. (8) Cash is king in universal MACD-bearish environments. (9) Monitor breadth: if SPY drops below $645, trim all positions by 50%.",
-  "total_trades": 32,
+  "strategy_notes": "HIGH CASH DEFENSIVE PHASE \u2014 Universal MACD bearish persists across all 50 names. Core principles: (1) Took profits on AMZN (+12%) and GOOGL (+8.6%) \u2014 enforcing the +5-7% profit-taking rule I previously ignored. (2) Holding only NVDA as the single strongest relative strength name with a tight 4% trailing stop. (3) Cash target: ~80% \u2014 maximum defense in universal bearish MACD. (4) NO new buys until: at least 5 names show MACD bullish crossovers AND volume confirms (up days with expanding volume). (5) Volume divergence research reinforces caution: narrow AI-led rallies without broad participation are fragile. (6) If NVDA triggers stop, go 100% cash. (7) Watch for rotation signals: if breadth improves (10+ MACD crossovers), deploy cash aggressively into confirmed leaders. (8) Key watchlist for re-entry: META, AVGO, AMD (semiconductor momentum), V/MA (if rotation to quality cyclicals). (9) Realized gains compound; unrealized gains evaporate. Take profits in bearish technical regimes.",
+  "total_trades": 34,
   "recent_trades": [
     {
       "symbol": "NVDA",
@@ -107,36 +107,55 @@
       "date_closed": "2026-04-04",
       "result": "LOSS",
       "trade_id": 32
+    },
+    {
+      "symbol": "AMZN",
+      "action": "SELL",
+      "entry_price": 212.695371,
+      "exit_price": 238.3800048828125,
+      "return_pct": 12.08,
+      "reason": "AMZN is +12.08% from entry \u2014 well past the +5% and even +7% profit-taking thresholds in my strategy. MACD still bearish across all 50 names. Strategy notes explicitly flagged AMZN as a trim candidate. Taking full profit here locks in ~$2,490 gain. In universal MACD-bearish environments, realized gains > unrealized gains. This raises cash to ~60% which is appropriate for current conditions.",
+      "date_opened": "unknown",
+      "date_closed": "2026-04-11",
+      "result": "WIN",
+      "trade_id": 33
+    },
+    {
+      "symbol": "GOOGL",
+      "action": "SELL",
+      "entry_price": 292.001417,
+      "exit_price": 317.239990234375,
+      "return_pct": 8.64,
+      "reason": "GOOGL is +8.64% from entry, well past the +5% profit-taking threshold. GOOGL was -0.39% today while semis rallied hard \u2014 showing relative weakness within tech. MACD bearish. Strategy notes flagged GOOGL as next trim candidate after AMZN. Locking in ~$1,738 gain. With universal bearish MACD and narrow AI-only leadership, reducing to single strongest position is the disciplined move.",
+      "date_opened": "unknown",
+      "date_closed": "2026-04-11",
+      "result": "WIN",
+      "trade_id": 34
     }
   ],
   "lessons_count": 2,
   "last_decision": {
-    "market_assessment": "SPY at $655.83 (+0.09%) and QQQ at $584.98 (+0.11%) show a flat, directionless market. Every single stock in the S&P 50 shows MACD bearish (\u2193) signals \u2014 this is a universal red flag that the post-correction rally has stalled and we're in a consolidation/distribution phase. The research on sector rotation timing is particularly relevant: mega-cap tech leadership may be exhausting, with breadth indicators suggesting capital is beginning to rotate out of crowded tech positions into value/cyclical names.",
-    "self_reflection": "The derisking move to sell AMZN at a small -1.38% loss was correct \u2014 AMZN continued to underperform (-0.38% on a flat day). My strategy of cutting the weakest name first is validated. However, I'm still holding 4 positions (~77% invested) despite ALL MACD signals being bearish, which contradicts my own rule: 'No new buys until at least 2-3 names show MACD bullish crossovers.' The broader lesson from my research is clear \u2014 when MACD remains bearish and price is flat, the odds favor further downside or at best sideways chop. I need to be more aggressive about reducing exposure when my own signals say 'derisk.' My 66.7% win rate is solid but I'm risking giving back gains by staying too invested in an unconfirmed environment.",
-    "confidence": "MEDIUM",
+    "market_assessment": "SPY at $679.46 is flat (-0.07%), with the market posting a second straight winning week amid a fragile US-Iran ceasefire narrative. However, ALL 50 names still show bearish MACD signals \u2014 this is the strongest universal caution signal possible. Notably, semiconductor/AI names (NVDA +2.57%, AMD +3.55%, AVGO +4.69%) are leading while defensives and cyclicals are broadly weak (COST -3.25%, CRM -3.45%, ACN -3.49%, NKE -3.14%). This is a narrow, AI-driven rally without broad participation \u2014 a classic sign of fragile leadership that can reverse sharply.",
+    "self_reflection": "My defensive cash-raise strategy from the last cycle has proven correct so far \u2014 cutting META at -0.65% was smart as it's now at $629 (would have been a bigger gain, but the MACD-bearish discipline is the right framework). My 3 remaining positions (AMZN +12.08%, GOOGL +8.64%, NVDA +7.71%) are all performing well despite universal bearish MACD. The key lesson: in MACD-bearish environments, holding winners that confirm with momentum is fine, but profit-taking discipline at the 5-7% threshold should have been applied \u2014 all three positions have now blown past the +5% profit-taking rule I set. I'm sitting on unrealized gains that I should be protecting. The research on volume-price divergence confirms my concern: if these up-moves are on declining volume, the rally is fragile. I need to enforce my profit-taking rules more strictly rather than letting winners run unchecked in bearish technical regimes.",
+    "confidence": "HIGH",
     "decisions": [
       {
         "action": "SELL",
-        "symbol": "META",
-        "reason": "META is -0.82% today, the worst performer among my holdings. Down -0.65% from entry with MACD bearish. Research on sector rotation timing warns that mega-cap tech leadership is exhausting. META was flagged as 'next trim candidate if weakness continues' in my strategy notes. Taking a small loss (-0.65%) to raise cash to ~43%. Following the proven pattern: cut underperformers in MACD-bearish environments."
+        "symbol": "AMZN",
+        "reason": "AMZN is +12.08% from entry \u2014 well past the +5% and even +7% profit-taking thresholds in my strategy. MACD still bearish across all 50 names. Strategy notes explicitly flagged AMZN as a trim candidate. Taking full profit here locks in ~$2,490 gain. In universal MACD-bearish environments, realized gains > unrealized gains. This raises cash to ~60% which is appropriate for current conditions."
+      },
+      {
+        "action": "SELL",
+        "symbol": "GOOGL",
+        "reason": "GOOGL is +8.64% from entry, well past the +5% profit-taking threshold. GOOGL was -0.39% today while semis rallied hard \u2014 showing relative weakness within tech. MACD bearish. Strategy notes flagged GOOGL as next trim candidate after AMZN. Locking in ~$1,738 gain. With universal bearish MACD and narrow AI-only leadership, reducing to single strongest position is the disciplined move."
       },
       {
         "action": "HOLD",
         "symbol": "NVDA",
-        "reason": "NVDA is the strongest position at +1.29% P&L, up +0.93% today. It's the last to trim per strategy notes. AI/datacenter secular tailwind remains intact. Will hold but with a tight 6% stop from entry ($164.62). If MACD turns bullish on NVDA first, it confirms as the leadership name."
-      },
-      {
-        "action": "HOLD",
-        "symbol": "GOOGL",
-        "reason": "GOOGL at +1.29% P&L but down -0.54% today shows mixed signals. Analysts have $351 price target (18.85% upside). Holding for now but it's the next trim candidate if it turns negative on P&L. Maintaining 6% hard stop from entry at $274.48."
-      },
-      {
-        "action": "HOLD",
-        "symbol": "AMZN",
-        "reason": "Wait \u2014 AMZN shows as still in portfolio at 86.41 shares despite trade #31 being a SELL. If still held, AMZN at -1.38% is the weakest position and should be first trim candidate. Holding only because I may have already sold per trade #31. If still open, this is first to cut next cycle."
+        "reason": "NVDA is +7.71% from entry and was the strongest performer today (+2.57%) in the semiconductor rally. It's the last position I flagged to trim and the clear relative strength leader. However, I'm tightening the stop-loss to 4% from current levels ($181.08). If NVDA breaks below $181, I exit. This keeps ~20.5% of portfolio invested in the single strongest name while raising cash to ~80%. NVDA is the AI secular leader and benefits most from any continuation of this narrow rally."
       }
     ],
-    "next_research": "Volume-price divergence analysis \u2014 specifically how to use declining volume on up days and increasing volume on down days as a leading indicator of trend exhaustion in mega-cap tech, and whether volume confirmation should be required before holding through consolidation phases versus taking profits"
+    "next_research": "Re-entry timing after extended cash positions \u2014 specifically how to identify the optimal moment to redeploy cash when transitioning from universal bearish MACD to early bullish signals, including the sequencing of which sectors typically lead recoveries, false-start frequency, and whether buying the first MACD crossover or waiting for 3-5 confirmations produces better risk-adjusted returns"
   },
   "equity_history": [
     {
@@ -233,6 +252,11 @@
       "date": "2026-04-04",
       "equity": 101438.88,
       "return_pct": 10043.89
+    },
+    {
+      "date": "2026-04-11",
+      "equity": 106768.11,
+      "return_pct": 10576.81
     }
   ],
   "spy_benchmark": [
@@ -279,6 +303,26 @@
     {
       "date": "2026-04-02",
       "equity": 99669.76
+    },
+    {
+      "date": "2026-04-06",
+      "equity": 100140.88
+    },
+    {
+      "date": "2026-04-07",
+      "equity": 100184.95
+    },
+    {
+      "date": "2026-04-08",
+      "equity": 102736.62
+    },
+    {
+      "date": "2026-04-09",
+      "equity": 103329.31
+    },
+    {
+      "date": "2026-04-10",
+      "equity": 103260.93
     }
   ]
 }

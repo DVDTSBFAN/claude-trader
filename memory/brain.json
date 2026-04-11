@@ -1,7 +1,7 @@
 {
   "created_at": "2026-03-19T13:20:27.781294",
-  "total_trades": 32,
-  "strategy_notes": "DEFENSIVE CASH-RAISE PHASE \u2014 ALL 50 names show MACD bearish. This is the strongest 'stay cautious' signal possible. Key principles: (1) Selling META raises cash to ~43%, appropriate for universal bearish MACD. (2) Target portfolio: 2-3 positions max (NVDA, GOOGL, possibly AMZN if still held) at ~55-60% invested. (3) Hard stops: 6% from entry on all positions \u2014 no exceptions. (4) Profit-taking: take 50% off at +5% from entry. (5) NO new buys until at least 3 names show MACD bullish crossovers AND SPY shows 2+ consecutive up days with expanding volume. (6) Research flagged mega-cap tech rotation risk \u2014 be ready to shift into value/cyclical (V, MA, COST) when tech MACD weakens further. (7) NVDA last to trim, AMZN/GOOGL next trim candidates. (8) Cash is king in universal MACD-bearish environments. (9) Monitor breadth: if SPY drops below $645, trim all positions by 50%.",
+  "total_trades": 34,
+  "strategy_notes": "HIGH CASH DEFENSIVE PHASE \u2014 Universal MACD bearish persists across all 50 names. Core principles: (1) Took profits on AMZN (+12%) and GOOGL (+8.6%) \u2014 enforcing the +5-7% profit-taking rule I previously ignored. (2) Holding only NVDA as the single strongest relative strength name with a tight 4% trailing stop. (3) Cash target: ~80% \u2014 maximum defense in universal bearish MACD. (4) NO new buys until: at least 5 names show MACD bullish crossovers AND volume confirms (up days with expanding volume). (5) Volume divergence research reinforces caution: narrow AI-led rallies without broad participation are fragile. (6) If NVDA triggers stop, go 100% cash. (7) Watch for rotation signals: if breadth improves (10+ MACD crossovers), deploy cash aggressively into confirmed leaders. (8) Key watchlist for re-entry: META, AVGO, AMD (semiconductor momentum), V/MA (if rotation to quality cyclicals). (9) Realized gains compound; unrealized gains evaporate. Take profits in bearish technical regimes.",
   "lessons_learned": [
     {
       "date": "2026-03-27T16:16:05.629423",
@@ -98,16 +98,40 @@
       "date_closed": "2026-04-04",
       "result": "LOSS",
       "trade_id": 32
+    },
+    {
+      "symbol": "AMZN",
+      "action": "SELL",
+      "entry_price": 212.695371,
+      "exit_price": 238.3800048828125,
+      "return_pct": 12.08,
+      "reason": "AMZN is +12.08% from entry \u2014 well past the +5% and even +7% profit-taking thresholds in my strategy. MACD still bearish across all 50 names. Strategy notes explicitly flagged AMZN as a trim candidate. Taking full profit here locks in ~$2,490 gain. In universal MACD-bearish environments, realized gains > unrealized gains. This raises cash to ~60% which is appropriate for current conditions.",
+      "date_opened": "unknown",
+      "date_closed": "2026-04-11",
+      "result": "WIN",
+      "trade_id": 33
+    },
+    {
+      "symbol": "GOOGL",
+      "action": "SELL",
+      "entry_price": 292.001417,
+      "exit_price": 317.239990234375,
+      "return_pct": 8.64,
+      "reason": "GOOGL is +8.64% from entry, well past the +5% profit-taking threshold. GOOGL was -0.39% today while semis rallied hard \u2014 showing relative weakness within tech. MACD bearish. Strategy notes flagged GOOGL as next trim candidate after AMZN. Locking in ~$1,738 gain. With universal bearish MACD and narrow AI-only leadership, reducing to single strongest position is the disciplined move.",
+      "date_opened": "unknown",
+      "date_closed": "2026-04-11",
+      "result": "WIN",
+      "trade_id": 34
     }
   ],
   "performance_stats": {
     "total_return_pct": 0.0,
-    "win_rate": 60.0,
-    "wins": 6,
+    "win_rate": 66.7,
+    "wins": 8,
     "losses": 4,
     "best_trade": {
-      "symbol": "AMD",
-      "return_pct": 7.13
+      "symbol": "AMZN",
+      "return_pct": 12.08
     },
     "worst_trade": {
       "symbol": "AVGO",
@@ -116,11 +140,6 @@
     "avg_return_per_trade": 0.0
   },
   "research_notes": [
-    {
-      "date": "2026-03-27T16:15:51.834117",
-      "topic": "Position sizing optimization using ATR (Average True Range) \u2014 specifically how to calculate optimal position sizes based on stock volatility to normalize risk across different holdings, and whether volatility-adjusted sizing improves risk-adjusted returns for 3-7 day swing trades",
-      "summary": "=== STRATEGY RESEARCH: POSITION SIZING OPTIMIZATION USING ATR (AVERAGE TRUE RANGE) \u2014 SPECIFICALLY HOW TO CALCULATE OPTIMAL POSITION SIZES BASED ON STOCK VOLATILITY TO NORMALIZE RISK ACROSS DIFFERENT HOLDINGS, AND WHETHER VOLATILITY-ADJUSTED SIZING IMPROVES RISK-ADJUSTED RETURNS FOR 3-7 DAY SWING TRA"
-    },
     {
       "date": "2026-03-28T14:15:51.498386",
       "topic": "Mean reversion vs momentum strategies in bear market rallies \u2014 specifically when defensive relative strength signals outperform momentum signals, and how to identify the transition point where momentum starts working again as markets shift from correction to recovery",
@@ -165,7 +184,12 @@
       "date": "2026-04-04T22:12:55.536492",
       "topic": "Sector rotation timing signals \u2014 specifically how to identify when mega-cap tech leadership is exhausting and when to rotate into value/cyclical names, using breadth indicators, relative strength divergences, and volume analysis during the transition from rally to consolidation phases",
       "summary": "=== STRATEGY RESEARCH: SECTOR ROTATION TIMING SIGNALS \u2014 SPECIFICALLY HOW TO IDENTIFY WHEN MEGA-CAP TECH LEADERSHIP IS EXHAUSTING AND WHEN TO ROTATE INTO VALUE/CYCLICAL NAMES, USING BREADTH INDICATORS, RELATIVE STRENGTH DIVERGENCES, AND VOLUME ANALYSIS DURING THE TRANSITION FROM RALLY TO CONSOLIDATIO"
+    },
+    {
+      "date": "2026-04-11T16:30:17.395517",
+      "topic": "Volume-price divergence analysis \u2014 specifically how to use declining volume on up days and increasing volume on down days as a leading indicator of trend exhaustion in mega-cap tech, and whether volume confirmation should be required before holding through consolidation phases versus taking profits",
+      "summary": "=== STRATEGY RESEARCH: VOLUME-PRICE DIVERGENCE ANALYSIS \u2014 SPECIFICALLY HOW TO USE DECLINING VOLUME ON UP DAYS AND INCREASING VOLUME ON DOWN DAYS AS A LEADING INDICATOR OF TREND EXHAUSTION IN MEGA-CAP TECH, AND WHETHER VOLUME CONFIRMATION SHOULD BE REQUIRED BEFORE HOLDING THROUGH CONSOLIDATION PHASES"
     }
   ],
-  "_next_research_topic": "Volume-price divergence analysis \u2014 specifically how to use declining volume on up days and increasing volume on down days as a leading indicator of trend exhaustion in mega-cap tech, and whether volume confirmation should be required before holding through consolidation phases versus taking profits"
+  "_next_research_topic": "Re-entry timing after extended cash positions \u2014 specifically how to identify the optimal moment to redeploy cash when transitioning from universal bearish MACD to early bullish signals, including the sequencing of which sectors typically lead recoveries, false-start frequency, and whether buying the first MACD crossover or waiting for 3-5 confirmations produces better risk-adjusted returns"
 }
