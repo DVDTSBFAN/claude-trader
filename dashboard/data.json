@@ -1,15 +1,15 @@
 {
-  "last_updated": "2026-04-11T16:30:22.454427",
+  "last_updated": "2026-04-13T15:34:18.527461",
   "portfolio": {
-    "equity": 106768.11,
+    "equity": 106058.83,
     "cash": 44151.63,
-    "buying_power": 150919.74,
-    "total_return_pct": 10576.81
+    "buying_power": 150210.46,
+    "total_return_pct": 10505.88
   },
   "performance_stats": {
     "total_return_pct": 0.0,
-    "win_rate": 66.7,
-    "wins": 8,
+    "win_rate": 71.4,
+    "wins": 10,
     "losses": 4,
     "best_trade": {
       "symbol": "AMZN",
@@ -21,21 +21,9 @@
     },
     "avg_return_per_trade": 0.0
   },
-  "strategy_notes": "HIGH CASH DEFENSIVE PHASE \u2014 Universal MACD bearish persists across all 50 names. Core principles: (1) Took profits on AMZN (+12%) and GOOGL (+8.6%) \u2014 enforcing the +5-7% profit-taking rule I previously ignored. (2) Holding only NVDA as the single strongest relative strength name with a tight 4% trailing stop. (3) Cash target: ~80% \u2014 maximum defense in universal bearish MACD. (4) NO new buys until: at least 5 names show MACD bullish crossovers AND volume confirms (up days with expanding volume). (5) Volume divergence research reinforces caution: narrow AI-led rallies without broad participation are fragile. (6) If NVDA triggers stop, go 100% cash. (7) Watch for rotation signals: if breadth improves (10+ MACD crossovers), deploy cash aggressively into confirmed leaders. (8) Key watchlist for re-entry: META, AVGO, AMD (semiconductor momentum), V/MA (if rotation to quality cyclicals). (9) Realized gains compound; unrealized gains evaporate. Take profits in bearish technical regimes.",
-  "total_trades": 34,
+  "strategy_notes": "MAXIMUM DEFENSIVE POSTURE \u2014 Hormuz blockade is a major geopolitical escalation. After selling AMZN (+11.35%) and GOOGL (+7.44%), targeting ~80% cash with only NVDA as sole holding. Core principles: (1) Profit-taking discipline at +5-7% is NON-NEGOTIABLE in MACD-bearish regimes \u2014 no exceptions. (2) NVDA held as single strongest RS name with 4% trailing stop at ~$181. If triggered, go 100% cash. (3) Geopolitical risk (Hormuz blockade, Iran tensions) adds tail risk \u2014 cash is king. (4) NO new buys until: geopolitical de-escalation AND 5+ MACD bullish crossovers AND volume confirmation. (5) Watch energy names (XOM, CVX) \u2014 Hormuz blockade could create opportunity there if oil spikes. (6) Narrow AI-only leadership without breadth is fragile per volume-divergence research. (7) Key watchlist: AVGO, AMD (semis if momentum continues), XOM/CVX (energy on Hormuz), META (if tech broadens). (8) Follow own rules \u2014 the system works when I'm disciplined.",
+  "total_trades": 36,
   "recent_trades": [
-    {
-      "symbol": "NVDA",
-      "action": "BUY",
-      "entry_price": 174.39999389648438,
-      "exit_price": null,
-      "return_pct": null,
-      "reason": "Adding to NVDA position using pyramiding approach. NVDA +5.59% today, leading the semiconductor rally. AI/datacenter secular tailwind is intact. If the Iran de-escalation narrative holds, growth/cyclical tech will continue leading. This is a confirmation add \u2014 the initial entry was yesterday and it's already confirming with strong momentum. Scaling up per pyramiding research: add to winners showing confirmation.",
-      "date_opened": "2026-04-01",
-      "date_closed": null,
-      "result": "OPEN",
-      "trade_id": 26
-    },
     {
       "symbol": "META",
       "action": "BUY",
@@ -131,31 +119,55 @@
       "date_closed": "2026-04-11",
       "result": "WIN",
       "trade_id": 34
+    },
+    {
+      "symbol": "AMZN",
+      "action": "SELL",
+      "entry_price": 212.695371,
+      "exit_price": 238.3800048828125,
+      "return_pct": 12.08,
+      "reason": "AMZN at +11.35% \u2014 well past my +5-7% profit-taking threshold in a universal MACD-bearish environment. Geopolitical escalation (Hormuz blockade) adds significant downside risk. Locking in ~$2,320 in gains. My strategy notes say 'realized gains compound; unrealized gains evaporate.' Following my own rules strictly this time.",
+      "date_opened": "unknown",
+      "date_closed": "2026-04-13",
+      "result": "WIN",
+      "trade_id": 35
+    },
+    {
+      "symbol": "GOOGL",
+      "action": "SELL",
+      "entry_price": 292.001417,
+      "exit_price": 317.239990234375,
+      "return_pct": 8.64,
+      "reason": "GOOGL at +7.44% \u2014 at the upper end of my profit-taking threshold. GOOGL was -0.39% today while semis rallied, showing relative weakness within tech. With Hormuz blockade escalation, broad market risk is elevated. Taking ~$1,376 in gains. Strategy notes flagged GOOGL as trim candidate. Reducing to single strongest position (NVDA) as planned.",
+      "date_opened": "unknown",
+      "date_closed": "2026-04-13",
+      "result": "WIN",
+      "trade_id": 36
     }
   ],
   "lessons_count": 2,
   "last_decision": {
-    "market_assessment": "SPY at $679.46 is flat (-0.07%), with the market posting a second straight winning week amid a fragile US-Iran ceasefire narrative. However, ALL 50 names still show bearish MACD signals \u2014 this is the strongest universal caution signal possible. Notably, semiconductor/AI names (NVDA +2.57%, AMD +3.55%, AVGO +4.69%) are leading while defensives and cyclicals are broadly weak (COST -3.25%, CRM -3.45%, ACN -3.49%, NKE -3.14%). This is a narrow, AI-driven rally without broad participation \u2014 a classic sign of fragile leadership that can reverse sharply.",
-    "self_reflection": "My defensive cash-raise strategy from the last cycle has proven correct so far \u2014 cutting META at -0.65% was smart as it's now at $629 (would have been a bigger gain, but the MACD-bearish discipline is the right framework). My 3 remaining positions (AMZN +12.08%, GOOGL +8.64%, NVDA +7.71%) are all performing well despite universal bearish MACD. The key lesson: in MACD-bearish environments, holding winners that confirm with momentum is fine, but profit-taking discipline at the 5-7% threshold should have been applied \u2014 all three positions have now blown past the +5% profit-taking rule I set. I'm sitting on unrealized gains that I should be protecting. The research on volume-price divergence confirms my concern: if these up-moves are on declining volume, the rally is fragile. I need to enforce my profit-taking rules more strictly rather than letting winners run unchecked in bearish technical regimes.",
+    "market_assessment": "Universal MACD bearish across all 50 names persists \u2014 zero bullish crossovers. SPY flat at -0.07%, QQQ slightly positive at +0.14%. Key geopolitical risk: US-Iran talks failed and US is blockading the Strait of Hormuz, which is a major escalation threatening oil supply and global risk sentiment. The market is bifurcated \u2014 semiconductors/AI (NVDA +2.57%, AMD +3.55%, AVGO +4.69%) are rallying while defensives, consumer staples, and broad cyclicals are selling off. This narrow leadership is fragile and consistent with my volume-divergence research warning.",
+    "self_reflection": "My defensive cash strategy has been working well \u2014 sitting at ~42% cash with only 3 positions, all in profit. NVDA (+5.97%), GOOGL (+7.44%), and AMZN (+11.35%) are all performing. However, I'm violating my own strategy notes: I said I'd hold only NVDA as the single strongest name, yet I still hold GOOGL and AMZN. The profit-taking discipline I developed (sell at +5-7%) is being tested \u2014 AMZN at +11.35% is well past that threshold. I should have already taken profits on AMZN per my own rules. GOOGL at +7.44% is also past the threshold. The Hormuz blockade is a significant new risk that could trigger a sharp selloff. My win rate of 66.7% reflects that cutting losers early and taking profits works. I need to follow my own rules more strictly.",
     "confidence": "HIGH",
     "decisions": [
       {
         "action": "SELL",
         "symbol": "AMZN",
-        "reason": "AMZN is +12.08% from entry \u2014 well past the +5% and even +7% profit-taking thresholds in my strategy. MACD still bearish across all 50 names. Strategy notes explicitly flagged AMZN as a trim candidate. Taking full profit here locks in ~$2,490 gain. In universal MACD-bearish environments, realized gains > unrealized gains. This raises cash to ~60% which is appropriate for current conditions."
+        "reason": "AMZN at +11.35% \u2014 well past my +5-7% profit-taking threshold in a universal MACD-bearish environment. Geopolitical escalation (Hormuz blockade) adds significant downside risk. Locking in ~$2,320 in gains. My strategy notes say 'realized gains compound; unrealized gains evaporate.' Following my own rules strictly this time."
       },
       {
         "action": "SELL",
         "symbol": "GOOGL",
-        "reason": "GOOGL is +8.64% from entry, well past the +5% profit-taking threshold. GOOGL was -0.39% today while semis rallied hard \u2014 showing relative weakness within tech. MACD bearish. Strategy notes flagged GOOGL as next trim candidate after AMZN. Locking in ~$1,738 gain. With universal bearish MACD and narrow AI-only leadership, reducing to single strongest position is the disciplined move."
+        "reason": "GOOGL at +7.44% \u2014 at the upper end of my profit-taking threshold. GOOGL was -0.39% today while semis rallied, showing relative weakness within tech. With Hormuz blockade escalation, broad market risk is elevated. Taking ~$1,376 in gains. Strategy notes flagged GOOGL as trim candidate. Reducing to single strongest position (NVDA) as planned."
       },
       {
         "action": "HOLD",
         "symbol": "NVDA",
-        "reason": "NVDA is +7.71% from entry and was the strongest performer today (+2.57%) in the semiconductor rally. It's the last position I flagged to trim and the clear relative strength leader. However, I'm tightening the stop-loss to 4% from current levels ($181.08). If NVDA breaks below $181, I exit. This keeps ~20.5% of portfolio invested in the single strongest name while raising cash to ~80%. NVDA is the AI secular leader and benefits most from any continuation of this narrow rally."
+        "reason": "NVDA is the strongest relative strength name at +2.57% today, leading the semiconductor rally alongside AVGO and AMD. At +5.97% from entry, it's at my minimum profit-taking level but still showing clear momentum leadership. Holding with a tight 4% trailing stop from current price (~$181 stop). If Hormuz situation deteriorates and NVDA breaks below the stop, I go to 100% cash as planned. NVDA is the single best position to hold in a narrow AI-led market."
       }
     ],
-    "next_research": "Re-entry timing after extended cash positions \u2014 specifically how to identify the optimal moment to redeploy cash when transitioning from universal bearish MACD to early bullish signals, including the sequencing of which sectors typically lead recoveries, false-start frequency, and whether buying the first MACD crossover or waiting for 3-5 confirmations produces better risk-adjusted returns"
+    "next_research": "Geopolitical risk management in equity portfolios \u2014 specifically how oil supply disruptions (Strait of Hormuz blockades/closures) historically impact S&P 500 sectors, which sectors benefit vs. suffer, optimal hedging through energy positions, typical drawdown timelines, and whether reducing to cash or rotating into energy/defense produces better risk-adjusted returns during Middle East escalations"
   },
   "equity_history": [
     {
@@ -257,6 +269,11 @@
       "date": "2026-04-11",
       "equity": 106768.11,
       "return_pct": 10576.81
+    },
+    {
+      "date": "2026-04-13",
+      "equity": 106058.83,
+      "return_pct": 10505.88
     }
   ],
   "spy_benchmark": [

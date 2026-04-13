@@ -1,7 +1,7 @@
 {
   "created_at": "2026-03-19T13:20:27.781294",
-  "total_trades": 34,
-  "strategy_notes": "HIGH CASH DEFENSIVE PHASE \u2014 Universal MACD bearish persists across all 50 names. Core principles: (1) Took profits on AMZN (+12%) and GOOGL (+8.6%) \u2014 enforcing the +5-7% profit-taking rule I previously ignored. (2) Holding only NVDA as the single strongest relative strength name with a tight 4% trailing stop. (3) Cash target: ~80% \u2014 maximum defense in universal bearish MACD. (4) NO new buys until: at least 5 names show MACD bullish crossovers AND volume confirms (up days with expanding volume). (5) Volume divergence research reinforces caution: narrow AI-led rallies without broad participation are fragile. (6) If NVDA triggers stop, go 100% cash. (7) Watch for rotation signals: if breadth improves (10+ MACD crossovers), deploy cash aggressively into confirmed leaders. (8) Key watchlist for re-entry: META, AVGO, AMD (semiconductor momentum), V/MA (if rotation to quality cyclicals). (9) Realized gains compound; unrealized gains evaporate. Take profits in bearish technical regimes.",
+  "total_trades": 36,
+  "strategy_notes": "MAXIMUM DEFENSIVE POSTURE \u2014 Hormuz blockade is a major geopolitical escalation. After selling AMZN (+11.35%) and GOOGL (+7.44%), targeting ~80% cash with only NVDA as sole holding. Core principles: (1) Profit-taking discipline at +5-7% is NON-NEGOTIABLE in MACD-bearish regimes \u2014 no exceptions. (2) NVDA held as single strongest RS name with 4% trailing stop at ~$181. If triggered, go 100% cash. (3) Geopolitical risk (Hormuz blockade, Iran tensions) adds tail risk \u2014 cash is king. (4) NO new buys until: geopolitical de-escalation AND 5+ MACD bullish crossovers AND volume confirmation. (5) Watch energy names (XOM, CVX) \u2014 Hormuz blockade could create opportunity there if oil spikes. (6) Narrow AI-only leadership without breadth is fragile per volume-divergence research. (7) Key watchlist: AVGO, AMD (semis if momentum continues), XOM/CVX (energy on Hormuz), META (if tech broadens). (8) Follow own rules \u2014 the system works when I'm disciplined.",
   "lessons_learned": [
     {
       "date": "2026-03-27T16:16:05.629423",
@@ -122,12 +122,36 @@
       "date_closed": "2026-04-11",
       "result": "WIN",
       "trade_id": 34
+    },
+    {
+      "symbol": "AMZN",
+      "action": "SELL",
+      "entry_price": 212.695371,
+      "exit_price": 238.3800048828125,
+      "return_pct": 12.08,
+      "reason": "AMZN at +11.35% \u2014 well past my +5-7% profit-taking threshold in a universal MACD-bearish environment. Geopolitical escalation (Hormuz blockade) adds significant downside risk. Locking in ~$2,320 in gains. My strategy notes say 'realized gains compound; unrealized gains evaporate.' Following my own rules strictly this time.",
+      "date_opened": "unknown",
+      "date_closed": "2026-04-13",
+      "result": "WIN",
+      "trade_id": 35
+    },
+    {
+      "symbol": "GOOGL",
+      "action": "SELL",
+      "entry_price": 292.001417,
+      "exit_price": 317.239990234375,
+      "return_pct": 8.64,
+      "reason": "GOOGL at +7.44% \u2014 at the upper end of my profit-taking threshold. GOOGL was -0.39% today while semis rallied, showing relative weakness within tech. With Hormuz blockade escalation, broad market risk is elevated. Taking ~$1,376 in gains. Strategy notes flagged GOOGL as trim candidate. Reducing to single strongest position (NVDA) as planned.",
+      "date_opened": "unknown",
+      "date_closed": "2026-04-13",
+      "result": "WIN",
+      "trade_id": 36
     }
   ],
   "performance_stats": {
     "total_return_pct": 0.0,
-    "win_rate": 66.7,
-    "wins": 8,
+    "win_rate": 71.4,
+    "wins": 10,
     "losses": 4,
     "best_trade": {
       "symbol": "AMZN",
@@ -140,11 +164,6 @@
     "avg_return_per_trade": 0.0
   },
   "research_notes": [
-    {
-      "date": "2026-03-28T14:15:51.498386",
-      "topic": "Mean reversion vs momentum strategies in bear market rallies \u2014 specifically when defensive relative strength signals outperform momentum signals, and how to identify the transition point where momentum starts working again as markets shift from correction to recovery",
-      "summary": "=== STRATEGY RESEARCH: MEAN REVERSION VS MOMENTUM STRATEGIES IN BEAR MARKET RALLIES \u2014 SPECIFICALLY WHEN DEFENSIVE RELATIVE STRENGTH SIGNALS OUTPERFORM MOMENTUM SIGNALS, AND HOW TO IDENTIFY THE TRANSITION POINT WHERE MOMENTUM STARTS WORKING AGAIN AS MARKETS SHIFT FROM CORRECTION TO RECOVERY ===\n\u2022 Mea"
-    },
     {
       "date": "2026-03-30T16:58:32.086033",
       "topic": "Geopolitical risk premium pricing in energy stocks \u2014 specifically how long energy outperformance persists during geopolitical crises (Iran-type scenarios), what signals indicate the premium is fading, and optimal exit timing for energy positions when tensions de-escalate",
@@ -189,7 +208,12 @@
       "date": "2026-04-11T16:30:17.395517",
       "topic": "Volume-price divergence analysis \u2014 specifically how to use declining volume on up days and increasing volume on down days as a leading indicator of trend exhaustion in mega-cap tech, and whether volume confirmation should be required before holding through consolidation phases versus taking profits",
       "summary": "=== STRATEGY RESEARCH: VOLUME-PRICE DIVERGENCE ANALYSIS \u2014 SPECIFICALLY HOW TO USE DECLINING VOLUME ON UP DAYS AND INCREASING VOLUME ON DOWN DAYS AS A LEADING INDICATOR OF TREND EXHAUSTION IN MEGA-CAP TECH, AND WHETHER VOLUME CONFIRMATION SHOULD BE REQUIRED BEFORE HOLDING THROUGH CONSOLIDATION PHASES"
+    },
+    {
+      "date": "2026-04-13T15:34:14.734976",
+      "topic": "Re-entry timing after extended cash positions \u2014 specifically how to identify the optimal moment to redeploy cash when transitioning from universal bearish MACD to early bullish signals, including the sequencing of which sectors typically lead recoveries, false-start frequency, and whether buying the first MACD crossover or waiting for 3-5 confirmations produces better risk-adjusted returns",
+      "summary": "No results found for: Re-entry timing after extended cash positions \u2014 specifically how to identify the optimal moment to redeploy cash when transitioning from universal bearish MACD to early bullish signals, including the sequencing of which sectors typically lead recoveries, false-start frequency, "
     }
   ],
-  "_next_research_topic": "Re-entry timing after extended cash positions \u2014 specifically how to identify the optimal moment to redeploy cash when transitioning from universal bearish MACD to early bullish signals, including the sequencing of which sectors typically lead recoveries, false-start frequency, and whether buying the first MACD crossover or waiting for 3-5 confirmations produces better risk-adjusted returns"
+  "_next_research_topic": "Geopolitical risk management in equity portfolios \u2014 specifically how oil supply disruptions (Strait of Hormuz blockades/closures) historically impact S&P 500 sectors, which sectors benefit vs. suffer, optimal hedging through energy positions, typical drawdown timelines, and whether reducing to cash or rotating into energy/defense produces better risk-adjusted returns during Middle East escalations"
 }
