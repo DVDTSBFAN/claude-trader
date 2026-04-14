@@ -1,7 +1,7 @@
 {
   "created_at": "2026-03-19T13:20:27.781294",
-  "total_trades": 36,
-  "strategy_notes": "MAXIMUM DEFENSIVE POSTURE \u2014 Hormuz blockade is a major geopolitical escalation. After selling AMZN (+11.35%) and GOOGL (+7.44%), targeting ~80% cash with only NVDA as sole holding. Core principles: (1) Profit-taking discipline at +5-7% is NON-NEGOTIABLE in MACD-bearish regimes \u2014 no exceptions. (2) NVDA held as single strongest RS name with 4% trailing stop at ~$181. If triggered, go 100% cash. (3) Geopolitical risk (Hormuz blockade, Iran tensions) adds tail risk \u2014 cash is king. (4) NO new buys until: geopolitical de-escalation AND 5+ MACD bullish crossovers AND volume confirmation. (5) Watch energy names (XOM, CVX) \u2014 Hormuz blockade could create opportunity there if oil spikes. (6) Narrow AI-only leadership without breadth is fragile per volume-divergence research. (7) Key watchlist: AVGO, AMD (semis if momentum continues), XOM/CVX (energy on Hormuz), META (if tech broadens). (8) Follow own rules \u2014 the system works when I'm disciplined.",
+  "total_trades": 39,
+  "strategy_notes": "CAUTIOUS RE-ENGAGEMENT phase \u2014 Iran deal optimism is easing geopolitical risk. Moved from ~80% cash to ~42% cash with 4 positions: NVDA (semis), MSFT (enterprise software/cloud), AVGO (AI networking), V (consumer payments). Core principles: (1) Profit-taking at +7% remains active but relaxed to +10% in improving geopolitical environment. NVDA at +8.7% gets a pass given momentum. (2) ALL MACD signals still bearish \u2014 this is a cautious re-entry, NOT full risk-on. Keep 40%+ cash until MACD crossovers appear. (3) Cut any new position showing -3% or more within first 3 days (non-confirmation exit). (4) If Iran deal falls apart, immediately sell MSFT/AVGO/V and return to NVDA-only defensive posture. (5) Enterprise software breadth (CRM, ADBE, ACN rallying) suggests institutional rotation broadening \u2014 this is a healthier market structure than narrow AI-only leadership. (6) Watchlist for potential adds: GOOGL, META if tech broadens further; CVX if Iran deal fails. (7) Trust the system but adapt to changing conditions.",
   "lessons_learned": [
     {
       "date": "2026-03-27T16:16:05.629423",
@@ -146,6 +146,42 @@
       "date_closed": "2026-04-13",
       "result": "WIN",
       "trade_id": 36
+    },
+    {
+      "symbol": "MSFT",
+      "action": "BUY",
+      "entry_price": 384.3699951171875,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "MSFT +3.64% today \u2014 strong relative strength in a broad rally. Enterprise software/cloud is leading (CRM +4.76%, ADBE +6.55%, ACN +6.92%) suggesting institutional rotation into quality software. MSFT is the highest-quality name in this group with Azure AI tailwinds. Starting moderate 15% position. If geopolitical de-escalation continues and MACD turns bullish, I'll add. MSFT diversifies beyond pure semiconductor exposure (NVDA).",
+      "date_opened": "2026-04-14",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 37
+    },
+    {
+      "symbol": "AVGO",
+      "action": "BUY",
+      "entry_price": 379.75,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "AVGO +2.21% today, participating in the semiconductor rally alongside NVDA. Broadcom's AI networking/custom chip business provides second best AI exposure after NVDA. Analyst sentiment strong. Starting at 12% \u2014 smaller than MSFT because I already have semiconductor exposure via NVDA. This is a 'broadening the AI bet' position. If the market is genuinely recovering from the Iran scare, semis will lead.",
+      "date_opened": "2026-04-14",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 38
+    },
+    {
+      "symbol": "V",
+      "action": "BUY",
+      "entry_price": 309.3900146484375,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "V +1.65% today \u2014 Visa provides exposure to consumer spending recovery and financial services without pure bank risk. If Iran deal optimism is real, consumer confidence should improve which directly benefits payment networks. V is a quality defensive-growth hybrid \u2014 performs in both risk-on and risk-off. This gives my portfolio sector diversification beyond pure tech/semis. Small 10% starter position.",
+      "date_opened": "2026-04-14",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 39
     }
   ],
   "performance_stats": {
@@ -164,11 +200,6 @@
     "avg_return_per_trade": 0.0
   },
   "research_notes": [
-    {
-      "date": "2026-03-30T16:58:32.086033",
-      "topic": "Geopolitical risk premium pricing in energy stocks \u2014 specifically how long energy outperformance persists during geopolitical crises (Iran-type scenarios), what signals indicate the premium is fading, and optimal exit timing for energy positions when tensions de-escalate",
-      "summary": "=== STRATEGY RESEARCH: GEOPOLITICAL RISK PREMIUM PRICING IN ENERGY STOCKS \u2014 SPECIFICALLY HOW LONG ENERGY OUTPERFORMANCE PERSISTS DURING GEOPOLITICAL CRISES (IRAN-TYPE SCENARIOS), WHAT SIGNALS INDICATE THE PREMIUM IS FADING, AND OPTIMAL EXIT TIMING FOR ENERGY POSITIONS WHEN TENSIONS DE-ESCALATE ===\n\u2022"
-    },
     {
       "date": "2026-03-31T17:04:08.877165",
       "topic": "Sector rotation timing signals \u2014 specifically how to identify when MACD bearish signals are about to turn bullish across major indices, and what leading indicators (breadth, volume, credit spreads) historically signal the transition from defensive to cyclical leadership, to prepare for eventual portfolio rotation",
@@ -213,7 +244,12 @@
       "date": "2026-04-13T15:34:14.734976",
       "topic": "Re-entry timing after extended cash positions \u2014 specifically how to identify the optimal moment to redeploy cash when transitioning from universal bearish MACD to early bullish signals, including the sequencing of which sectors typically lead recoveries, false-start frequency, and whether buying the first MACD crossover or waiting for 3-5 confirmations produces better risk-adjusted returns",
       "summary": "No results found for: Re-entry timing after extended cash positions \u2014 specifically how to identify the optimal moment to redeploy cash when transitioning from universal bearish MACD to early bullish signals, including the sequencing of which sectors typically lead recoveries, false-start frequency, "
+    },
+    {
+      "date": "2026-04-14T15:54:13.282156",
+      "topic": "Geopolitical risk management in equity portfolios \u2014 specifically how oil supply disruptions (Strait of Hormuz blockades/closures) historically impact S&P 500 sectors, which sectors benefit vs. suffer, optimal hedging through energy positions, typical drawdown timelines, and whether reducing to cash or rotating into energy/defense produces better risk-adjusted returns during Middle East escalations",
+      "summary": "No results found for: Geopolitical risk management in equity portfolios \u2014 specifically how oil supply disruptions (Strait of Hormuz blockades/closures) historically impact S&P 500 sectors, which sectors benefit vs. suffer, optimal hedging through energy positions, typical drawdown timelines, and whe"
     }
   ],
-  "_next_research_topic": "Geopolitical risk management in equity portfolios \u2014 specifically how oil supply disruptions (Strait of Hormuz blockades/closures) historically impact S&P 500 sectors, which sectors benefit vs. suffer, optimal hedging through energy positions, typical drawdown timelines, and whether reducing to cash or rotating into energy/defense produces better risk-adjusted returns during Middle East escalations"
+  "_next_research_topic": "MACD crossover reliability as re-entry signals after extended bearish periods \u2014 specifically whether the first bullish MACD crossover in leading sectors (semis, enterprise software) after a geopolitical selloff tends to be a reliable buy signal or a false start, and what confirmation filters (volume, breadth, multiple sector crossovers) improve signal quality"
 }

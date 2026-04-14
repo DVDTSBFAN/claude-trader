@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-04-13T15:34:18.527461",
+  "last_updated": "2026-04-14T15:54:16.941662",
   "portfolio": {
-    "equity": 106058.83,
-    "cash": 44151.63,
-    "buying_power": 150210.46,
-    "total_return_pct": 10505.88
+    "equity": 106821.63,
+    "cash": 84713.39,
+    "buying_power": 191535.02,
+    "total_return_pct": 10582.16
   },
   "performance_stats": {
     "total_return_pct": 0.0,
@@ -21,45 +21,9 @@
     },
     "avg_return_per_trade": 0.0
   },
-  "strategy_notes": "MAXIMUM DEFENSIVE POSTURE \u2014 Hormuz blockade is a major geopolitical escalation. After selling AMZN (+11.35%) and GOOGL (+7.44%), targeting ~80% cash with only NVDA as sole holding. Core principles: (1) Profit-taking discipline at +5-7% is NON-NEGOTIABLE in MACD-bearish regimes \u2014 no exceptions. (2) NVDA held as single strongest RS name with 4% trailing stop at ~$181. If triggered, go 100% cash. (3) Geopolitical risk (Hormuz blockade, Iran tensions) adds tail risk \u2014 cash is king. (4) NO new buys until: geopolitical de-escalation AND 5+ MACD bullish crossovers AND volume confirmation. (5) Watch energy names (XOM, CVX) \u2014 Hormuz blockade could create opportunity there if oil spikes. (6) Narrow AI-only leadership without breadth is fragile per volume-divergence research. (7) Key watchlist: AVGO, AMD (semis if momentum continues), XOM/CVX (energy on Hormuz), META (if tech broadens). (8) Follow own rules \u2014 the system works when I'm disciplined.",
-  "total_trades": 36,
+  "strategy_notes": "CAUTIOUS RE-ENGAGEMENT phase \u2014 Iran deal optimism is easing geopolitical risk. Moved from ~80% cash to ~42% cash with 4 positions: NVDA (semis), MSFT (enterprise software/cloud), AVGO (AI networking), V (consumer payments). Core principles: (1) Profit-taking at +7% remains active but relaxed to +10% in improving geopolitical environment. NVDA at +8.7% gets a pass given momentum. (2) ALL MACD signals still bearish \u2014 this is a cautious re-entry, NOT full risk-on. Keep 40%+ cash until MACD crossovers appear. (3) Cut any new position showing -3% or more within first 3 days (non-confirmation exit). (4) If Iran deal falls apart, immediately sell MSFT/AVGO/V and return to NVDA-only defensive posture. (5) Enterprise software breadth (CRM, ADBE, ACN rallying) suggests institutional rotation broadening \u2014 this is a healthier market structure than narrow AI-only leadership. (6) Watchlist for potential adds: GOOGL, META if tech broadens further; CVX if Iran deal fails. (7) Trust the system but adapt to changing conditions.",
+  "total_trades": 39,
   "recent_trades": [
-    {
-      "symbol": "META",
-      "action": "BUY",
-      "entry_price": 572.1300048828125,
-      "exit_price": null,
-      "return_pct": null,
-      "reason": "Adding to META position. +6.67% today \u2014 strongest performer in the top 50. Mega-cap tech is leading this rotation with strong ad revenue fundamentals and AI investments. Pyramiding into a winner that's confirming. If this rally has legs, META will be among the biggest beneficiaries of a sentiment shift.",
-      "date_opened": "2026-04-01",
-      "date_closed": null,
-      "result": "OPEN",
-      "trade_id": 27
-    },
-    {
-      "symbol": "GOOGL",
-      "action": "BUY",
-      "entry_price": 287.55999755859375,
-      "exit_price": null,
-      "return_pct": null,
-      "reason": "GOOGL +5.14% today \u2014 strong participation in the tech rally. Diversifying cyclical exposure across mega-cap tech rather than concentrating in just two names. GOOGL benefits from same AI/advertising tailwinds as META but adds search/cloud diversification. Initial position size per pyramiding strategy \u2014 start moderate, add on confirmation next cycle.",
-      "date_opened": "2026-04-01",
-      "date_closed": null,
-      "result": "OPEN",
-      "trade_id": 28
-    },
-    {
-      "symbol": "ABBV",
-      "action": "SELL",
-      "entry_price": 210.33,
-      "exit_price": 215.28500366210938,
-      "return_pct": 2.36,
-      "reason": "ABBV -0.94% today on a +1.06% SPY day \u2014 significant relative weakness. Defensive healthcare is clearly rotating out as the market shifts to cyclical/growth leadership. Still +2.41% from entry, so locking in a small win. This frees ~$12.5K for better-positioned names. Following the proven pattern: sell defensives showing negative relative strength on rally days (same signal that correctly flagged COST and XOM exits).",
-      "date_opened": "unknown",
-      "date_closed": "2026-04-01",
-      "result": "WIN",
-      "trade_id": 29
-    },
     {
       "symbol": "AMZN",
       "action": "BUY",
@@ -143,31 +107,79 @@
       "date_closed": "2026-04-13",
       "result": "WIN",
       "trade_id": 36
+    },
+    {
+      "symbol": "MSFT",
+      "action": "BUY",
+      "entry_price": 384.3699951171875,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "MSFT +3.64% today \u2014 strong relative strength in a broad rally. Enterprise software/cloud is leading (CRM +4.76%, ADBE +6.55%, ACN +6.92%) suggesting institutional rotation into quality software. MSFT is the highest-quality name in this group with Azure AI tailwinds. Starting moderate 15% position. If geopolitical de-escalation continues and MACD turns bullish, I'll add. MSFT diversifies beyond pure semiconductor exposure (NVDA).",
+      "date_opened": "2026-04-14",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 37
+    },
+    {
+      "symbol": "AVGO",
+      "action": "BUY",
+      "entry_price": 379.75,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "AVGO +2.21% today, participating in the semiconductor rally alongside NVDA. Broadcom's AI networking/custom chip business provides second best AI exposure after NVDA. Analyst sentiment strong. Starting at 12% \u2014 smaller than MSFT because I already have semiconductor exposure via NVDA. This is a 'broadening the AI bet' position. If the market is genuinely recovering from the Iran scare, semis will lead.",
+      "date_opened": "2026-04-14",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 38
+    },
+    {
+      "symbol": "V",
+      "action": "BUY",
+      "entry_price": 309.3900146484375,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "V +1.65% today \u2014 Visa provides exposure to consumer spending recovery and financial services without pure bank risk. If Iran deal optimism is real, consumer confidence should improve which directly benefits payment networks. V is a quality defensive-growth hybrid \u2014 performs in both risk-on and risk-off. This gives my portfolio sector diversification beyond pure tech/semis. Small 10% starter position.",
+      "date_opened": "2026-04-14",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 39
     }
   ],
   "lessons_count": 2,
   "last_decision": {
-    "market_assessment": "Universal MACD bearish across all 50 names persists \u2014 zero bullish crossovers. SPY flat at -0.07%, QQQ slightly positive at +0.14%. Key geopolitical risk: US-Iran talks failed and US is blockading the Strait of Hormuz, which is a major escalation threatening oil supply and global risk sentiment. The market is bifurcated \u2014 semiconductors/AI (NVDA +2.57%, AMD +3.55%, AVGO +4.69%) are rallying while defensives, consumer staples, and broad cyclicals are selling off. This narrow leadership is fragile and consistent with my volume-divergence research warning.",
-    "self_reflection": "My defensive cash strategy has been working well \u2014 sitting at ~42% cash with only 3 positions, all in profit. NVDA (+5.97%), GOOGL (+7.44%), and AMZN (+11.35%) are all performing. However, I'm violating my own strategy notes: I said I'd hold only NVDA as the single strongest name, yet I still hold GOOGL and AMZN. The profit-taking discipline I developed (sell at +5-7%) is being tested \u2014 AMZN at +11.35% is well past that threshold. I should have already taken profits on AMZN per my own rules. GOOGL at +7.44% is also past the threshold. The Hormuz blockade is a significant new risk that could trigger a sharp selloff. My win rate of 66.7% reflects that cutting losers early and taking profits works. I need to follow my own rules more strictly.",
-    "confidence": "HIGH",
+    "market_assessment": "SPY +0.98% and QQQ +1.03% today with broad-based rally. Headlines suggest S&P 500 has erased all Iran war losses, with markets pricing in optimism around a US-Iran deal. However, ALL 50 stocks still show MACD bearish (\u2193), meaning this rally hasn't yet produced confirmed trend reversals. Standout movers today: ORCL +12.69%, ACN +6.92%, ADBE +6.55%, CRM +4.76%, INTC +4.49% \u2014 enterprise software and tech services leading, suggesting rotation broadening beyond pure AI/semis.",
+    "self_reflection": "My defensive posture with ~80% cash and only NVDA has been somewhat costly as the market rallied and erased Iran losses. NVDA is +8.7% from entry which is approaching my profit-taking zone. Key lesson: my strategy notes said 'NO new buys until geopolitical de-escalation AND 5+ MACD bullish crossovers AND volume confirmation.' Geopolitical de-escalation appears to be underway (Iran deal optimism), but zero MACD bullish crossovers exist yet. The tension is between missing a recovery rally and my discipline around MACD signals. My 71.4% win rate proves the system works \u2014 I should trust it but also recognize that waiting for 5 MACD crossovers may be too conservative if geopolitical risk is genuinely declining. Compromise: I can start small positions in the strongest relative strength names while maintaining elevated cash.",
+    "confidence": "MEDIUM",
     "decisions": [
-      {
-        "action": "SELL",
-        "symbol": "AMZN",
-        "reason": "AMZN at +11.35% \u2014 well past my +5-7% profit-taking threshold in a universal MACD-bearish environment. Geopolitical escalation (Hormuz blockade) adds significant downside risk. Locking in ~$2,320 in gains. My strategy notes say 'realized gains compound; unrealized gains evaporate.' Following my own rules strictly this time."
-      },
-      {
-        "action": "SELL",
-        "symbol": "GOOGL",
-        "reason": "GOOGL at +7.44% \u2014 at the upper end of my profit-taking threshold. GOOGL was -0.39% today while semis rallied, showing relative weakness within tech. With Hormuz blockade escalation, broad market risk is elevated. Taking ~$1,376 in gains. Strategy notes flagged GOOGL as trim candidate. Reducing to single strongest position (NVDA) as planned."
-      },
       {
         "action": "HOLD",
         "symbol": "NVDA",
-        "reason": "NVDA is the strongest relative strength name at +2.57% today, leading the semiconductor rally alongside AVGO and AMD. At +5.97% from entry, it's at my minimum profit-taking level but still showing clear momentum leadership. Holding with a tight 4% trailing stop from current price (~$181 stop). If Hormuz situation deteriorates and NVDA breaks below the stop, I go to 100% cash as planned. NVDA is the single best position to hold in a narrow AI-led market."
+        "reason": "NVDA at +8.7% from entry, past the +7% profit-taking threshold. However, geopolitical headwinds are easing and NVDA remains the strongest RS semiconductor name with analyst targets averaging $273. The market is recovering, not rolling over. I'll hold with a tightened trailing stop at $181 (4.4% below current). If it breaks $181, I sell immediately. The setup favors continuation given Iran deal optimism and AI secular tailwind.",
+        "stop_loss_pct": 4.5
+      },
+      {
+        "action": "BUY",
+        "symbol": "MSFT",
+        "allocation_pct": 15,
+        "reason": "MSFT +3.64% today \u2014 strong relative strength in a broad rally. Enterprise software/cloud is leading (CRM +4.76%, ADBE +6.55%, ACN +6.92%) suggesting institutional rotation into quality software. MSFT is the highest-quality name in this group with Azure AI tailwinds. Starting moderate 15% position. If geopolitical de-escalation continues and MACD turns bullish, I'll add. MSFT diversifies beyond pure semiconductor exposure (NVDA).",
+        "stop_loss_pct": 4
+      },
+      {
+        "action": "BUY",
+        "symbol": "AVGO",
+        "allocation_pct": 12,
+        "reason": "AVGO +2.21% today, participating in the semiconductor rally alongside NVDA. Broadcom's AI networking/custom chip business provides second best AI exposure after NVDA. Analyst sentiment strong. Starting at 12% \u2014 smaller than MSFT because I already have semiconductor exposure via NVDA. This is a 'broadening the AI bet' position. If the market is genuinely recovering from the Iran scare, semis will lead.",
+        "stop_loss_pct": 5
+      },
+      {
+        "action": "BUY",
+        "symbol": "V",
+        "allocation_pct": 10,
+        "reason": "V +1.65% today \u2014 Visa provides exposure to consumer spending recovery and financial services without pure bank risk. If Iran deal optimism is real, consumer confidence should improve which directly benefits payment networks. V is a quality defensive-growth hybrid \u2014 performs in both risk-on and risk-off. This gives my portfolio sector diversification beyond pure tech/semis. Small 10% starter position.",
+        "stop_loss_pct": 4
       }
     ],
-    "next_research": "Geopolitical risk management in equity portfolios \u2014 specifically how oil supply disruptions (Strait of Hormuz blockades/closures) historically impact S&P 500 sectors, which sectors benefit vs. suffer, optimal hedging through energy positions, typical drawdown timelines, and whether reducing to cash or rotating into energy/defense produces better risk-adjusted returns during Middle East escalations"
+    "next_research": "MACD crossover reliability as re-entry signals after extended bearish periods \u2014 specifically whether the first bullish MACD crossover in leading sectors (semis, enterprise software) after a geopolitical selloff tends to be a reliable buy signal or a false start, and what confirmation filters (volume, breadth, multiple sector crossovers) improve signal quality"
   },
   "equity_history": [
     {
@@ -274,6 +286,11 @@
       "date": "2026-04-13",
       "equity": 106058.83,
       "return_pct": 10505.88
+    },
+    {
+      "date": "2026-04-14",
+      "equity": 106821.63,
+      "return_pct": 10582.16
     }
   ],
   "spy_benchmark": [
@@ -340,6 +357,10 @@
     {
       "date": "2026-04-10",
       "equity": 103260.93
+    },
+    {
+      "date": "2026-04-13",
+      "equity": 104270.04
     }
   ]
 }
