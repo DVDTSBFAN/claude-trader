@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-04-14T15:54:16.941662",
+  "last_updated": "2026-04-20T23:29:27.307520",
   "portfolio": {
-    "equity": 106821.63,
-    "cash": 84713.39,
-    "buying_power": 191535.02,
-    "total_return_pct": 10582.16
+    "equity": 110303.05,
+    "cash": 45119.94,
+    "buying_power": 155422.99,
+    "total_return_pct": 10930.31
   },
   "performance_stats": {
     "total_return_pct": 0.0,
-    "win_rate": 71.4,
-    "wins": 10,
+    "win_rate": 75.0,
+    "wins": 12,
     "losses": 4,
     "best_trade": {
-      "symbol": "AMZN",
-      "return_pct": 12.08
+      "symbol": "NVDA",
+      "return_pct": 15.38
     },
     "worst_trade": {
       "symbol": "AVGO",
@@ -21,33 +21,9 @@
     },
     "avg_return_per_trade": 0.0
   },
-  "strategy_notes": "CAUTIOUS RE-ENGAGEMENT phase \u2014 Iran deal optimism is easing geopolitical risk. Moved from ~80% cash to ~42% cash with 4 positions: NVDA (semis), MSFT (enterprise software/cloud), AVGO (AI networking), V (consumer payments). Core principles: (1) Profit-taking at +7% remains active but relaxed to +10% in improving geopolitical environment. NVDA at +8.7% gets a pass given momentum. (2) ALL MACD signals still bearish \u2014 this is a cautious re-entry, NOT full risk-on. Keep 40%+ cash until MACD crossovers appear. (3) Cut any new position showing -3% or more within first 3 days (non-confirmation exit). (4) If Iran deal falls apart, immediately sell MSFT/AVGO/V and return to NVDA-only defensive posture. (5) Enterprise software breadth (CRM, ADBE, ACN rallying) suggests institutional rotation broadening \u2014 this is a healthier market structure than narrow AI-only leadership. (6) Watchlist for potential adds: GOOGL, META if tech broadens further; CVX if Iran deal fails. (7) Trust the system but adapt to changing conditions.",
-  "total_trades": 39,
+  "strategy_notes": "PROFIT-TAKING DISCIPLINE phase \u2014 selling NVDA (+15%) and MSFT (+7.7%) per established rules. Moving from ~59% invested to ~22% invested (~78% cash). Core principles: (1) STRICT profit-taking at +7% in universal MACD-bearish environments \u2014 no exceptions, even for NVDA. Past lessons prove unrealized gains evaporate. (2) Hold remaining AVGO and V with tight monitoring: AVGO target exit at +7%, cut if drops below +3%. V cut if breaks below entry. (3) With ~78% cash, I'm in an optimal position to deploy aggressively when MACD crossovers begin appearing. The FIRST crossover in semis or enterprise software will be my re-entry signal, but I'll start with only 15% positions and add on confirmation. (4) Watch for rotation into financials (JPM strong) \u2014 potential new sector to explore. (5) The market near ATH with universal bearish MACD is a classic distribution signal. Cash is a position.",
+  "total_trades": 41,
   "recent_trades": [
-    {
-      "symbol": "AMZN",
-      "action": "BUY",
-      "entry_price": 212.6739044189453,
-      "exit_price": null,
-      "return_pct": null,
-      "reason": "AMZN +2.11% today \u2014 participating strongly in the cyclical rally. Diversifies tech exposure beyond pure advertising (META/GOOGL) into e-commerce/cloud (AWS). AMZN benefits from consumer spending recovery if geopolitical resolution boosts confidence. Starting at 18% per pyramiding approach \u2014 moderate initial size, will add on confirmation next cycle. This fills the 5th position slot freed by ABBV sale.",
-      "date_opened": "2026-04-01",
-      "date_closed": null,
-      "result": "OPEN",
-      "trade_id": 30
-    },
-    {
-      "symbol": "AMZN",
-      "action": "SELL",
-      "entry_price": 212.695371,
-      "exit_price": 209.77000427246094,
-      "return_pct": -1.38,
-      "reason": "AMZN is the weakest position at -1.38% P&L, down -0.38% today on a flat market day. Strategy notes explicitly flagged AMZN as 'first trim candidate if portfolio needs derisking.' Day 3 of the rally is showing no follow-through, and AMZN is underperforming all other holdings. Cutting the weakest name frees ~$18K to cash, reducing portfolio exposure from ~77% to ~59%. In MACD-unconfirmed environments, protecting capital is priority #1. Taking a small loss (-1.38%) is better than waiting for the -6% stop.",
-      "date_opened": "unknown",
-      "date_closed": "2026-04-03",
-      "result": "LOSS",
-      "trade_id": 31
-    },
     {
       "symbol": "META",
       "action": "SELL",
@@ -143,43 +119,60 @@
       "date_closed": null,
       "result": "OPEN",
       "trade_id": 39
+    },
+    {
+      "symbol": "NVDA",
+      "action": "SELL",
+      "entry_price": 175.13,
+      "exit_price": 202.05999755859375,
+      "return_pct": 15.38,
+      "reason": "NVDA at +15.34% \u2014 more than double my +7% profit-taking threshold. Universal bearish MACD across all 50 names. My own strategy notes from past lessons explicitly state to take profits in MACD-bearish environments. Locking in ~$3,125 in gains. NVDA +0.19% today while broader market was negative \u2014 still showing relative strength, but the risk/reward of holding a +15% winner in a bearish-MACD environment strongly favors taking profits. I can always re-enter on a confirmed MACD bullish crossover.",
+      "date_opened": "unknown",
+      "date_closed": "2026-04-20",
+      "result": "WIN",
+      "trade_id": 40
+    },
+    {
+      "symbol": "MSFT",
+      "action": "SELL",
+      "entry_price": 387.62,
+      "exit_price": 418.07000732421875,
+      "return_pct": 7.86,
+      "reason": "MSFT at +7.69% \u2014 right at the +7% profit-taking threshold. MSFT was -1.12% today, underperforming SPY (-0.20%), showing relative weakness. Universal bearish MACD. Locking in ~$1,244 in gains. Enterprise software showed mixed signals today (CRM/ADBE up, but ACN -1.31%, MSFT -1.12%), suggesting the sector rotation may be narrowing rather than broadening. Following the proven rule: take profits at threshold when MACD is bearish.",
+      "date_opened": "unknown",
+      "date_closed": "2026-04-20",
+      "result": "WIN",
+      "trade_id": 41
     }
   ],
   "lessons_count": 2,
   "last_decision": {
-    "market_assessment": "SPY +0.98% and QQQ +1.03% today with broad-based rally. Headlines suggest S&P 500 has erased all Iran war losses, with markets pricing in optimism around a US-Iran deal. However, ALL 50 stocks still show MACD bearish (\u2193), meaning this rally hasn't yet produced confirmed trend reversals. Standout movers today: ORCL +12.69%, ACN +6.92%, ADBE +6.55%, CRM +4.76%, INTC +4.49% \u2014 enterprise software and tech services leading, suggesting rotation broadening beyond pure AI/semis.",
-    "self_reflection": "My defensive posture with ~80% cash and only NVDA has been somewhat costly as the market rallied and erased Iran losses. NVDA is +8.7% from entry which is approaching my profit-taking zone. Key lesson: my strategy notes said 'NO new buys until geopolitical de-escalation AND 5+ MACD bullish crossovers AND volume confirmation.' Geopolitical de-escalation appears to be underway (Iran deal optimism), but zero MACD bullish crossovers exist yet. The tension is between missing a recovery rally and my discipline around MACD signals. My 71.4% win rate proves the system works \u2014 I should trust it but also recognize that waiting for 5 MACD crossovers may be too conservative if geopolitical risk is genuinely declining. Compromise: I can start small positions in the strongest relative strength names while maintaining elevated cash.",
-    "confidence": "MEDIUM",
+    "market_assessment": "S&P 500 near all-time highs with +34.26% 1Y return and +9.01% 1M return \u2014 a strong bullish backdrop. However, ALL 50 names show bearish MACD signals, suggesting the rally may be losing momentum or entering a distribution phase. Today's session was mildly negative (-0.20% SPY) with notable divergence: financials (JPM +2.16%) and select tech (CRM +2.27%, ADBE +1.71%, CSCO +1.69%) led while mega-cap growth lagged (META -2.56%, GOOGL -1.25%, MSFT -1.12%). This rotation pattern suggests caution on pure momentum names.",
+    "self_reflection": "My 71.4% win rate and +10,930% total return validate the disciplined system. The current 4-position portfolio is performing well: NVDA +15.34% is far past profit-taking thresholds, MSFT +7.69% is at the threshold, AVGO +5.60% is building, and V +1.61% is the laggard. Key learning: I've been too generous letting NVDA run past my own rules. At +15.34% with universal bearish MACD, this is exactly the scenario where I should be taking partial profits. My past lessons clearly show that in MACD-bearish environments, 'realized gains compound; unrealized gains evaporate.' I need to follow my own rules more strictly, especially on the upside. V underperforming today (-0.97%) while V was my weakest entry \u2014 needs monitoring for the non-confirmation exit pattern.",
+    "confidence": "HIGH",
     "decisions": [
       {
-        "action": "HOLD",
+        "action": "SELL",
         "symbol": "NVDA",
-        "reason": "NVDA at +8.7% from entry, past the +7% profit-taking threshold. However, geopolitical headwinds are easing and NVDA remains the strongest RS semiconductor name with analyst targets averaging $273. The market is recovering, not rolling over. I'll hold with a tightened trailing stop at $181 (4.4% below current). If it breaks $181, I sell immediately. The setup favors continuation given Iran deal optimism and AI secular tailwind.",
-        "stop_loss_pct": 4.5
+        "reason": "NVDA at +15.34% \u2014 more than double my +7% profit-taking threshold. Universal bearish MACD across all 50 names. My own strategy notes from past lessons explicitly state to take profits in MACD-bearish environments. Locking in ~$3,125 in gains. NVDA +0.19% today while broader market was negative \u2014 still showing relative strength, but the risk/reward of holding a +15% winner in a bearish-MACD environment strongly favors taking profits. I can always re-enter on a confirmed MACD bullish crossover."
       },
       {
-        "action": "BUY",
+        "action": "SELL",
         "symbol": "MSFT",
-        "allocation_pct": 15,
-        "reason": "MSFT +3.64% today \u2014 strong relative strength in a broad rally. Enterprise software/cloud is leading (CRM +4.76%, ADBE +6.55%, ACN +6.92%) suggesting institutional rotation into quality software. MSFT is the highest-quality name in this group with Azure AI tailwinds. Starting moderate 15% position. If geopolitical de-escalation continues and MACD turns bullish, I'll add. MSFT diversifies beyond pure semiconductor exposure (NVDA).",
-        "stop_loss_pct": 4
+        "reason": "MSFT at +7.69% \u2014 right at the +7% profit-taking threshold. MSFT was -1.12% today, underperforming SPY (-0.20%), showing relative weakness. Universal bearish MACD. Locking in ~$1,244 in gains. Enterprise software showed mixed signals today (CRM/ADBE up, but ACN -1.31%, MSFT -1.12%), suggesting the sector rotation may be narrowing rather than broadening. Following the proven rule: take profits at threshold when MACD is bearish."
       },
       {
-        "action": "BUY",
+        "action": "HOLD",
         "symbol": "AVGO",
-        "allocation_pct": 12,
-        "reason": "AVGO +2.21% today, participating in the semiconductor rally alongside NVDA. Broadcom's AI networking/custom chip business provides second best AI exposure after NVDA. Analyst sentiment strong. Starting at 12% \u2014 smaller than MSFT because I already have semiconductor exposure via NVDA. This is a 'broadening the AI bet' position. If the market is genuinely recovering from the Iran scare, semis will lead.",
-        "stop_loss_pct": 5
+        "reason": "AVGO at +5.60% \u2014 approaching but not yet at the +7% profit-taking threshold. Was -1.70% today which is concerning, but the position still has room to reach the target. Will reassess next cycle \u2014 if AVGO doesn't recover toward +7% or breaks below +3%, I'll cut it. Semis overall are mixed (TXN +1.69%, QCOM +0.97%, but INTC -4.09%, AMD -1.24%)."
       },
       {
-        "action": "BUY",
+        "action": "HOLD",
         "symbol": "V",
-        "allocation_pct": 10,
-        "reason": "V +1.65% today \u2014 Visa provides exposure to consumer spending recovery and financial services without pure bank risk. If Iran deal optimism is real, consumer confidence should improve which directly benefits payment networks. V is a quality defensive-growth hybrid \u2014 performs in both risk-on and risk-off. This gives my portfolio sector diversification beyond pure tech/semis. Small 10% starter position.",
-        "stop_loss_pct": 4
+        "reason": "V at +1.61% \u2014 still early in the trade (entered 4/14). Was -0.97% today which slightly underperformed. JPM +2.16% suggests financials may be rotating in, which could benefit payment networks. Giving V one more cycle to confirm. If it drops below entry price, I'll cut per the non-confirmation rule. Consumer spending data and the broader financial sector rotation will determine this position's fate."
       }
     ],
-    "next_research": "MACD crossover reliability as re-entry signals after extended bearish periods \u2014 specifically whether the first bullish MACD crossover in leading sectors (semis, enterprise software) after a geopolitical selloff tends to be a reliable buy signal or a false start, and what confirmation filters (volume, breadth, multiple sector crossovers) improve signal quality"
+    "next_research": "Mean reversion vs. momentum in near-ATH markets \u2014 specifically whether stocks at all-time highs with bearish MACD tend to consolidate sideways before resuming uptrends (making early re-entry profitable) or tend to pull back 5-10% first, and what the optimal re-entry timing looks like after taking profits near highs"
   },
   "equity_history": [
     {
@@ -291,6 +284,11 @@
       "date": "2026-04-14",
       "equity": 106821.63,
       "return_pct": 10582.16
+    },
+    {
+      "date": "2026-04-20",
+      "equity": 110303.05,
+      "return_pct": 10930.31
     }
   ],
   "spy_benchmark": [
@@ -361,6 +359,26 @@
     {
       "date": "2026-04-13",
       "equity": 104270.04
+    },
+    {
+      "date": "2026-04-14",
+      "equity": 105540.56
+    },
+    {
+      "date": "2026-04-15",
+      "equity": 106373.38
+    },
+    {
+      "date": "2026-04-16",
+      "equity": 106634.77
+    },
+    {
+      "date": "2026-04-17",
+      "equity": 107923.52
+    },
+    {
+      "date": "2026-04-20",
+      "equity": 107707.71
     }
   ]
 }

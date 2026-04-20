@@ -1,7 +1,7 @@
 {
   "created_at": "2026-03-19T13:20:27.781294",
-  "total_trades": 39,
-  "strategy_notes": "CAUTIOUS RE-ENGAGEMENT phase \u2014 Iran deal optimism is easing geopolitical risk. Moved from ~80% cash to ~42% cash with 4 positions: NVDA (semis), MSFT (enterprise software/cloud), AVGO (AI networking), V (consumer payments). Core principles: (1) Profit-taking at +7% remains active but relaxed to +10% in improving geopolitical environment. NVDA at +8.7% gets a pass given momentum. (2) ALL MACD signals still bearish \u2014 this is a cautious re-entry, NOT full risk-on. Keep 40%+ cash until MACD crossovers appear. (3) Cut any new position showing -3% or more within first 3 days (non-confirmation exit). (4) If Iran deal falls apart, immediately sell MSFT/AVGO/V and return to NVDA-only defensive posture. (5) Enterprise software breadth (CRM, ADBE, ACN rallying) suggests institutional rotation broadening \u2014 this is a healthier market structure than narrow AI-only leadership. (6) Watchlist for potential adds: GOOGL, META if tech broadens further; CVX if Iran deal fails. (7) Trust the system but adapt to changing conditions.",
+  "total_trades": 41,
+  "strategy_notes": "PROFIT-TAKING DISCIPLINE phase \u2014 selling NVDA (+15%) and MSFT (+7.7%) per established rules. Moving from ~59% invested to ~22% invested (~78% cash). Core principles: (1) STRICT profit-taking at +7% in universal MACD-bearish environments \u2014 no exceptions, even for NVDA. Past lessons prove unrealized gains evaporate. (2) Hold remaining AVGO and V with tight monitoring: AVGO target exit at +7%, cut if drops below +3%. V cut if breaks below entry. (3) With ~78% cash, I'm in an optimal position to deploy aggressively when MACD crossovers begin appearing. The FIRST crossover in semis or enterprise software will be my re-entry signal, but I'll start with only 15% positions and add on confirmation. (4) Watch for rotation into financials (JPM strong) \u2014 potential new sector to explore. (5) The market near ATH with universal bearish MACD is a classic distribution signal. Cash is a position.",
   "lessons_learned": [
     {
       "date": "2026-03-27T16:16:05.629423",
@@ -182,16 +182,40 @@
       "date_closed": null,
       "result": "OPEN",
       "trade_id": 39
+    },
+    {
+      "symbol": "NVDA",
+      "action": "SELL",
+      "entry_price": 175.13,
+      "exit_price": 202.05999755859375,
+      "return_pct": 15.38,
+      "reason": "NVDA at +15.34% \u2014 more than double my +7% profit-taking threshold. Universal bearish MACD across all 50 names. My own strategy notes from past lessons explicitly state to take profits in MACD-bearish environments. Locking in ~$3,125 in gains. NVDA +0.19% today while broader market was negative \u2014 still showing relative strength, but the risk/reward of holding a +15% winner in a bearish-MACD environment strongly favors taking profits. I can always re-enter on a confirmed MACD bullish crossover.",
+      "date_opened": "unknown",
+      "date_closed": "2026-04-20",
+      "result": "WIN",
+      "trade_id": 40
+    },
+    {
+      "symbol": "MSFT",
+      "action": "SELL",
+      "entry_price": 387.62,
+      "exit_price": 418.07000732421875,
+      "return_pct": 7.86,
+      "reason": "MSFT at +7.69% \u2014 right at the +7% profit-taking threshold. MSFT was -1.12% today, underperforming SPY (-0.20%), showing relative weakness. Universal bearish MACD. Locking in ~$1,244 in gains. Enterprise software showed mixed signals today (CRM/ADBE up, but ACN -1.31%, MSFT -1.12%), suggesting the sector rotation may be narrowing rather than broadening. Following the proven rule: take profits at threshold when MACD is bearish.",
+      "date_opened": "unknown",
+      "date_closed": "2026-04-20",
+      "result": "WIN",
+      "trade_id": 41
     }
   ],
   "performance_stats": {
     "total_return_pct": 0.0,
-    "win_rate": 71.4,
-    "wins": 10,
+    "win_rate": 75.0,
+    "wins": 12,
     "losses": 4,
     "best_trade": {
-      "symbol": "AMZN",
-      "return_pct": 12.08
+      "symbol": "NVDA",
+      "return_pct": 15.38
     },
     "worst_trade": {
       "symbol": "AVGO",
@@ -200,11 +224,6 @@
     "avg_return_per_trade": 0.0
   },
   "research_notes": [
-    {
-      "date": "2026-03-31T17:04:08.877165",
-      "topic": "Sector rotation timing signals \u2014 specifically how to identify when MACD bearish signals are about to turn bullish across major indices, and what leading indicators (breadth, volume, credit spreads) historically signal the transition from defensive to cyclical leadership, to prepare for eventual portfolio rotation",
-      "summary": "=== STRATEGY RESEARCH: SECTOR ROTATION TIMING SIGNALS \u2014 SPECIFICALLY HOW TO IDENTIFY WHEN MACD BEARISH SIGNALS ARE ABOUT TO TURN BULLISH ACROSS MAJOR INDICES, AND WHAT LEADING INDICATORS (BREADTH, VOLUME, CREDIT SPREADS) HISTORICALLY SIGNAL THE TRANSITION FROM DEFENSIVE TO CYCLICAL LEADERSHIP, TO PR"
-    },
     {
       "date": "2026-03-31T23:21:31.808612",
       "topic": "Bear market rally identification \u2014 specifically how to distinguish a genuine trend reversal from a bear market bounce using volume patterns, advance-decline breadth, new highs vs new lows, and whether the current rally has characteristics of sustainable recovery or a dead cat bounce given ongoing geopolitical conflict",
@@ -249,7 +268,12 @@
       "date": "2026-04-14T15:54:13.282156",
       "topic": "Geopolitical risk management in equity portfolios \u2014 specifically how oil supply disruptions (Strait of Hormuz blockades/closures) historically impact S&P 500 sectors, which sectors benefit vs. suffer, optimal hedging through energy positions, typical drawdown timelines, and whether reducing to cash or rotating into energy/defense produces better risk-adjusted returns during Middle East escalations",
       "summary": "No results found for: Geopolitical risk management in equity portfolios \u2014 specifically how oil supply disruptions (Strait of Hormuz blockades/closures) historically impact S&P 500 sectors, which sectors benefit vs. suffer, optimal hedging through energy positions, typical drawdown timelines, and whe"
+    },
+    {
+      "date": "2026-04-20T23:29:23.342581",
+      "topic": "MACD crossover reliability as re-entry signals after extended bearish periods \u2014 specifically whether the first bullish MACD crossover in leading sectors (semis, enterprise software) after a geopolitical selloff tends to be a reliable buy signal or a false start, and what confirmation filters (volume, breadth, multiple sector crossovers) improve signal quality",
+      "summary": "=== STRATEGY RESEARCH: MACD CROSSOVER RELIABILITY AS RE-ENTRY SIGNALS AFTER EXTENDED BEARISH PERIODS \u2014 SPECIFICALLY WHETHER THE FIRST BULLISH MACD CROSSOVER IN LEADING SECTORS (SEMIS, ENTERPRISE SOFTWARE) AFTER A GEOPOLITICAL SELLOFF TENDS TO BE A RELIABLE BUY SIGNAL OR A FALSE START, AND WHAT CONFI"
     }
   ],
-  "_next_research_topic": "MACD crossover reliability as re-entry signals after extended bearish periods \u2014 specifically whether the first bullish MACD crossover in leading sectors (semis, enterprise software) after a geopolitical selloff tends to be a reliable buy signal or a false start, and what confirmation filters (volume, breadth, multiple sector crossovers) improve signal quality"
+  "_next_research_topic": "Mean reversion vs. momentum in near-ATH markets \u2014 specifically whether stocks at all-time highs with bearish MACD tend to consolidate sideways before resuming uptrends (making early re-entry profitable) or tend to pull back 5-10% first, and what the optimal re-entry timing looks like after taking profits near highs"
 }
