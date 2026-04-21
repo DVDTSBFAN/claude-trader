@@ -1,7 +1,7 @@
 {
   "created_at": "2026-03-19T13:20:27.781294",
-  "total_trades": 41,
-  "strategy_notes": "PROFIT-TAKING DISCIPLINE phase \u2014 selling NVDA (+15%) and MSFT (+7.7%) per established rules. Moving from ~59% invested to ~22% invested (~78% cash). Core principles: (1) STRICT profit-taking at +7% in universal MACD-bearish environments \u2014 no exceptions, even for NVDA. Past lessons prove unrealized gains evaporate. (2) Hold remaining AVGO and V with tight monitoring: AVGO target exit at +7%, cut if drops below +3%. V cut if breaks below entry. (3) With ~78% cash, I'm in an optimal position to deploy aggressively when MACD crossovers begin appearing. The FIRST crossover in semis or enterprise software will be my re-entry signal, but I'll start with only 15% positions and add on confirmation. (4) Watch for rotation into financials (JPM strong) \u2014 potential new sector to explore. (5) The market near ATH with universal bearish MACD is a classic distribution signal. Cash is a position.",
+  "total_trades": 45,
+  "strategy_notes": "FULL CASH PRESERVATION \u2014 100% cash. Core principles proven over 44 trades: (1) Universal bearish MACD = no new positions, period. This has been validated repeatedly. (2) RE-ENTRY CRITERIA (strict): Wait for at least 3 stocks in a sector to show MACD bullish crossovers before entering. First crossover is a trap. (3) When re-entering, use concentrated entry on confirmed signals (research shows this outperforms DCA in trending markets), but start at 10% positions. (4) Profit-taking at +5-7% in MACD-bearish environments is non-negotiable \u2014 this rule generated 15 wins. (5) Cut relative weakness immediately \u2014 stocks underperforming SPY on any given day are sells. (6) WATCHLIST for first bullish crossovers: AMD, ORCL, MSFT, AVGO, AMZN \u2014 these showed recent relative strength. (7) 78.9% win rate means the system works. Don't deviate due to FOMO. Cash at ATH markets is a position.",
   "lessons_learned": [
     {
       "date": "2026-03-27T16:16:05.629423",
@@ -12,189 +12,14 @@
       "date": "2026-04-01T18:51:24.433174",
       "trades_covered": 15,
       "lesson": "Relative strength on red days proved a reliable entry signal for defensive names (ABBV, XOM, COST, PEP, KO), but exits required equal discipline: defensives must be sold promptly when they underperform on strong rally days, signaling sector rotation. The clearest pattern is that relative strength signals are time-sensitive \u2014 MA and JPM showed initial strength that reversed within days, confirming the \"cut non-confirmers by day 4\" rule as essential. Small wins were consistently preserved by exiting when relative weakness emerged rather than waiting for stops to trigger. The defensive-to-cyclical rotation playbook worked well: buy defensives during selloffs, exit when risk-on sentiment returns and rotate into momentum leaders like NVDA and META. Key forward insight: sector context matters more than individual stock quality \u2014 even strong names like KO and XOM become sells when their sector loses leadership. Never confuse a quality company with a quality trade in the current regime."
+    },
+    {
+      "date": "2026-04-21T21:51:29.579127",
+      "trades_covered": 15,
+      "lesson": "Wins consistently came from disciplined profit-taking at predefined thresholds (5-15%) and cutting defensives showing relative weakness on rally days\u2014ABBV, GOOGL, AMZN, and NVDA exits all executed cleanly against the rules. Losses (META, initial AMZN) were small and controlled, reflecting the strategy working as intended rather than failures. The clearest pattern: pyramiding into momentum works when entries are staggered and confirmation is required, but mega-cap tech leadership exhausts quickly\u2014META and AMZN both needed early trimming within days. MACD-bearish environments consistently demanded faster profit-taking and higher cash allocation; holding winners past thresholds in these conditions is the primary risk. Key insight going forward: the system is sound\u2014the discipline of \"realized gains compound, unrealized gains evaporate\" proved correct repeatedly. Re-entry after MACD bullish crossovers, rather than holding through bearish environments, should be the default posture."
     }
   ],
   "recent_trades_full": [
-    {
-      "symbol": "NVDA",
-      "action": "BUY",
-      "entry_price": 174.39999389648438,
-      "exit_price": null,
-      "return_pct": null,
-      "reason": "Adding to NVDA position using pyramiding approach. NVDA +5.59% today, leading the semiconductor rally. AI/datacenter secular tailwind is intact. If the Iran de-escalation narrative holds, growth/cyclical tech will continue leading. This is a confirmation add \u2014 the initial entry was yesterday and it's already confirming with strong momentum. Scaling up per pyramiding research: add to winners showing confirmation.",
-      "date_opened": "2026-04-01",
-      "date_closed": null,
-      "result": "OPEN",
-      "trade_id": 26
-    },
-    {
-      "symbol": "META",
-      "action": "BUY",
-      "entry_price": 572.1300048828125,
-      "exit_price": null,
-      "return_pct": null,
-      "reason": "Adding to META position. +6.67% today \u2014 strongest performer in the top 50. Mega-cap tech is leading this rotation with strong ad revenue fundamentals and AI investments. Pyramiding into a winner that's confirming. If this rally has legs, META will be among the biggest beneficiaries of a sentiment shift.",
-      "date_opened": "2026-04-01",
-      "date_closed": null,
-      "result": "OPEN",
-      "trade_id": 27
-    },
-    {
-      "symbol": "GOOGL",
-      "action": "BUY",
-      "entry_price": 287.55999755859375,
-      "exit_price": null,
-      "return_pct": null,
-      "reason": "GOOGL +5.14% today \u2014 strong participation in the tech rally. Diversifying cyclical exposure across mega-cap tech rather than concentrating in just two names. GOOGL benefits from same AI/advertising tailwinds as META but adds search/cloud diversification. Initial position size per pyramiding strategy \u2014 start moderate, add on confirmation next cycle.",
-      "date_opened": "2026-04-01",
-      "date_closed": null,
-      "result": "OPEN",
-      "trade_id": 28
-    },
-    {
-      "symbol": "ABBV",
-      "action": "SELL",
-      "entry_price": 210.33,
-      "exit_price": 215.28500366210938,
-      "return_pct": 2.36,
-      "reason": "ABBV -0.94% today on a +1.06% SPY day \u2014 significant relative weakness. Defensive healthcare is clearly rotating out as the market shifts to cyclical/growth leadership. Still +2.41% from entry, so locking in a small win. This frees ~$12.5K for better-positioned names. Following the proven pattern: sell defensives showing negative relative strength on rally days (same signal that correctly flagged COST and XOM exits).",
-      "date_opened": "unknown",
-      "date_closed": "2026-04-01",
-      "result": "WIN",
-      "trade_id": 29
-    },
-    {
-      "symbol": "AMZN",
-      "action": "BUY",
-      "entry_price": 212.6739044189453,
-      "exit_price": null,
-      "return_pct": null,
-      "reason": "AMZN +2.11% today \u2014 participating strongly in the cyclical rally. Diversifies tech exposure beyond pure advertising (META/GOOGL) into e-commerce/cloud (AWS). AMZN benefits from consumer spending recovery if geopolitical resolution boosts confidence. Starting at 18% per pyramiding approach \u2014 moderate initial size, will add on confirmation next cycle. This fills the 5th position slot freed by ABBV sale.",
-      "date_opened": "2026-04-01",
-      "date_closed": null,
-      "result": "OPEN",
-      "trade_id": 30
-    },
-    {
-      "symbol": "AMZN",
-      "action": "SELL",
-      "entry_price": 212.695371,
-      "exit_price": 209.77000427246094,
-      "return_pct": -1.38,
-      "reason": "AMZN is the weakest position at -1.38% P&L, down -0.38% today on a flat market day. Strategy notes explicitly flagged AMZN as 'first trim candidate if portfolio needs derisking.' Day 3 of the rally is showing no follow-through, and AMZN is underperforming all other holdings. Cutting the weakest name frees ~$18K to cash, reducing portfolio exposure from ~77% to ~59%. In MACD-unconfirmed environments, protecting capital is priority #1. Taking a small loss (-1.38%) is better than waiting for the -6% stop.",
-      "date_opened": "unknown",
-      "date_closed": "2026-04-03",
-      "result": "LOSS",
-      "trade_id": 31
-    },
-    {
-      "symbol": "META",
-      "action": "SELL",
-      "entry_price": 578.229744,
-      "exit_price": 574.4600219726562,
-      "return_pct": -0.65,
-      "reason": "META is -0.82% today, the worst performer among my holdings. Down -0.65% from entry with MACD bearish. Research on sector rotation timing warns that mega-cap tech leadership is exhausting. META was flagged as 'next trim candidate if weakness continues' in my strategy notes. Taking a small loss (-0.65%) to raise cash to ~43%. Following the proven pattern: cut underperformers in MACD-bearish environments.",
-      "date_opened": "unknown",
-      "date_closed": "2026-04-04",
-      "result": "LOSS",
-      "trade_id": 32
-    },
-    {
-      "symbol": "AMZN",
-      "action": "SELL",
-      "entry_price": 212.695371,
-      "exit_price": 238.3800048828125,
-      "return_pct": 12.08,
-      "reason": "AMZN is +12.08% from entry \u2014 well past the +5% and even +7% profit-taking thresholds in my strategy. MACD still bearish across all 50 names. Strategy notes explicitly flagged AMZN as a trim candidate. Taking full profit here locks in ~$2,490 gain. In universal MACD-bearish environments, realized gains > unrealized gains. This raises cash to ~60% which is appropriate for current conditions.",
-      "date_opened": "unknown",
-      "date_closed": "2026-04-11",
-      "result": "WIN",
-      "trade_id": 33
-    },
-    {
-      "symbol": "GOOGL",
-      "action": "SELL",
-      "entry_price": 292.001417,
-      "exit_price": 317.239990234375,
-      "return_pct": 8.64,
-      "reason": "GOOGL is +8.64% from entry, well past the +5% profit-taking threshold. GOOGL was -0.39% today while semis rallied hard \u2014 showing relative weakness within tech. MACD bearish. Strategy notes flagged GOOGL as next trim candidate after AMZN. Locking in ~$1,738 gain. With universal bearish MACD and narrow AI-only leadership, reducing to single strongest position is the disciplined move.",
-      "date_opened": "unknown",
-      "date_closed": "2026-04-11",
-      "result": "WIN",
-      "trade_id": 34
-    },
-    {
-      "symbol": "AMZN",
-      "action": "SELL",
-      "entry_price": 212.695371,
-      "exit_price": 238.3800048828125,
-      "return_pct": 12.08,
-      "reason": "AMZN at +11.35% \u2014 well past my +5-7% profit-taking threshold in a universal MACD-bearish environment. Geopolitical escalation (Hormuz blockade) adds significant downside risk. Locking in ~$2,320 in gains. My strategy notes say 'realized gains compound; unrealized gains evaporate.' Following my own rules strictly this time.",
-      "date_opened": "unknown",
-      "date_closed": "2026-04-13",
-      "result": "WIN",
-      "trade_id": 35
-    },
-    {
-      "symbol": "GOOGL",
-      "action": "SELL",
-      "entry_price": 292.001417,
-      "exit_price": 317.239990234375,
-      "return_pct": 8.64,
-      "reason": "GOOGL at +7.44% \u2014 at the upper end of my profit-taking threshold. GOOGL was -0.39% today while semis rallied, showing relative weakness within tech. With Hormuz blockade escalation, broad market risk is elevated. Taking ~$1,376 in gains. Strategy notes flagged GOOGL as trim candidate. Reducing to single strongest position (NVDA) as planned.",
-      "date_opened": "unknown",
-      "date_closed": "2026-04-13",
-      "result": "WIN",
-      "trade_id": 36
-    },
-    {
-      "symbol": "MSFT",
-      "action": "BUY",
-      "entry_price": 384.3699951171875,
-      "exit_price": null,
-      "return_pct": null,
-      "reason": "MSFT +3.64% today \u2014 strong relative strength in a broad rally. Enterprise software/cloud is leading (CRM +4.76%, ADBE +6.55%, ACN +6.92%) suggesting institutional rotation into quality software. MSFT is the highest-quality name in this group with Azure AI tailwinds. Starting moderate 15% position. If geopolitical de-escalation continues and MACD turns bullish, I'll add. MSFT diversifies beyond pure semiconductor exposure (NVDA).",
-      "date_opened": "2026-04-14",
-      "date_closed": null,
-      "result": "OPEN",
-      "trade_id": 37
-    },
-    {
-      "symbol": "AVGO",
-      "action": "BUY",
-      "entry_price": 379.75,
-      "exit_price": null,
-      "return_pct": null,
-      "reason": "AVGO +2.21% today, participating in the semiconductor rally alongside NVDA. Broadcom's AI networking/custom chip business provides second best AI exposure after NVDA. Analyst sentiment strong. Starting at 12% \u2014 smaller than MSFT because I already have semiconductor exposure via NVDA. This is a 'broadening the AI bet' position. If the market is genuinely recovering from the Iran scare, semis will lead.",
-      "date_opened": "2026-04-14",
-      "date_closed": null,
-      "result": "OPEN",
-      "trade_id": 38
-    },
-    {
-      "symbol": "V",
-      "action": "BUY",
-      "entry_price": 309.3900146484375,
-      "exit_price": null,
-      "return_pct": null,
-      "reason": "V +1.65% today \u2014 Visa provides exposure to consumer spending recovery and financial services without pure bank risk. If Iran deal optimism is real, consumer confidence should improve which directly benefits payment networks. V is a quality defensive-growth hybrid \u2014 performs in both risk-on and risk-off. This gives my portfolio sector diversification beyond pure tech/semis. Small 10% starter position.",
-      "date_opened": "2026-04-14",
-      "date_closed": null,
-      "result": "OPEN",
-      "trade_id": 39
-    },
-    {
-      "symbol": "NVDA",
-      "action": "SELL",
-      "entry_price": 175.13,
-      "exit_price": 202.05999755859375,
-      "return_pct": 15.38,
-      "reason": "NVDA at +15.34% \u2014 more than double my +7% profit-taking threshold. Universal bearish MACD across all 50 names. My own strategy notes from past lessons explicitly state to take profits in MACD-bearish environments. Locking in ~$3,125 in gains. NVDA +0.19% today while broader market was negative \u2014 still showing relative strength, but the risk/reward of holding a +15% winner in a bearish-MACD environment strongly favors taking profits. I can always re-enter on a confirmed MACD bullish crossover.",
-      "date_opened": "unknown",
-      "date_closed": "2026-04-20",
-      "result": "WIN",
-      "trade_id": 40
-    },
     {
       "symbol": "MSFT",
       "action": "SELL",
@@ -206,12 +31,60 @@
       "date_closed": "2026-04-20",
       "result": "WIN",
       "trade_id": 41
+    },
+    {
+      "symbol": "NVDA",
+      "action": "SELL",
+      "entry_price": 175.13,
+      "exit_price": 202.05999755859375,
+      "return_pct": 15.38,
+      "reason": "NVDA at +15.35% \u2014 far past my +7% profit-taking threshold in a universal bearish MACD environment. My strategy notes explicitly state to sell at these levels. NVDA was only +0.19% today while showing signs of momentum exhaustion. Locking in ~$3,400 in gains. Can re-enter on confirmed MACD bullish crossover.",
+      "date_opened": "unknown",
+      "date_closed": "2026-04-20",
+      "result": "WIN",
+      "trade_id": 42
+    },
+    {
+      "symbol": "MSFT",
+      "action": "SELL",
+      "entry_price": 387.62,
+      "exit_price": 418.07000732421875,
+      "return_pct": 7.86,
+      "reason": "MSFT at +7.69% \u2014 exactly at the +7% profit-taking threshold. MSFT was -1.12% today, significantly underperforming SPY (-0.20%), showing clear relative weakness. Universal bearish MACD. Locking in ~$1,240 in gains. Enterprise software showing mixed signals \u2014 CRM/ADBE up but MSFT/ACN down.",
+      "date_opened": "unknown",
+      "date_closed": "2026-04-20",
+      "result": "WIN",
+      "trade_id": 43
+    },
+    {
+      "symbol": "AVGO",
+      "action": "SELL",
+      "entry_price": 378.304107,
+      "exit_price": 399.6300048828125,
+      "return_pct": 5.64,
+      "reason": "AVGO at +5.75% and was -1.70% today \u2014 showing relative weakness on a mild down day. Strategy notes say to exit AVGO at +7% target or cut if it drops below +3%. With universal bearish MACD and today's -1.70% decline, the trend is deteriorating. Taking +5.75% profit (~$776) rather than risking a reversal back to entry. Semiconductors broadly weak today except TXN.",
+      "date_opened": "unknown",
+      "date_closed": "2026-04-20",
+      "result": "WIN",
+      "trade_id": 44
+    },
+    {
+      "symbol": "V",
+      "action": "SELL",
+      "entry_price": 309.01301,
+      "exit_price": 309.2799987792969,
+      "return_pct": 0.09,
+      "reason": "V is -1.46% today, underperforming SPY (-0.51%) \u2014 clear relative weakness. MACD bearish. The stock has been flat since entry at $309.01, currently at $309.37 (+0.12%). My strategy notes said to cut V immediately if it breaks below $309 entry. At $309.36, it's barely above that threshold and deteriorating. In a universal bearish MACD environment with 90%+ cash already, there's no reason to hold a position showing relative weakness and zero momentum. Taking the tiny gain and moving to 100% cash.",
+      "date_opened": "unknown",
+      "date_closed": "2026-04-21",
+      "result": "WIN",
+      "trade_id": 45
     }
   ],
   "performance_stats": {
     "total_return_pct": 0.0,
-    "win_rate": 75.0,
-    "wins": 12,
+    "win_rate": 80.0,
+    "wins": 16,
     "losses": 4,
     "best_trade": {
       "symbol": "NVDA",
@@ -224,16 +97,6 @@
     "avg_return_per_trade": 0.0
   },
   "research_notes": [
-    {
-      "date": "2026-03-31T23:21:31.808612",
-      "topic": "Bear market rally identification \u2014 specifically how to distinguish a genuine trend reversal from a bear market bounce using volume patterns, advance-decline breadth, new highs vs new lows, and whether the current rally has characteristics of sustainable recovery or a dead cat bounce given ongoing geopolitical conflict",
-      "summary": "=== STRATEGY RESEARCH: BEAR MARKET RALLY IDENTIFICATION \u2014 SPECIFICALLY HOW TO DISTINGUISH A GENUINE TREND REVERSAL FROM A BEAR MARKET BOUNCE USING VOLUME PATTERNS, ADVANCE-DECLINE BREADTH, NEW HIGHS VS NEW LOWS, AND WHETHER THE CURRENT RALLY HAS CHARACTERISTICS OF SUSTAINABLE RECOVERY OR A DEAD CAT "
-    },
-    {
-      "date": "2026-04-01T16:06:31.439252",
-      "topic": "Position sizing optimization during regime transitions \u2014 specifically how to scale into cyclical positions during uncertain trend changes, whether pyramiding (adding on confirmation) outperforms full-size initial entries, and what the optimal initial position size should be when MACD is still bearish but price action is turning bullish",
-      "summary": "=== STRATEGY RESEARCH: POSITION SIZING OPTIMIZATION DURING REGIME TRANSITIONS \u2014 SPECIFICALLY HOW TO SCALE INTO CYCLICAL POSITIONS DURING UNCERTAIN TREND CHANGES, WHETHER PYRAMIDING (ADDING ON CONFIRMATION) OUTPERFORMS FULL-SIZE INITIAL ENTRIES, AND WHAT THE OPTIMAL INITIAL POSITION SIZE SHOULD BE WH"
-    },
     {
       "date": "2026-04-01T18:51:12.369586",
       "topic": "Mean reversion vs momentum continuation in post-correction rallies \u2014 specifically after 7%+ quarterly drawdowns in the S&P 500, how often do the first-week leaders (mega-cap tech) continue leading in weeks 2-4 versus reverting, and whether profit-taking timing matters more than position selection",
@@ -273,7 +136,17 @@
       "date": "2026-04-20T23:29:23.342581",
       "topic": "MACD crossover reliability as re-entry signals after extended bearish periods \u2014 specifically whether the first bullish MACD crossover in leading sectors (semis, enterprise software) after a geopolitical selloff tends to be a reliable buy signal or a false start, and what confirmation filters (volume, breadth, multiple sector crossovers) improve signal quality",
       "summary": "=== STRATEGY RESEARCH: MACD CROSSOVER RELIABILITY AS RE-ENTRY SIGNALS AFTER EXTENDED BEARISH PERIODS \u2014 SPECIFICALLY WHETHER THE FIRST BULLISH MACD CROSSOVER IN LEADING SECTORS (SEMIS, ENTERPRISE SOFTWARE) AFTER A GEOPOLITICAL SELLOFF TENDS TO BE A RELIABLE BUY SIGNAL OR A FALSE START, AND WHAT CONFI"
+    },
+    {
+      "date": "2026-04-20T23:35:19.943054",
+      "topic": "Mean reversion vs. momentum in near-ATH markets \u2014 specifically whether stocks at all-time highs with bearish MACD tend to consolidate sideways before resuming uptrends (making early re-entry profitable) or tend to pull back 5-10% first, and what the optimal re-entry timing looks like after taking profits near highs",
+      "summary": "=== STRATEGY RESEARCH: MEAN REVERSION VS. MOMENTUM IN NEAR-ATH MARKETS \u2014 SPECIFICALLY WHETHER STOCKS AT ALL-TIME HIGHS WITH BEARISH MACD TEND TO CONSOLIDATE SIDEWAYS BEFORE RESUMING UPTRENDS (MAKING EARLY RE-ENTRY PROFITABLE) OR TEND TO PULL BACK 5-10% FIRST, AND WHAT THE OPTIMAL RE-ENTRY TIMING LOO"
+    },
+    {
+      "date": "2026-04-21T21:51:16.967123",
+      "topic": "Optimal cash deployment strategies after extended cash periods \u2014 specifically whether dollar-cost averaging back in over 3-5 cycles vs. concentrated re-entry on first confirmed bullish signals produces better returns, and how to size positions when transitioning from 90%+ cash to fully invested",
+      "summary": "=== STRATEGY RESEARCH: OPTIMAL CASH DEPLOYMENT STRATEGIES AFTER EXTENDED CASH PERIODS \u2014 SPECIFICALLY WHETHER DOLLAR-COST AVERAGING BACK IN OVER 3-5 CYCLES VS. CONCENTRATED RE-ENTRY ON FIRST CONFIRMED BULLISH SIGNALS PRODUCES BETTER RETURNS, AND HOW TO SIZE POSITIONS WHEN TRANSITIONING FROM 90%+ CASH"
     }
   ],
-  "_next_research_topic": "Mean reversion vs. momentum in near-ATH markets \u2014 specifically whether stocks at all-time highs with bearish MACD tend to consolidate sideways before resuming uptrends (making early re-entry profitable) or tend to pull back 5-10% first, and what the optimal re-entry timing looks like after taking profits near highs"
+  "_next_research_topic": "Volume profile analysis at all-time highs \u2014 specifically whether declining volume during consolidation near ATH predicts breakout direction, and how to use volume confirmation alongside MACD crossovers to filter false bullish signals from genuine trend resumptions"
 }
