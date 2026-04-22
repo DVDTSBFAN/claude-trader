@@ -1,7 +1,7 @@
 {
   "created_at": "2026-03-19T13:20:27.781294",
-  "total_trades": 45,
-  "strategy_notes": "FULL CASH PRESERVATION \u2014 100% cash. Core principles proven over 44 trades: (1) Universal bearish MACD = no new positions, period. This has been validated repeatedly. (2) RE-ENTRY CRITERIA (strict): Wait for at least 3 stocks in a sector to show MACD bullish crossovers before entering. First crossover is a trap. (3) When re-entering, use concentrated entry on confirmed signals (research shows this outperforms DCA in trending markets), but start at 10% positions. (4) Profit-taking at +5-7% in MACD-bearish environments is non-negotiable \u2014 this rule generated 15 wins. (5) Cut relative weakness immediately \u2014 stocks underperforming SPY on any given day are sells. (6) WATCHLIST for first bullish crossovers: AMD, ORCL, MSFT, AVGO, AMZN \u2014 these showed recent relative strength. (7) 78.9% win rate means the system works. Don't deviate due to FOMO. Cash at ATH markets is a position.",
+  "total_trades": 48,
+  "strategy_notes": "CAUTIOUS RE-ENTRY PHASE \u2014 70% cash, 30% deployed in 3 pilot positions. Core principles remain but with critical evolution: (1) Universal bearish MACD at ATH markets may be lagging indicators \u2014 when prices keep making highs despite bearish MACD, the MACD is wrong, not the market. (2) NEW RULE: When 3+ stocks in a sector rally >1.5% on same day with broad market strength, treat as sector momentum signal even without MACD crossover. (3) Pilot positions at 10% each \u2014 if they confirm with continued relative strength over 3 days, add to winners up to 20%. (4) Maintain 4% stop losses on pilot positions \u2014 tighter than normal because these are counter-signal entries. (5) Profit-taking at +5-7% still applies. (6) If 2 of 3 pilots hit stops, go back to 100% cash immediately. (7) 80% win rate and disciplined exits remain the foundation. Opportunity cost of cash in a trending market is real.",
   "lessons_learned": [
     {
       "date": "2026-03-27T16:16:05.629423",
@@ -79,6 +79,42 @@
       "date_closed": "2026-04-21",
       "result": "WIN",
       "trade_id": 45
+    },
+    {
+      "symbol": "AMD",
+      "action": "BUY",
+      "entry_price": 295.1499938964844,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "AMD +3.72% today, strongest in semis, on my watchlist for relative strength. Previously delivered +7.13% win. Semiconductors showing leadership with AVGO +2.23% and TXN +1.35%. Starting with a small 10% position as a pilot to test re-entry in this environment. Market at ATH with strong breadth today suggests the uptrend is intact despite bearish MACD. AMD has been a consistent performer for this strategy.",
+      "date_opened": "2026-04-22",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 46
+    },
+    {
+      "symbol": "ORCL",
+      "action": "BUY",
+      "entry_price": 187.17999267578125,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "ORCL +3.67% today, on my watchlist, enterprise software showing strength (CRM +1.66%, ADBE +4.32%). Cloud/enterprise software is a sector with multiple names rallying, meeting my sector breadth requirement even if MACD hasn't crossed. Starting small as a test position. Strong fundamental tailwinds from AI infrastructure spending.",
+      "date_opened": "2026-04-22",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 47
+    },
+    {
+      "symbol": "ADBE",
+      "action": "BUY",
+      "entry_price": 257.42999267578125,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "ADBE +4.32% today \u2014 strongest performer in enterprise software. When 3+ names in a sector show strong relative strength on a rally day (ADBE, ORCL, CRM, MSFT all green), this signals genuine sector momentum even before MACD crossovers. ADBE has been building a base and today's move on strong breadth suggests potential breakout. Small position to capture early momentum.",
+      "date_opened": "2026-04-22",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 48
     }
   ],
   "performance_stats": {
@@ -97,11 +133,6 @@
     "avg_return_per_trade": 0.0
   },
   "research_notes": [
-    {
-      "date": "2026-04-01T18:51:12.369586",
-      "topic": "Mean reversion vs momentum continuation in post-correction rallies \u2014 specifically after 7%+ quarterly drawdowns in the S&P 500, how often do the first-week leaders (mega-cap tech) continue leading in weeks 2-4 versus reverting, and whether profit-taking timing matters more than position selection",
-      "summary": "=== STRATEGY RESEARCH: MEAN REVERSION VS MOMENTUM CONTINUATION IN POST-CORRECTION RALLIES \u2014 SPECIFICALLY AFTER 7%+ QUARTERLY DRAWDOWNS IN THE S&P 500, HOW OFTEN DO THE FIRST-WEEK LEADERS (MEGA-CAP TECH) CONTINUE LEADING IN WEEKS 2-4 VERSUS REVERTING, AND WHETHER PROFIT-TAKING TIMING MATTERS MORE THA"
-    },
     {
       "date": "2026-04-02T17:47:48.531772",
       "topic": "Optimal profit-taking strategies during MACD-unconfirmed rallies \u2014 specifically when price is rising but MACD remains bearish, what are the historical outcomes for holding through the MACD crossover versus taking profits at fixed percentage thresholds (5%, 7%, 10%), and how trailing stops compare to fixed targets in this specific technical setup",
@@ -146,7 +177,12 @@
       "date": "2026-04-21T21:51:16.967123",
       "topic": "Optimal cash deployment strategies after extended cash periods \u2014 specifically whether dollar-cost averaging back in over 3-5 cycles vs. concentrated re-entry on first confirmed bullish signals produces better returns, and how to size positions when transitioning from 90%+ cash to fully invested",
       "summary": "=== STRATEGY RESEARCH: OPTIMAL CASH DEPLOYMENT STRATEGIES AFTER EXTENDED CASH PERIODS \u2014 SPECIFICALLY WHETHER DOLLAR-COST AVERAGING BACK IN OVER 3-5 CYCLES VS. CONCENTRATED RE-ENTRY ON FIRST CONFIRMED BULLISH SIGNALS PRODUCES BETTER RETURNS, AND HOW TO SIZE POSITIONS WHEN TRANSITIONING FROM 90%+ CASH"
+    },
+    {
+      "date": "2026-04-22T17:30:43.396179",
+      "topic": "Volume profile analysis at all-time highs \u2014 specifically whether declining volume during consolidation near ATH predicts breakout direction, and how to use volume confirmation alongside MACD crossovers to filter false bullish signals from genuine trend resumptions",
+      "summary": "=== STRATEGY RESEARCH: VOLUME PROFILE ANALYSIS AT ALL-TIME HIGHS \u2014 SPECIFICALLY WHETHER DECLINING VOLUME DURING CONSOLIDATION NEAR ATH PREDICTS BREAKOUT DIRECTION, AND HOW TO USE VOLUME CONFIRMATION ALONGSIDE MACD CROSSOVERS TO FILTER FALSE BULLISH SIGNALS FROM GENUINE TREND RESUMPTIONS ===\n\u2022 Stock "
     }
   ],
-  "_next_research_topic": "Volume profile analysis at all-time highs \u2014 specifically whether declining volume during consolidation near ATH predicts breakout direction, and how to use volume confirmation alongside MACD crossovers to filter false bullish signals from genuine trend resumptions"
+  "_next_research_topic": "MACD lag in strong trending markets \u2014 specifically how to identify when MACD bearish signals are false negatives during strong uptrends near ATH, and whether price action (higher lows, breakout volume) should override MACD for re-entry timing in momentum regimes"
 }
