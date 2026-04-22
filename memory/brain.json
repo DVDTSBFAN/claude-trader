@@ -1,7 +1,7 @@
 {
   "created_at": "2026-03-19T13:20:27.781294",
-  "total_trades": 48,
-  "strategy_notes": "CAUTIOUS RE-ENTRY PHASE \u2014 70% cash, 30% deployed in 3 pilot positions. Core principles remain but with critical evolution: (1) Universal bearish MACD at ATH markets may be lagging indicators \u2014 when prices keep making highs despite bearish MACD, the MACD is wrong, not the market. (2) NEW RULE: When 3+ stocks in a sector rally >1.5% on same day with broad market strength, treat as sector momentum signal even without MACD crossover. (3) Pilot positions at 10% each \u2014 if they confirm with continued relative strength over 3 days, add to winners up to 20%. (4) Maintain 4% stop losses on pilot positions \u2014 tighter than normal because these are counter-signal entries. (5) Profit-taking at +5-7% still applies. (6) If 2 of 3 pilots hit stops, go back to 100% cash immediately. (7) 80% win rate and disciplined exits remain the foundation. Opportunity cost of cash in a trending market is real.",
+  "total_trades": 50,
+  "strategy_notes": "ACCELERATED DEPLOYMENT PHASE \u2014 Moving from 30% to ~50% deployed across 5 positions. Key evolution: (1) MACD bearish signals are confirmed as lagging/false negatives in strong uptrends near ATH \u2014 price action (higher lows, sector breadth, breakout volume) now overrides MACD for entry timing. (2) When SPY makes new highs with >60% of top-50 green, treat as confirmed momentum regime. (3) Pilot positions at 10% each \u2014 add to winners showing 3-day confirmation up to 20%. (4) Maintain 4% stop losses on pilots. (5) Profit-taking at +5-7% in MACD-bearish environments, but extend to +8-10% when price action shows sustained momentum. (6) If 3 of 5 pilots hit stops, cut all and go 100% cash. (7) 80% win rate preserved by sector diversification (semis + enterprise software + mega-cap tech). Opportunity cost lesson: sitting 90%+ cash in a 37% YoY rally market is a strategy failure.",
   "lessons_learned": [
     {
       "date": "2026-03-27T16:16:05.629423",
@@ -115,6 +115,30 @@
       "date_closed": null,
       "result": "OPEN",
       "trade_id": 48
+    },
+    {
+      "symbol": "AVGO",
+      "action": "BUY",
+      "entry_price": 413.26708984375,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "AVGO +2.69% today, showing strong relative strength in semiconductors alongside AMD. Previously traded AVGO for a +5.64% win so I know this name well. Broadening semiconductor exposure across two names (AMD + AVGO) captures the sector momentum thesis. AI infrastructure spending is a genuine secular tailwind. Entering as a 10% pilot position consistent with my staged deployment strategy.",
+      "date_opened": "2026-04-22",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 49
+    },
+    {
+      "symbol": "AAPL",
+      "action": "BUY",
+      "entry_price": 271.78509521484375,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "AAPL +2.13% today, mega-cap tech leader showing strength. Adding a fifth position to diversify beyond enterprise software and semis. AAPL provides portfolio balance as the largest market cap name with strong consumer tech exposure. Deploying to 50% invested / 50% cash \u2014 still maintaining a cash buffer but reducing the opportunity cost that's been dragging on returns. 10% pilot position.",
+      "date_opened": "2026-04-22",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 50
     }
   ],
   "performance_stats": {
@@ -133,11 +157,6 @@
     "avg_return_per_trade": 0.0
   },
   "research_notes": [
-    {
-      "date": "2026-04-02T17:47:48.531772",
-      "topic": "Optimal profit-taking strategies during MACD-unconfirmed rallies \u2014 specifically when price is rising but MACD remains bearish, what are the historical outcomes for holding through the MACD crossover versus taking profits at fixed percentage thresholds (5%, 7%, 10%), and how trailing stops compare to fixed targets in this specific technical setup",
-      "summary": "=== STRATEGY RESEARCH: OPTIMAL PROFIT-TAKING STRATEGIES DURING MACD-UNCONFIRMED RALLIES \u2014 SPECIFICALLY WHEN PRICE IS RISING BUT MACD REMAINS BEARISH, WHAT ARE THE HISTORICAL OUTCOMES FOR HOLDING THROUGH THE MACD CROSSOVER VERSUS TAKING PROFITS AT FIXED PERCENTAGE THRESHOLDS (5%, 7%, 10%), AND HOW TR"
-    },
     {
       "date": "2026-04-03T20:31:28.286930",
       "topic": "Event-driven trading around presidential addresses and major policy announcements \u2014 specifically how markets react in the 24-48 hours after presidential primetime addresses, whether pre-event positioning or post-event reaction trading is more profitable, and how to manage overnight gap risk in concentrated tech portfolios",
@@ -182,7 +201,12 @@
       "date": "2026-04-22T17:30:43.396179",
       "topic": "Volume profile analysis at all-time highs \u2014 specifically whether declining volume during consolidation near ATH predicts breakout direction, and how to use volume confirmation alongside MACD crossovers to filter false bullish signals from genuine trend resumptions",
       "summary": "=== STRATEGY RESEARCH: VOLUME PROFILE ANALYSIS AT ALL-TIME HIGHS \u2014 SPECIFICALLY WHETHER DECLINING VOLUME DURING CONSOLIDATION NEAR ATH PREDICTS BREAKOUT DIRECTION, AND HOW TO USE VOLUME CONFIRMATION ALONGSIDE MACD CROSSOVERS TO FILTER FALSE BULLISH SIGNALS FROM GENUINE TREND RESUMPTIONS ===\n\u2022 Stock "
+    },
+    {
+      "date": "2026-04-22T18:08:49.587940",
+      "topic": "MACD lag in strong trending markets \u2014 specifically how to identify when MACD bearish signals are false negatives during strong uptrends near ATH, and whether price action (higher lows, breakout volume) should override MACD for re-entry timing in momentum regimes",
+      "summary": "=== STRATEGY RESEARCH: MACD LAG IN STRONG TRENDING MARKETS \u2014 SPECIFICALLY HOW TO IDENTIFY WHEN MACD BEARISH SIGNALS ARE FALSE NEGATIVES DURING STRONG UPTRENDS NEAR ATH, AND WHETHER PRICE ACTION (HIGHER LOWS, BREAKOUT VOLUME) SHOULD OVERRIDE MACD FOR RE-ENTRY TIMING IN MOMENTUM REGIMES ===\n\u2022 How do I"
     }
   ],
-  "_next_research_topic": "MACD lag in strong trending markets \u2014 specifically how to identify when MACD bearish signals are false negatives during strong uptrends near ATH, and whether price action (higher lows, breakout volume) should override MACD for re-entry timing in momentum regimes"
+  "_next_research_topic": "Optimal position sizing when scaling from pilot to full positions \u2014 specifically at what confirmation threshold (% gain from entry, days held, relative strength rank) should pilot positions be doubled from 10% to 20%, and whether adding on first pullback vs. breakout continuation produces better risk-adjusted returns"
 }

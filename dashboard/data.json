@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-04-22T17:30:49.049621",
+  "last_updated": "2026-04-22T18:08:52.253364",
   "portfolio": {
-    "equity": 110182.53,
-    "cash": 110182.53,
-    "buying_power": 220365.06,
-    "total_return_pct": 10918.25
+    "equity": 110039.47,
+    "cash": 77125.95,
+    "buying_power": 187165.42,
+    "total_return_pct": 10903.95
   },
   "performance_stats": {
     "total_return_pct": 0.0,
@@ -21,8 +21,8 @@
     },
     "avg_return_per_trade": 0.0
   },
-  "strategy_notes": "CAUTIOUS RE-ENTRY PHASE \u2014 70% cash, 30% deployed in 3 pilot positions. Core principles remain but with critical evolution: (1) Universal bearish MACD at ATH markets may be lagging indicators \u2014 when prices keep making highs despite bearish MACD, the MACD is wrong, not the market. (2) NEW RULE: When 3+ stocks in a sector rally >1.5% on same day with broad market strength, treat as sector momentum signal even without MACD crossover. (3) Pilot positions at 10% each \u2014 if they confirm with continued relative strength over 3 days, add to winners up to 20%. (4) Maintain 4% stop losses on pilot positions \u2014 tighter than normal because these are counter-signal entries. (5) Profit-taking at +5-7% still applies. (6) If 2 of 3 pilots hit stops, go back to 100% cash immediately. (7) 80% win rate and disciplined exits remain the foundation. Opportunity cost of cash in a trending market is real.",
-  "total_trades": 48,
+  "strategy_notes": "ACCELERATED DEPLOYMENT PHASE \u2014 Moving from 30% to ~50% deployed across 5 positions. Key evolution: (1) MACD bearish signals are confirmed as lagging/false negatives in strong uptrends near ATH \u2014 price action (higher lows, sector breadth, breakout volume) now overrides MACD for entry timing. (2) When SPY makes new highs with >60% of top-50 green, treat as confirmed momentum regime. (3) Pilot positions at 10% each \u2014 add to winners showing 3-day confirmation up to 20%. (4) Maintain 4% stop losses on pilots. (5) Profit-taking at +5-7% in MACD-bearish environments, but extend to +8-10% when price action shows sustained momentum. (6) If 3 of 5 pilots hit stops, cut all and go 100% cash. (7) 80% win rate preserved by sector diversification (semis + enterprise software + mega-cap tech). Opportunity cost lesson: sitting 90%+ cash in a 37% YoY rally market is a strategy failure.",
+  "total_trades": 50,
   "recent_trades": [
     {
       "symbol": "MSFT",
@@ -119,37 +119,68 @@
       "date_closed": null,
       "result": "OPEN",
       "trade_id": 48
+    },
+    {
+      "symbol": "AVGO",
+      "action": "BUY",
+      "entry_price": 413.26708984375,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "AVGO +2.69% today, showing strong relative strength in semiconductors alongside AMD. Previously traded AVGO for a +5.64% win so I know this name well. Broadening semiconductor exposure across two names (AMD + AVGO) captures the sector momentum thesis. AI infrastructure spending is a genuine secular tailwind. Entering as a 10% pilot position consistent with my staged deployment strategy.",
+      "date_opened": "2026-04-22",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 49
+    },
+    {
+      "symbol": "AAPL",
+      "action": "BUY",
+      "entry_price": 271.78509521484375,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "AAPL +2.13% today, mega-cap tech leader showing strength. Adding a fifth position to diversify beyond enterprise software and semis. AAPL provides portfolio balance as the largest market cap name with strong consumer tech exposure. Deploying to 50% invested / 50% cash \u2014 still maintaining a cash buffer but reducing the opportunity cost that's been dragging on returns. 10% pilot position.",
+      "date_opened": "2026-04-22",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 50
     }
   ],
   "lessons_count": 3,
   "last_decision": {
-    "market_assessment": "S&P 500 is at all-time highs (~7,100+) with SPY +0.92% and QQQ +1.33% today, driven by geopolitical ceasefire news. The market is up 36.95% YoY \u2014 extremely strong. However, every single stock in my watchlist shows bearish MACD (universal \u2193). Today's rally is broad but notable standouts include PM +6.41%, ADBE +4.32%, AMD +3.72%, ORCL +3.67%, UNH +2.75%, AVGO +2.23%, and AAPL +2.07%. This looks like a strong risk-on day, but universal bearish MACD means the intermediate trend hasn't confirmed a reversal yet.",
-    "self_reflection": "My strategy has delivered an 80% win rate and +10,918% total return \u2014 the system works. However, I've been 100% cash while the S&P has continued making new highs. My strict rule of waiting for 3 MACD bullish crossovers before re-entry has kept me out during what appears to be continued upside. The risk now is that my conservatism becomes a liability \u2014 sitting in cash while the market rallies 8.57% in one month is a meaningful opportunity cost. My research on cash deployment strategies suggests concentrated re-entry on confirmed signals beats DCA, but the key tension is: when every MACD is bearish yet prices keep making ATHs, the MACD may be lagging rather than leading. I need to consider that in a strong trending market, MACD bearish signals during consolidation near ATH often precede continuation, not reversal. My volume profile research confirms that declining volume during ATH consolidation typically resolves with the trend (upward). I should start deploying capital cautiously.",
+    "market_assessment": "Market is in a strong uptrend with SPY at $710 (+0.85%) and QQQ at $652 (+1.26%). The S&P 500 is up 36.95% YoY with broad-based strength today across tech and semiconductors. All MACD signals are bearish (\u2193) across the board, but this is clearly a lagging indicator in a momentum regime \u2014 the market keeps making new highs. My research confirms MACD bearish signals are frequently false negatives during strong uptrends near ATH, and price action (higher lows, breakout volume) should take precedence.",
+    "self_reflection": "My three pilot positions entered same-day are essentially flat after one session \u2014 ADBE -1.05%, AMD +0.18%, ORCL -0.41%. This is expected for day-one entries. The broader strategy of re-entering with small pilots was correct given the market strength. My 80% win rate and disciplined profit-taking continue to work. The key lesson from my research is that I've been too cautious sitting in 70%+ cash during what turned out to be a 36.95% YoY rally. Opportunity cost is real. I need to be more aggressive deploying capital when price action confirms the trend, even with universal bearish MACD. My pilots are testing the waters correctly \u2014 now I need to decide whether to add or wait for confirmation.",
     "confidence": "MEDIUM",
     "decisions": [
       {
-        "action": "BUY",
+        "action": "HOLD",
         "symbol": "AMD",
-        "allocation_pct": 10,
-        "reason": "AMD +3.72% today, strongest in semis, on my watchlist for relative strength. Previously delivered +7.13% win. Semiconductors showing leadership with AVGO +2.23% and TXN +1.35%. Starting with a small 10% position as a pilot to test re-entry in this environment. Market at ATH with strong breadth today suggests the uptrend is intact despite bearish MACD. AMD has been a consistent performer for this strategy.",
-        "stop_loss_pct": 4
+        "reason": "AMD +3.92% today, strongest relative strength in semis. Position is +0.18% from entry. Semiconductors showing sector breadth (AVGO +2.69%, QCOM +1.35%, TXN +0.88%). This is exactly the sector momentum pattern I should ride. Hold and evaluate for potential add next cycle if strength continues. 4% stop loss from entry at ~$283."
       },
       {
-        "action": "BUY",
+        "action": "HOLD",
         "symbol": "ORCL",
+        "reason": "ORCL +2.99% today with enterprise software sector showing strength (CRM +1.27%, ADBE +3.13%). Position is -0.41% \u2014 minor noise on a strong day. The stock is up 46% YoY with AI infrastructure tailwinds. Hold as a pilot and evaluate confirmation over next 3 days."
+      },
+      {
+        "action": "HOLD",
+        "symbol": "ADBE",
+        "reason": "ADBE +3.13% today, strong sector momentum in enterprise software. Position is -1.05% from entry but today's price action is constructive. Analyst consensus target of $329 vs current $254 represents significant upside. Massive news catalyst mentioned in headlines. Hold and watch for confirmation."
+      },
+      {
+        "action": "BUY",
+        "symbol": "AVGO",
         "allocation_pct": 10,
-        "reason": "ORCL +3.67% today, on my watchlist, enterprise software showing strength (CRM +1.66%, ADBE +4.32%). Cloud/enterprise software is a sector with multiple names rallying, meeting my sector breadth requirement even if MACD hasn't crossed. Starting small as a test position. Strong fundamental tailwinds from AI infrastructure spending.",
+        "reason": "AVGO +2.69% today, showing strong relative strength in semiconductors alongside AMD. Previously traded AVGO for a +5.64% win so I know this name well. Broadening semiconductor exposure across two names (AMD + AVGO) captures the sector momentum thesis. AI infrastructure spending is a genuine secular tailwind. Entering as a 10% pilot position consistent with my staged deployment strategy.",
         "stop_loss_pct": 4
       },
       {
         "action": "BUY",
-        "symbol": "ADBE",
+        "symbol": "AAPL",
         "allocation_pct": 10,
-        "reason": "ADBE +4.32% today \u2014 strongest performer in enterprise software. When 3+ names in a sector show strong relative strength on a rally day (ADBE, ORCL, CRM, MSFT all green), this signals genuine sector momentum even before MACD crossovers. ADBE has been building a base and today's move on strong breadth suggests potential breakout. Small position to capture early momentum.",
-        "stop_loss_pct": 4
+        "reason": "AAPL +2.13% today, mega-cap tech leader showing strength. Adding a fifth position to diversify beyond enterprise software and semis. AAPL provides portfolio balance as the largest market cap name with strong consumer tech exposure. Deploying to 50% invested / 50% cash \u2014 still maintaining a cash buffer but reducing the opportunity cost that's been dragging on returns. 10% pilot position."
       }
     ],
-    "next_research": "MACD lag in strong trending markets \u2014 specifically how to identify when MACD bearish signals are false negatives during strong uptrends near ATH, and whether price action (higher lows, breakout volume) should override MACD for re-entry timing in momentum regimes"
+    "next_research": "Optimal position sizing when scaling from pilot to full positions \u2014 specifically at what confirmation threshold (% gain from entry, days held, relative strength rank) should pilot positions be doubled from 10% to 20%, and whether adding on first pullback vs. breakout continuation produces better risk-adjusted returns"
   },
   "equity_history": [
     {
@@ -281,6 +312,11 @@
       "date": "2026-04-22",
       "equity": 110182.53,
       "return_pct": 10918.25
+    },
+    {
+      "date": "2026-04-22",
+      "equity": 110039.47,
+      "return_pct": 10903.95
     }
   ],
   "spy_benchmark": [
@@ -378,7 +414,7 @@
     },
     {
       "date": "2026-04-22",
-      "equity": 107938.72
+      "equity": 107915.96
     }
   ]
 }
