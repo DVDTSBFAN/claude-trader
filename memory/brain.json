@@ -1,7 +1,7 @@
 {
   "created_at": "2026-03-19T13:20:27.781294",
-  "total_trades": 50,
-  "strategy_notes": "ACCELERATED DEPLOYMENT PHASE \u2014 Moving from 30% to ~50% deployed across 5 positions. Key evolution: (1) MACD bearish signals are confirmed as lagging/false negatives in strong uptrends near ATH \u2014 price action (higher lows, sector breadth, breakout volume) now overrides MACD for entry timing. (2) When SPY makes new highs with >60% of top-50 green, treat as confirmed momentum regime. (3) Pilot positions at 10% each \u2014 add to winners showing 3-day confirmation up to 20%. (4) Maintain 4% stop losses on pilots. (5) Profit-taking at +5-7% in MACD-bearish environments, but extend to +8-10% when price action shows sustained momentum. (6) If 3 of 5 pilots hit stops, cut all and go 100% cash. (7) 80% win rate preserved by sector diversification (semis + enterprise software + mega-cap tech). Opportunity cost lesson: sitting 90%+ cash in a 37% YoY rally market is a strategy failure.",
+  "total_trades": 55,
+  "strategy_notes": "CONCENTRATED MOMENTUM PHASE \u2014 Portfolio shifting to sector-concentrated approach in semiconductors + AI beneficiaries. Key rules: (1) When a sector shows 3+ names surging >5% simultaneously, it's a confirmed sector breakout \u2014 concentrate positions there rather than diversifying across weak sectors. (2) Cut non-confirmers by day 3-4 without hesitation \u2014 ORCL and ADBE losses were predictable from relative weakness signals. (3) Scale winners: AMD's +19% gain justifies holding past normal +7% threshold when sector momentum is accelerating (multiple names confirming). (4) Profit-taking levels: take 50% at +15%, hold remainder with trailing stop at +10%. (5) For new entries in hot sectors, size at 15-20% not 10% when 3+ sector names confirm. (6) Maintain max 2 sectors for concentration with at least 1 diversifier. (7) Immediate sell triggers: -4% from entry OR relative weakness (underperforming QQQ by >2%) on a strong market day.",
   "lessons_learned": [
     {
       "date": "2026-03-27T16:16:05.629423",
@@ -139,6 +139,66 @@
       "date_closed": null,
       "result": "OPEN",
       "trade_id": 50
+    },
+    {
+      "symbol": "ORCL",
+      "action": "SELL",
+      "entry_price": null,
+      "exit_price": 170.4550018310547,
+      "return_pct": null,
+      "reason": "ORCL is -8.84% from entry and -3.24% today \u2014 clear relative weakness while the broader market rallies strongly. Enterprise software is underperforming semiconductors dramatically. My strategy explicitly says to cut non-confirmers showing relative weakness on rally days. This is a textbook exit signal. Taking the loss now to redeploy into stronger names.",
+      "date_opened": "unknown",
+      "date_closed": "2026-04-24",
+      "result": "UNKNOWN",
+      "trade_id": 51
+    },
+    {
+      "symbol": "ADBE",
+      "action": "SELL",
+      "entry_price": null,
+      "exit_price": 241.69000244140625,
+      "return_pct": null,
+      "reason": "ADBE is -6.14% from entry despite +1.10% today. It has not confirmed since purchase and is significantly lagging the market. While it's bouncing today, it's still deeply underwater and enterprise software as a sector is losing to semiconductors. Following the rule: when a pilot position fails to confirm within the first few days and the sector is losing leadership, exit and rotate into the leading sector.",
+      "date_opened": "unknown",
+      "date_closed": "2026-04-24",
+      "result": "UNKNOWN",
+      "trade_id": 52
+    },
+    {
+      "symbol": "AAPL",
+      "action": "SELL",
+      "entry_price": null,
+      "exit_price": 270.1300048828125,
+      "return_pct": null,
+      "reason": "AAPL is -1.20% today while QQQ is +1.75% \u2014 significant relative weakness on a strong tech day. Failed to confirm from pilot entry. The CEO transition news creates headline risk for multiple compression. With semis surging, AAPL's consumer tech exposure is the wrong sector bet right now. Cutting to redeploy capital into momentum leaders.",
+      "date_opened": "unknown",
+      "date_closed": "2026-04-24",
+      "result": "UNKNOWN",
+      "trade_id": 53
+    },
+    {
+      "symbol": "NVDA",
+      "action": "BUY",
+      "entry_price": 210.4001007080078,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "NVDA +5.36% today, semiconductor sector is surging with massive breadth. Previously traded NVDA for +15.38% gain \u2014 my best trade ever. AI infrastructure spending is the dominant market theme. With AMD at +18.95% and sector showing explosive momentum, adding NVDA as a second high-conviction semi position. Deploying larger than pilot size (20%) because this is a confirmed momentum regime with sector breadth backing it up. NVDA has clear fundamental catalysts with Cerebras competition driving urgency in chip demand.",
+      "date_opened": "2026-04-24",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 54
+    },
+    {
+      "symbol": "META",
+      "action": "BUY",
+      "entry_price": 675.4550170898438,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "META +2.52% today, showing strong relative strength among mega-caps. Diversifies beyond pure semiconductors while staying in tech momentum. META benefits from AI monetization through advertising \u2014 a different angle on the AI theme. Previously traded META successfully. Adding as a complementary position to my semi-heavy portfolio to manage sector concentration risk.",
+      "date_opened": "2026-04-24",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 55
     }
   ],
   "performance_stats": {
@@ -157,11 +217,6 @@
     "avg_return_per_trade": 0.0
   },
   "research_notes": [
-    {
-      "date": "2026-04-03T20:31:28.286930",
-      "topic": "Event-driven trading around presidential addresses and major policy announcements \u2014 specifically how markets react in the 24-48 hours after presidential primetime addresses, whether pre-event positioning or post-event reaction trading is more profitable, and how to manage overnight gap risk in concentrated tech portfolios",
-      "summary": "=== STRATEGY RESEARCH: EVENT-DRIVEN TRADING AROUND PRESIDENTIAL ADDRESSES AND MAJOR POLICY ANNOUNCEMENTS \u2014 SPECIFICALLY HOW MARKETS REACT IN THE 24-48 HOURS AFTER PRESIDENTIAL PRIMETIME ADDRESSES, WHETHER PRE-EVENT POSITIONING OR POST-EVENT REACTION TRADING IS MORE PROFITABLE, AND HOW TO MANAGE OVER"
-    },
     {
       "date": "2026-04-04T22:12:55.536492",
       "topic": "Sector rotation timing signals \u2014 specifically how to identify when mega-cap tech leadership is exhausting and when to rotate into value/cyclical names, using breadth indicators, relative strength divergences, and volume analysis during the transition from rally to consolidation phases",
@@ -206,7 +261,12 @@
       "date": "2026-04-22T18:08:49.587940",
       "topic": "MACD lag in strong trending markets \u2014 specifically how to identify when MACD bearish signals are false negatives during strong uptrends near ATH, and whether price action (higher lows, breakout volume) should override MACD for re-entry timing in momentum regimes",
       "summary": "=== STRATEGY RESEARCH: MACD LAG IN STRONG TRENDING MARKETS \u2014 SPECIFICALLY HOW TO IDENTIFY WHEN MACD BEARISH SIGNALS ARE FALSE NEGATIVES DURING STRONG UPTRENDS NEAR ATH, AND WHETHER PRICE ACTION (HIGHER LOWS, BREAKOUT VOLUME) SHOULD OVERRIDE MACD FOR RE-ENTRY TIMING IN MOMENTUM REGIMES ===\n\u2022 How do I"
+    },
+    {
+      "date": "2026-04-24T19:48:58.165980",
+      "topic": "Optimal position sizing when scaling from pilot to full positions \u2014 specifically at what confirmation threshold (% gain from entry, days held, relative strength rank) should pilot positions be doubled from 10% to 20%, and whether adding on first pullback vs. breakout continuation produces better risk-adjusted returns",
+      "summary": "=== STRATEGY RESEARCH: OPTIMAL POSITION SIZING WHEN SCALING FROM PILOT TO FULL POSITIONS \u2014 SPECIFICALLY AT WHAT CONFIRMATION THRESHOLD (% GAIN FROM ENTRY, DAYS HELD, RELATIVE STRENGTH RANK) SHOULD PILOT POSITIONS BE DOUBLED FROM 10% TO 20%, AND WHETHER ADDING ON FIRST PULLBACK VS. BREAKOUT CONTINUAT"
     }
   ],
-  "_next_research_topic": "Optimal position sizing when scaling from pilot to full positions \u2014 specifically at what confirmation threshold (% gain from entry, days held, relative strength rank) should pilot positions be doubled from 10% to 20%, and whether adding on first pullback vs. breakout continuation produces better risk-adjusted returns"
+  "_next_research_topic": "Trailing stop strategies for momentum positions with large unrealized gains \u2014 specifically whether percentage-based trailing stops (e.g., sell if drops 5% from peak), ATR-based stops, or time-based exits (sell after X days regardless) produce better outcomes for positions already up 15%+ in trending markets"
 }
