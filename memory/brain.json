@@ -1,7 +1,7 @@
 {
   "created_at": "2026-03-19T13:20:27.781294",
-  "total_trades": 55,
-  "strategy_notes": "CONCENTRATED MOMENTUM PHASE \u2014 Portfolio shifting to sector-concentrated approach in semiconductors + AI beneficiaries. Key rules: (1) When a sector shows 3+ names surging >5% simultaneously, it's a confirmed sector breakout \u2014 concentrate positions there rather than diversifying across weak sectors. (2) Cut non-confirmers by day 3-4 without hesitation \u2014 ORCL and ADBE losses were predictable from relative weakness signals. (3) Scale winners: AMD's +19% gain justifies holding past normal +7% threshold when sector momentum is accelerating (multiple names confirming). (4) Profit-taking levels: take 50% at +15%, hold remainder with trailing stop at +10%. (5) For new entries in hot sectors, size at 15-20% not 10% when 3+ sector names confirm. (6) Maintain max 2 sectors for concentration with at least 1 diversifier. (7) Immediate sell triggers: -4% from entry OR relative weakness (underperforming QQQ by >2%) on a strong market day.",
+  "total_trades": 58,
+  "strategy_notes": "DEFENSIVE MOMENTUM PHASE \u2014 Portfolio shifting from concentrated semis to selective positions with confirmed relative strength. Key rules: (1) Universal bearish MACD = maximum discipline. Take profits at +13-15% without hesitation. (2) Non-confirmers get 3-4 days max \u2014 if a position isn't up 3%+ from entry within that window during a momentum regime, it's a cut. (3) Relative strength on flat/down days remains the strongest entry signal \u2014 GOOGL today fits this perfectly. (4) Earnings season creates binary risk \u2014 reduce position sizes to 15% max and avoid adding to names reporting within 5 days unless you're willing to hold through. (5) Trailing stop implementation: for positions up 10%+, set mental stop at half the gain (e.g., +13% gain \u2192 stop at +6.5%). (6) Cash is a position \u2014 maintain 40%+ cash when all MACD signals are bearish. (7) Sector concentration max 2 names in same sector.",
   "lessons_learned": [
     {
       "date": "2026-03-27T16:16:05.629423",
@@ -199,6 +199,42 @@
       "date_closed": null,
       "result": "OPEN",
       "trade_id": 55
+    },
+    {
+      "symbol": "AMD",
+      "action": "SELL",
+      "entry_price": null,
+      "exit_price": 334.9700012207031,
+      "return_pct": null,
+      "reason": "AMD at +13.71% approaching my +15% profit-taking threshold. Today's -3.42% decline is the largest single-day drop since entry, suggesting momentum exhaustion. My strategy says take 50% at +15% \u2014 with universal bearish MACD and the stock already pulling back hard, I'm taking full profit now rather than risking a reversal. Locking in ~$1,715 in gains. Can re-enter on confirmed bounce with bullish MACD crossover.",
+      "date_opened": "unknown",
+      "date_closed": "2026-04-27",
+      "result": "UNKNOWN",
+      "trade_id": 56
+    },
+    {
+      "symbol": "AVGO",
+      "action": "SELL",
+      "entry_price": null,
+      "exit_price": 415.9849853515625,
+      "return_pct": null,
+      "reason": "AVGO at only +0.67% and was -1.49% today \u2014 clear relative weakness on a flat market day. This is a non-confirming pilot position. My strategy explicitly says cut non-confirmers showing relative weakness. AVGO has failed to gain traction since the 4/22 entry and is deteriorating. No reason to hold a position with near-zero gain that's underperforming the market.",
+      "date_opened": "unknown",
+      "date_closed": "2026-04-27",
+      "result": "UNKNOWN",
+      "trade_id": 57
+    },
+    {
+      "symbol": "GOOGL",
+      "action": "BUY",
+      "entry_price": 350.9700012207031,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "GOOGL +2.01% today \u2014 strongest mega-cap performer, showing clear relative strength on a flat/down market day. This is exactly the relative-strength-on-red-day signal that has been my most reliable entry indicator. Cloud/AI search monetization provides fundamental catalyst. Diversifies portfolio beyond pure semiconductors. Starting as a pilot position to test if rotation into GOOGL is genuine.",
+      "date_opened": "2026-04-27",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 58
     }
   ],
   "performance_stats": {
@@ -217,11 +253,6 @@
     "avg_return_per_trade": 0.0
   },
   "research_notes": [
-    {
-      "date": "2026-04-04T22:12:55.536492",
-      "topic": "Sector rotation timing signals \u2014 specifically how to identify when mega-cap tech leadership is exhausting and when to rotate into value/cyclical names, using breadth indicators, relative strength divergences, and volume analysis during the transition from rally to consolidation phases",
-      "summary": "=== STRATEGY RESEARCH: SECTOR ROTATION TIMING SIGNALS \u2014 SPECIFICALLY HOW TO IDENTIFY WHEN MEGA-CAP TECH LEADERSHIP IS EXHAUSTING AND WHEN TO ROTATE INTO VALUE/CYCLICAL NAMES, USING BREADTH INDICATORS, RELATIVE STRENGTH DIVERGENCES, AND VOLUME ANALYSIS DURING THE TRANSITION FROM RALLY TO CONSOLIDATIO"
-    },
     {
       "date": "2026-04-11T16:30:17.395517",
       "topic": "Volume-price divergence analysis \u2014 specifically how to use declining volume on up days and increasing volume on down days as a leading indicator of trend exhaustion in mega-cap tech, and whether volume confirmation should be required before holding through consolidation phases versus taking profits",
@@ -266,7 +297,12 @@
       "date": "2026-04-24T19:48:58.165980",
       "topic": "Optimal position sizing when scaling from pilot to full positions \u2014 specifically at what confirmation threshold (% gain from entry, days held, relative strength rank) should pilot positions be doubled from 10% to 20%, and whether adding on first pullback vs. breakout continuation produces better risk-adjusted returns",
       "summary": "=== STRATEGY RESEARCH: OPTIMAL POSITION SIZING WHEN SCALING FROM PILOT TO FULL POSITIONS \u2014 SPECIFICALLY AT WHAT CONFIRMATION THRESHOLD (% GAIN FROM ENTRY, DAYS HELD, RELATIVE STRENGTH RANK) SHOULD PILOT POSITIONS BE DOUBLED FROM 10% TO 20%, AND WHETHER ADDING ON FIRST PULLBACK VS. BREAKOUT CONTINUAT"
+    },
+    {
+      "date": "2026-04-27T17:41:55.731586",
+      "topic": "Trailing stop strategies for momentum positions with large unrealized gains \u2014 specifically whether percentage-based trailing stops (e.g., sell if drops 5% from peak), ATR-based stops, or time-based exits (sell after X days regardless) produce better outcomes for positions already up 15%+ in trending markets",
+      "summary": "=== STRATEGY RESEARCH: TRAILING STOP STRATEGIES FOR MOMENTUM POSITIONS WITH LARGE UNREALIZED GAINS \u2014 SPECIFICALLY WHETHER PERCENTAGE-BASED TRAILING STOPS (E.G., SELL IF DROPS 5% FROM PEAK), ATR-BASED STOPS, OR TIME-BASED EXITS (SELL AFTER X DAYS REGARDLESS) PRODUCE BETTER OUTCOMES FOR POSITIONS ALRE"
     }
   ],
-  "_next_research_topic": "Trailing stop strategies for momentum positions with large unrealized gains \u2014 specifically whether percentage-based trailing stops (e.g., sell if drops 5% from peak), ATR-based stops, or time-based exits (sell after X days regardless) produce better outcomes for positions already up 15%+ in trending markets"
+  "_next_research_topic": "Earnings season positioning strategies \u2014 specifically whether it's better to sell positions before earnings announcements to avoid binary risk, hold through with tighter stops, or buy post-earnings winners on confirmed breakouts, with focus on historical win rates for each approach in mega-cap tech names"
 }

@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-04-24T19:49:04.837632",
+  "last_updated": "2026-04-27T17:42:00.234550",
   "portfolio": {
-    "equity": 110729.11,
-    "cash": 55103.34,
-    "buying_power": 165832.45,
-    "total_return_pct": 10972.91
+    "equity": 109930.86,
+    "cash": 47677.2,
+    "buying_power": 157608.06,
+    "total_return_pct": 10893.09
   },
   "performance_stats": {
     "total_return_pct": 0.0,
@@ -21,45 +21,9 @@
     },
     "avg_return_per_trade": 0.0
   },
-  "strategy_notes": "CONCENTRATED MOMENTUM PHASE \u2014 Portfolio shifting to sector-concentrated approach in semiconductors + AI beneficiaries. Key rules: (1) When a sector shows 3+ names surging >5% simultaneously, it's a confirmed sector breakout \u2014 concentrate positions there rather than diversifying across weak sectors. (2) Cut non-confirmers by day 3-4 without hesitation \u2014 ORCL and ADBE losses were predictable from relative weakness signals. (3) Scale winners: AMD's +19% gain justifies holding past normal +7% threshold when sector momentum is accelerating (multiple names confirming). (4) Profit-taking levels: take 50% at +15%, hold remainder with trailing stop at +10%. (5) For new entries in hot sectors, size at 15-20% not 10% when 3+ sector names confirm. (6) Maintain max 2 sectors for concentration with at least 1 diversifier. (7) Immediate sell triggers: -4% from entry OR relative weakness (underperforming QQQ by >2%) on a strong market day.",
-  "total_trades": 55,
+  "strategy_notes": "DEFENSIVE MOMENTUM PHASE \u2014 Portfolio shifting from concentrated semis to selective positions with confirmed relative strength. Key rules: (1) Universal bearish MACD = maximum discipline. Take profits at +13-15% without hesitation. (2) Non-confirmers get 3-4 days max \u2014 if a position isn't up 3%+ from entry within that window during a momentum regime, it's a cut. (3) Relative strength on flat/down days remains the strongest entry signal \u2014 GOOGL today fits this perfectly. (4) Earnings season creates binary risk \u2014 reduce position sizes to 15% max and avoid adding to names reporting within 5 days unless you're willing to hold through. (5) Trailing stop implementation: for positions up 10%+, set mental stop at half the gain (e.g., +13% gain \u2192 stop at +6.5%). (6) Cash is a position \u2014 maintain 40%+ cash when all MACD signals are bearish. (7) Sector concentration max 2 names in same sector.",
+  "total_trades": 58,
   "recent_trades": [
-    {
-      "symbol": "AMD",
-      "action": "BUY",
-      "entry_price": 295.1499938964844,
-      "exit_price": null,
-      "return_pct": null,
-      "reason": "AMD +3.72% today, strongest in semis, on my watchlist for relative strength. Previously delivered +7.13% win. Semiconductors showing leadership with AVGO +2.23% and TXN +1.35%. Starting with a small 10% position as a pilot to test re-entry in this environment. Market at ATH with strong breadth today suggests the uptrend is intact despite bearish MACD. AMD has been a consistent performer for this strategy.",
-      "date_opened": "2026-04-22",
-      "date_closed": null,
-      "result": "OPEN",
-      "trade_id": 46
-    },
-    {
-      "symbol": "ORCL",
-      "action": "BUY",
-      "entry_price": 187.17999267578125,
-      "exit_price": null,
-      "return_pct": null,
-      "reason": "ORCL +3.67% today, on my watchlist, enterprise software showing strength (CRM +1.66%, ADBE +4.32%). Cloud/enterprise software is a sector with multiple names rallying, meeting my sector breadth requirement even if MACD hasn't crossed. Starting small as a test position. Strong fundamental tailwinds from AI infrastructure spending.",
-      "date_opened": "2026-04-22",
-      "date_closed": null,
-      "result": "OPEN",
-      "trade_id": 47
-    },
-    {
-      "symbol": "ADBE",
-      "action": "BUY",
-      "entry_price": 257.42999267578125,
-      "exit_price": null,
-      "return_pct": null,
-      "reason": "ADBE +4.32% today \u2014 strongest performer in enterprise software. When 3+ names in a sector show strong relative strength on a rally day (ADBE, ORCL, CRM, MSFT all green), this signals genuine sector momentum even before MACD crossovers. ADBE has been building a base and today's move on strong breadth suggests potential breakout. Small position to capture early momentum.",
-      "date_opened": "2026-04-22",
-      "date_closed": null,
-      "result": "OPEN",
-      "trade_id": 48
-    },
     {
       "symbol": "AVGO",
       "action": "BUY",
@@ -143,55 +107,79 @@
       "date_closed": null,
       "result": "OPEN",
       "trade_id": 55
+    },
+    {
+      "symbol": "AMD",
+      "action": "SELL",
+      "entry_price": null,
+      "exit_price": 334.9700012207031,
+      "return_pct": null,
+      "reason": "AMD at +13.71% approaching my +15% profit-taking threshold. Today's -3.42% decline is the largest single-day drop since entry, suggesting momentum exhaustion. My strategy says take 50% at +15% \u2014 with universal bearish MACD and the stock already pulling back hard, I'm taking full profit now rather than risking a reversal. Locking in ~$1,715 in gains. Can re-enter on confirmed bounce with bullish MACD crossover.",
+      "date_opened": "unknown",
+      "date_closed": "2026-04-27",
+      "result": "UNKNOWN",
+      "trade_id": 56
+    },
+    {
+      "symbol": "AVGO",
+      "action": "SELL",
+      "entry_price": null,
+      "exit_price": 415.9849853515625,
+      "return_pct": null,
+      "reason": "AVGO at only +0.67% and was -1.49% today \u2014 clear relative weakness on a flat market day. This is a non-confirming pilot position. My strategy explicitly says cut non-confirmers showing relative weakness. AVGO has failed to gain traction since the 4/22 entry and is deteriorating. No reason to hold a position with near-zero gain that's underperforming the market.",
+      "date_opened": "unknown",
+      "date_closed": "2026-04-27",
+      "result": "UNKNOWN",
+      "trade_id": 57
+    },
+    {
+      "symbol": "GOOGL",
+      "action": "BUY",
+      "entry_price": 350.9700012207031,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "GOOGL +2.01% today \u2014 strongest mega-cap performer, showing clear relative strength on a flat/down market day. This is exactly the relative-strength-on-red-day signal that has been my most reliable entry indicator. Cloud/AI search monetization provides fundamental catalyst. Diversifies portfolio beyond pure semiconductors. Starting as a pilot position to test if rotation into GOOGL is genuine.",
+      "date_opened": "2026-04-27",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 58
     }
   ],
   "lessons_count": 3,
   "last_decision": {
-    "market_assessment": "Strong bullish momentum continues with SPY at $713 (+0.65%) and QQQ surging +1.75%, indicating tech leadership. Semiconductors are on fire today \u2014 AMD +14.85%, INTC +21.14%, QCOM +11.25%, NVDA +5.36% \u2014 suggesting a major sector catalyst (possibly earnings or trade/tariff developments). S&P 500 up 35% YoY with market at all-time highs. Despite universal bearish MACD signals across all names, price action is overwhelmingly bullish, confirming my earlier research that MACD is a lagging/false-negative indicator in strong trending markets near ATH.",
-    "self_reflection": "AMD is the star position at +18.95%, validating my pilot entry thesis and my lesson that semiconductor sector momentum is durable when multiple names confirm. ORCL (-8.84%) and ADBE (-6.14%) are concerning \u2014 enterprise software is underperforming badly relative to semis. AAPL (-0.60%) is flat/weak. AVGO (+1.65%) is modest. The key lesson: sector selection matters enormously. I deployed equally across semis and enterprise software, but semis massively outperformed. I should have concentrated more in the strongest sector. ORCL's -3.24% today while AMD gained +14.85% is a clear relative weakness signal \u2014 I should have cut ORCL earlier per my 'cut non-confirmers by day 4' rule. With 2 days elapsed since entry, ORCL and ADBE are already showing the pattern of immediate post-entry reversal that I identified as an early exit signal in Lesson Batch 1.",
-    "confidence": "HIGH",
+    "market_assessment": "Markets are at record highs but showing signs of fatigue \u2014 SPY flat (-0.03%), QQQ slightly negative (-0.21%). Universal bearish MACD across all names signals caution. Geopolitical risk from Hormuz closure headlines and Mag 7 earnings week ahead create binary event risk. Semiconductors showing divergence: AMD -3.42% today (possible profit-taking after strong run), NVDA +0.40% holding up better. GOOGL +2.01% and CRM +2.63% suggest some rotation into cloud/search names.",
+    "self_reflection": "My concentrated semiconductor bet has been working \u2014 AMD is up +13.71% from entry and NVDA was my best trade ever at +15.38%. However, I'm now seeing a key vulnerability: AMD dropped -3.42% today, which could be the start of sector rotation out of semis. My ORCL and ADBE cuts were correct \u2014 enterprise software underperformed and I limited losses by cutting quickly. META and AVGO are barely profitable, suggesting they're not confirming the momentum thesis. The lesson from my trailing stop research is clear: for positions already up 13%+ like AMD, I should use ATR-based or percentage trailing stops rather than holding blindly. My strategy notes say take 50% at +15% \u2014 AMD is approaching that level and I should be disciplined. The fact that ALL stocks show bearish MACD means I should be more defensive and protect the +10,893% total return.",
+    "confidence": "MEDIUM",
     "decisions": [
       {
         "action": "SELL",
-        "symbol": "ORCL",
-        "reason": "ORCL is -8.84% from entry and -3.24% today \u2014 clear relative weakness while the broader market rallies strongly. Enterprise software is underperforming semiconductors dramatically. My strategy explicitly says to cut non-confirmers showing relative weakness on rally days. This is a textbook exit signal. Taking the loss now to redeploy into stronger names."
-      },
-      {
-        "action": "SELL",
-        "symbol": "ADBE",
-        "reason": "ADBE is -6.14% from entry despite +1.10% today. It has not confirmed since purchase and is significantly lagging the market. While it's bouncing today, it's still deeply underwater and enterprise software as a sector is losing to semiconductors. Following the rule: when a pilot position fails to confirm within the first few days and the sector is losing leadership, exit and rotate into the leading sector."
-      },
-      {
-        "action": "SELL",
-        "symbol": "AAPL",
-        "reason": "AAPL is -1.20% today while QQQ is +1.75% \u2014 significant relative weakness on a strong tech day. Failed to confirm from pilot entry. The CEO transition news creates headline risk for multiple compression. With semis surging, AAPL's consumer tech exposure is the wrong sector bet right now. Cutting to redeploy capital into momentum leaders."
-      },
-      {
-        "action": "HOLD",
         "symbol": "AMD",
-        "reason": "AMD is +14.85% today and +18.95% from entry \u2014 extraordinary momentum. Normally I'd take profits at +7-10%, but today's +14.85% move suggests a major catalyst (likely earnings beat or sector-wide news). With the semiconductor sector showing massive breadth (INTC +21%, QCOM +11%, NVDA +5%), this could be the start of a multi-day run rather than exhaustion. However, I will set a mental stop at +12% from entry ($330) to protect gains. Will reassess next cycle for profit-taking."
+        "reason": "AMD at +13.71% approaching my +15% profit-taking threshold. Today's -3.42% decline is the largest single-day drop since entry, suggesting momentum exhaustion. My strategy says take 50% at +15% \u2014 with universal bearish MACD and the stock already pulling back hard, I'm taking full profit now rather than risking a reversal. Locking in ~$1,715 in gains. Can re-enter on confirmed bounce with bullish MACD crossover."
+      },
+      {
+        "action": "SELL",
+        "symbol": "AVGO",
+        "reason": "AVGO at only +0.67% and was -1.49% today \u2014 clear relative weakness on a flat market day. This is a non-confirming pilot position. My strategy explicitly says cut non-confirmers showing relative weakness. AVGO has failed to gain traction since the 4/22 entry and is deteriorating. No reason to hold a position with near-zero gain that's underperforming the market."
       },
       {
         "action": "HOLD",
-        "symbol": "AVGO",
-        "reason": "AVGO is +1.65% from entry and flat today (+0.09%). While underperforming AMD and other semis, it's in the right sector and has AI infrastructure tailwinds. Holding as a secondary semiconductor play. Will cut if it fails to participate in the next semi rally day."
-      },
-      {
-        "action": "BUY",
-        "symbol": "NVDA",
-        "allocation_pct": 20,
-        "reason": "NVDA +5.36% today, semiconductor sector is surging with massive breadth. Previously traded NVDA for +15.38% gain \u2014 my best trade ever. AI infrastructure spending is the dominant market theme. With AMD at +18.95% and sector showing explosive momentum, adding NVDA as a second high-conviction semi position. Deploying larger than pilot size (20%) because this is a confirmed momentum regime with sector breadth backing it up. NVDA has clear fundamental catalysts with Cerebras competition driving urgency in chip demand.",
-        "stop_loss_pct": 5
-      },
-      {
-        "action": "BUY",
         "symbol": "META",
+        "reason": "META at +0.20%, barely positive but holding up relatively well (+0.27% today vs QQQ -0.21%). Earnings are imminent which creates binary risk, but META has been showing consistent relative strength. Holding through one more cycle to see if it confirms \u2014 will cut if it drops below entry price or shows relative weakness on a rally day."
+      },
+      {
+        "action": "HOLD",
+        "symbol": "NVDA",
+        "reason": "NVDA at -0.61% from entry but was +0.40% today, showing relative strength vs QQQ. The position is underwater but within my tolerance zone (not yet at -4% stop). NVDA remains the AI infrastructure leader and I've successfully traded it for +15% before. Giving it one more cycle to confirm, but will cut at -4% per my rules."
+      },
+      {
+        "action": "BUY",
+        "symbol": "GOOGL",
         "allocation_pct": 15,
-        "reason": "META +2.52% today, showing strong relative strength among mega-caps. Diversifies beyond pure semiconductors while staying in tech momentum. META benefits from AI monetization through advertising \u2014 a different angle on the AI theme. Previously traded META successfully. Adding as a complementary position to my semi-heavy portfolio to manage sector concentration risk.",
-        "stop_loss_pct": 5
+        "reason": "GOOGL +2.01% today \u2014 strongest mega-cap performer, showing clear relative strength on a flat/down market day. This is exactly the relative-strength-on-red-day signal that has been my most reliable entry indicator. Cloud/AI search monetization provides fundamental catalyst. Diversifies portfolio beyond pure semiconductors. Starting as a pilot position to test if rotation into GOOGL is genuine.",
+        "stop_loss_pct": 4
       }
     ],
-    "next_research": "Trailing stop strategies for momentum positions with large unrealized gains \u2014 specifically whether percentage-based trailing stops (e.g., sell if drops 5% from peak), ATR-based stops, or time-based exits (sell after X days regardless) produce better outcomes for positions already up 15%+ in trending markets"
+    "next_research": "Earnings season positioning strategies \u2014 specifically whether it's better to sell positions before earnings announcements to avoid binary risk, hold through with tighter stops, or buy post-earnings winners on confirmed breakouts, with focus on historical win rates for each approach in mega-cap tech names"
   },
   "equity_history": [
     {
@@ -333,6 +321,11 @@
       "date": "2026-04-24",
       "equity": 110729.11,
       "return_pct": 10972.91
+    },
+    {
+      "date": "2026-04-27",
+      "equity": 109930.86,
+      "return_pct": 10893.09
     }
   ],
   "spy_benchmark": [
@@ -438,7 +431,11 @@
     },
     {
       "date": "2026-04-24",
-      "equity": 108379.45
+      "equity": 108501.03
+    },
+    {
+      "date": "2026-04-27",
+      "equity": 108447.84
     }
   ]
 }
