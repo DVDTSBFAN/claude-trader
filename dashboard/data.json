@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-04-27T17:42:00.234550",
+  "last_updated": "2026-04-28T13:51:32.356104",
   "portfolio": {
-    "equity": 109930.86,
-    "cash": 47677.2,
-    "buying_power": 157608.06,
-    "total_return_pct": 10893.09
+    "equity": 110223.4,
+    "cash": 54780.75,
+    "buying_power": 165004.15,
+    "total_return_pct": 10922.34
   },
   "performance_stats": {
     "total_return_pct": 0.0,
@@ -21,21 +21,9 @@
     },
     "avg_return_per_trade": 0.0
   },
-  "strategy_notes": "DEFENSIVE MOMENTUM PHASE \u2014 Portfolio shifting from concentrated semis to selective positions with confirmed relative strength. Key rules: (1) Universal bearish MACD = maximum discipline. Take profits at +13-15% without hesitation. (2) Non-confirmers get 3-4 days max \u2014 if a position isn't up 3%+ from entry within that window during a momentum regime, it's a cut. (3) Relative strength on flat/down days remains the strongest entry signal \u2014 GOOGL today fits this perfectly. (4) Earnings season creates binary risk \u2014 reduce position sizes to 15% max and avoid adding to names reporting within 5 days unless you're willing to hold through. (5) Trailing stop implementation: for positions up 10%+, set mental stop at half the gain (e.g., +13% gain \u2192 stop at +6.5%). (6) Cash is a position \u2014 maintain 40%+ cash when all MACD signals are bearish. (7) Sector concentration max 2 names in same sector.",
-  "total_trades": 58,
+  "strategy_notes": "SELECTIVE MOMENTUM WITH EARNINGS AWARENESS \u2014 Portfolio is 4 positions, ~50% invested, ~50% cash. Key rules: (1) Universal bearish MACD = take profits at +13-15%, no exceptions. (2) Earnings binary risk: hold through only if position is <15% of portfolio and at/near breakeven \u2014 the asymmetry favors holding when downside is limited. Sell before earnings if sitting on large gains. (3) Sector diversification: max 2 names in identical sub-sector. NVDA/GOOGL/META are acceptable because they represent chips/search/ads despite all being 'tech'. (4) Non-confirmers get 4 trading days from entry \u2014 GOOGL and META both on the clock. (5) Trailing stops: for positions up 5%+, set mental stop at half the gain. For positions up 10%+, tighten to 60% of gain. (6) Post-earnings breakout buying is statistically superior to pre-earnings speculation \u2014 after META reports, look for post-earnings winners to add. (7) Cash buffer at 40%+ when MACD universally bearish. (8) JPM adds financial sector diversification \u2014 monitor relative strength vs tech.",
+  "total_trades": 59,
   "recent_trades": [
-    {
-      "symbol": "AVGO",
-      "action": "BUY",
-      "entry_price": 413.26708984375,
-      "exit_price": null,
-      "return_pct": null,
-      "reason": "AVGO +2.69% today, showing strong relative strength in semiconductors alongside AMD. Previously traded AVGO for a +5.64% win so I know this name well. Broadening semiconductor exposure across two names (AMD + AVGO) captures the sector momentum thesis. AI infrastructure spending is a genuine secular tailwind. Entering as a 10% pilot position consistent with my staged deployment strategy.",
-      "date_opened": "2026-04-22",
-      "date_closed": null,
-      "result": "OPEN",
-      "trade_id": 49
-    },
     {
       "symbol": "AAPL",
       "action": "BUY",
@@ -143,43 +131,50 @@
       "date_closed": null,
       "result": "OPEN",
       "trade_id": 58
+    },
+    {
+      "symbol": "JPM",
+      "action": "BUY",
+      "entry_price": 311.6300048828125,
+      "exit_price": null,
+      "return_pct": null,
+      "reason": "JPM +1.09% today showing relative strength vs broad market. Financials provide genuine sector diversification away from my tech-heavy portfolio (NVDA, GOOGL, META all tech). Banking sector benefits from higher-for-longer rate environment and strong economic data supporting ATH in S&P. JPM is the quality leader in financials. Adding as a pilot position to reduce tech concentration risk.",
+      "date_opened": "2026-04-28",
+      "date_closed": null,
+      "result": "OPEN",
+      "trade_id": 59
     }
   ],
   "lessons_count": 3,
   "last_decision": {
-    "market_assessment": "Markets are at record highs but showing signs of fatigue \u2014 SPY flat (-0.03%), QQQ slightly negative (-0.21%). Universal bearish MACD across all names signals caution. Geopolitical risk from Hormuz closure headlines and Mag 7 earnings week ahead create binary event risk. Semiconductors showing divergence: AMD -3.42% today (possible profit-taking after strong run), NVDA +0.40% holding up better. GOOGL +2.01% and CRM +2.63% suggest some rotation into cloud/search names.",
-    "self_reflection": "My concentrated semiconductor bet has been working \u2014 AMD is up +13.71% from entry and NVDA was my best trade ever at +15.38%. However, I'm now seeing a key vulnerability: AMD dropped -3.42% today, which could be the start of sector rotation out of semis. My ORCL and ADBE cuts were correct \u2014 enterprise software underperformed and I limited losses by cutting quickly. META and AVGO are barely profitable, suggesting they're not confirming the momentum thesis. The lesson from my trailing stop research is clear: for positions already up 13%+ like AMD, I should use ATR-based or percentage trailing stops rather than holding blindly. My strategy notes say take 50% at +15% \u2014 AMD is approaching that level and I should be disciplined. The fact that ALL stocks show bearish MACD means I should be more defensive and protect the +10,893% total return.",
+    "market_assessment": "S&P 500 and Nasdaq at new highs with SPY +0.17% and QQQ +0.05% today \u2014 market grinding higher but with significant divergence underneath. Semiconductors showing split behavior: NVDA +4.00% surging while AMD -3.79% and TXN -2.76% pulling back hard, suggesting rotation within the sector rather than broad strength. Big earnings week ahead (META reports soon) creates binary risk. Universal bearish MACD across all names despite market at ATH \u2014 classic MACD lag scenario we've researched. Defensives and consumer staples broadly weak (KO -1.55%, WMT -1.79%, MCD -3.06%).",
+    "self_reflection": "My recent cycle was very productive: sold AMD at +13.71% (close to the +15% threshold) and cut AVGO as a non-confirmer \u2014 both correct decisions validated by today's price action (AMD -3.79%, AVGO -1.08%). The GOOGL entry on relative strength is already showing confirmation at +1.72% today. NVDA is my standout at +1.21% from entry and +4% today \u2014 the re-entry after taking +15.38% profit is working. META is essentially flat, not yet confirmed. Key lesson: my profit-taking discipline on AMD was vindicated immediately \u2014 the -3.79% drop today would have erased most gains. The pilot-to-confirmation framework continues to work well. One concern: I have 3 tech positions (NVDA, META, GOOGL) which is sector-heavy, but they represent different sub-themes (AI chips, AI ads, AI search/cloud).",
     "confidence": "MEDIUM",
     "decisions": [
       {
-        "action": "SELL",
-        "symbol": "AMD",
-        "reason": "AMD at +13.71% approaching my +15% profit-taking threshold. Today's -3.42% decline is the largest single-day drop since entry, suggesting momentum exhaustion. My strategy says take 50% at +15% \u2014 with universal bearish MACD and the stock already pulling back hard, I'm taking full profit now rather than risking a reversal. Locking in ~$1,715 in gains. Can re-enter on confirmed bounce with bullish MACD crossover."
+        "action": "HOLD",
+        "symbol": "NVDA",
+        "reason": "NVDA +4.00% today, +1.21% from entry, strongest name in the portfolio. Clear momentum leader in semiconductors. This is a confirmed position that should be allowed to run. My trailing stop research says use a percentage-based trailing stop \u2014 will set mental stop at entry price ($210.40) to protect against giving back gains. No reason to sell a position showing accelerating momentum."
       },
       {
-        "action": "SELL",
-        "symbol": "AVGO",
-        "reason": "AVGO at only +0.67% and was -1.49% today \u2014 clear relative weakness on a flat market day. This is a non-confirming pilot position. My strategy explicitly says cut non-confirmers showing relative weakness. AVGO has failed to gain traction since the 4/22 entry and is deteriorating. No reason to hold a position with near-zero gain that's underperforming the market."
+        "action": "HOLD",
+        "symbol": "GOOGL",
+        "reason": "GOOGL +1.72% today, confirming the relative-strength-on-flat-day entry signal from yesterday. At $350.13 vs entry $350.99, essentially flat but today's strong performance is encouraging. Needs 2 more days to fully confirm. Cloud/AI search theme intact. Will cut if it fails to be positive from entry by day 4."
       },
       {
         "action": "HOLD",
         "symbol": "META",
-        "reason": "META at +0.20%, barely positive but holding up relatively well (+0.27% today vs QQQ -0.21%). Earnings are imminent which creates binary risk, but META has been showing consistent relative strength. Holding through one more cycle to see if it confirms \u2014 will cut if it drops below entry price or shows relative weakness on a rally day."
-      },
-      {
-        "action": "HOLD",
-        "symbol": "NVDA",
-        "reason": "NVDA at -0.61% from entry but was +0.40% today, showing relative strength vs QQQ. The position is underwater but within my tolerance zone (not yet at -4% stop). NVDA remains the AI infrastructure leader and I've successfully traded it for +15% before. Giving it one more cycle to confirm, but will cut at -4% per my rules."
+        "reason": "META +0.53% today, essentially flat from entry at $675.50. CRITICAL: META earnings are imminent (likely this week). My earnings research says mega-cap tech has ~60% beat rate with average +3-5% post-earnings moves. Given META is at breakeven, the risk/reward of holding through earnings is acceptable \u2014 a beat could drive significant upside, while a miss would trigger an immediate exit. Position is only 15% of portfolio, within my earnings-season sizing guideline."
       },
       {
         "action": "BUY",
-        "symbol": "GOOGL",
-        "allocation_pct": 15,
-        "reason": "GOOGL +2.01% today \u2014 strongest mega-cap performer, showing clear relative strength on a flat/down market day. This is exactly the relative-strength-on-red-day signal that has been my most reliable entry indicator. Cloud/AI search monetization provides fundamental catalyst. Diversifies portfolio beyond pure semiconductors. Starting as a pilot position to test if rotation into GOOGL is genuine.",
+        "symbol": "JPM",
+        "allocation_pct": 12,
+        "reason": "JPM +1.09% today showing relative strength vs broad market. Financials provide genuine sector diversification away from my tech-heavy portfolio (NVDA, GOOGL, META all tech). Banking sector benefits from higher-for-longer rate environment and strong economic data supporting ATH in S&P. JPM is the quality leader in financials. Adding as a pilot position to reduce tech concentration risk.",
         "stop_loss_pct": 4
       }
     ],
-    "next_research": "Earnings season positioning strategies \u2014 specifically whether it's better to sell positions before earnings announcements to avoid binary risk, hold through with tighter stops, or buy post-earnings winners on confirmed breakouts, with focus on historical win rates for each approach in mega-cap tech names"
+    "next_research": "Sector rotation timing signals \u2014 specifically how to identify when leadership is shifting from semiconductors/AI to financials or other cyclicals, using relative strength ratios (e.g., XLF/XLK), breadth divergences, and yield curve changes, and what the historical lead time is between rotation signals and actual outperformance"
   },
   "equity_history": [
     {
@@ -326,6 +321,11 @@
       "date": "2026-04-27",
       "equity": 109930.86,
       "return_pct": 10893.09
+    },
+    {
+      "date": "2026-04-28",
+      "equity": 110223.4,
+      "return_pct": 10922.34
     }
   ],
   "spy_benchmark": [
@@ -435,7 +435,7 @@
     },
     {
       "date": "2026-04-27",
-      "equity": 108447.84
+      "equity": 108687.95
     }
   ]
 }
